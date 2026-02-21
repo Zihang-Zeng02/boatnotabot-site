@@ -1,0 +1,4 @@
+\title{Deep Reinforcement Learning}
+\author{boat}
+
+\tex{p_\theta(\mathbb{s}_1,\mathbb{a_1},\dots,\mathbb{s}_T,\mathbb{a}_T) = p(\mathbb{s}_1)\prod_{t=1}^T\pi_\theta(\mathbb{a}_t | \mathbb{s}_t)p(\mathbb s_{t+1} | \mathbb{s}_t), \mathbb{a}_t}

@@ -1,0 +1,15 @@
+\title{Boat's forest}
+\date{2026-01-26}
+\author{boat}
+
+\p{
+    This is my forest. [Forests](https://www.forester-notes.org/tfmt-000V) are a way of organizing notes and the project is called [forester]((https://www.forester-notes.org/)). Contents under this website are listed below:
+}
+
+\ul{
+    \li{[[ml-0001]]}
+}
+
+\p{
+    On a computer, you can press Ctrl-K to search for trees.
+}
