@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
   <fr:frontmatter>
-    <fr:anchor>253</fr:anchor>
+    <fr:anchor>255</fr:anchor>
     <fr:addr type="user">boat</fr:addr>
     <fr:route>boat.xml</fr:route>
     <fr:title text="Zihang Zeng">Zihang Zeng</fr:title>
@@ -26,7 +26,29 @@
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>254</fr:anchor>
+            <fr:anchor>256</fr:anchor>
+            <fr:addr type="user">test</fr:addr>
+            <fr:route>test.xml</fr:route>
+            <fr:title text="Test">Test</fr:title>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>2</fr:month>
+              <fr:day>21</fr:day>
+            </fr:date>
+            <fr:authors>
+              <fr:author>
+                <fr:link type="local" href="boat.xml" addr="boat" title="Zihang Zeng">Zihang Zeng</fr:link>
+              </fr:author>
+            </fr:authors>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>This is a test.</fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>258</fr:anchor>
             <fr:addr type="user">boat-0001</fr:addr>
             <fr:route>boat-0001.xml</fr:route>
             <fr:title text="Boat's forest">Boat's forest</fr:title>
@@ -54,7 +76,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>256</fr:anchor>
+            <fr:anchor>260</fr:anchor>
             <fr:addr type="user">ml-0001</fr:addr>
             <fr:route>ml-0001.xml</fr:route>
             <fr:title text="Machine Learning">Machine Learning</fr:title>
