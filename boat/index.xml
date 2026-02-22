@@ -3,7 +3,7 @@
 <fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
   <fr:frontmatter>
     <fr:authors />
-    <fr:uri>http://forest.local/boat/</fr:uri>
+    <fr:uri>https://boatnotabot.com/boat/</fr:uri>
     <fr:display-uri>boat</fr:display-uri>
     <fr:route>/boat/</fr:route>
     <fr:title text="Zihang Zeng">Zihang Zeng</fr:title>

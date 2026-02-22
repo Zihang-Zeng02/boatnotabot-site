@@ -4,7 +4,7 @@
   <fr:frontmatter>
     <fr:authors>
       <fr:author>
-        <fr:link href="/boat/" title="Zihang Zeng" uri="http://forest.local/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+        <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
       </fr:author>
     </fr:authors>
     <fr:date>
@@ -12,7 +12,7 @@
       <fr:month>2</fr:month>
       <fr:day>21</fr:day>
     </fr:date>
-    <fr:uri>http://forest.local/test/</fr:uri>
+    <fr:uri>https://boatnotabot.com/test/</fr:uri>
     <fr:display-uri>test</fr:display-uri>
     <fr:route>/test/</fr:route>
     <fr:title text="Test">Test</fr:title>

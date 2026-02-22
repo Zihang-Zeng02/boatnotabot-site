@@ -4,7 +4,7 @@
   <fr:frontmatter>
     <fr:authors>
       <fr:author>
-        <fr:link href="/boat/" title="Zihang Zeng" uri="http://forest.local/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+        <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
       </fr:author>
     </fr:authors>
     <fr:date>
@@ -12,7 +12,7 @@
       <fr:month>1</fr:month>
       <fr:day>26</fr:day>
     </fr:date>
-    <fr:uri>http://forest.local/ml-0001/</fr:uri>
+    <fr:uri>https://boatnotabot.com/ml-0001/</fr:uri>
     <fr:display-uri>ml-0001</fr:display-uri>
     <fr:route>/ml-0001/</fr:route>
     <fr:title text="Machine Learning">Machine Learning</fr:title>
@@ -47,7 +47,7 @@
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/boat/" title="Zihang Zeng" uri="http://forest.local/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
@@ -55,7 +55,7 @@
               <fr:month>1</fr:month>
               <fr:day>26</fr:day>
             </fr:date>
-            <fr:uri>http://forest.local/boat-0001/</fr:uri>
+            <fr:uri>https://boatnotabot.com/boat-0001/</fr:uri>
             <fr:display-uri>boat-0001</fr:display-uri>
             <fr:route>/boat-0001/</fr:route>
             <fr:title text="Boat's forest">Boat's forest</fr:title>
@@ -66,7 +66,7 @@
 </html:p>
             <html:ul>
               <html:li>
-                <fr:link href="/ml-0001/" title="Machine Learning" uri="http://forest.local/ml-0001/" display-uri="ml-0001" type="local">Machine Learning</fr:link>
+                <fr:link href="/ml-0001/" title="Machine Learning" uri="https://boatnotabot.com/ml-0001/" display-uri="ml-0001" type="local">Machine Learning</fr:link>
               </html:li>
             </html:ul>
             <html:p>
