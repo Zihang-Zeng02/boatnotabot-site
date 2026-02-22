@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="/default.xsl"?>
-<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="true" base-url="/">
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
   <fr:frontmatter>
     <fr:authors>
       <fr:author>
@@ -9,22 +9,17 @@
     </fr:authors>
     <fr:date>
       <fr:year>2026</fr:year>
-      <fr:month>1</fr:month>
-      <fr:day>26</fr:day>
+      <fr:month>2</fr:month>
+      <fr:day>21</fr:day>
     </fr:date>
-    <fr:uri>https://boatnotabot.com/boat-0001/</fr:uri>
-    <fr:display-uri>boat-0001</fr:display-uri>
-    <fr:route>/boat-0001/</fr:route>
-    <fr:title text="Boat's forest">Boat's forest</fr:title>
+    <fr:uri>https://boatnotabot.com/opt-6002/</fr:uri>
+    <fr:display-uri>opt-6002</fr:display-uri>
+    <fr:route>/opt-6002/</fr:route>
+    <fr:title text="Bolza Problem">Bolza Problem</fr:title>
   </fr:frontmatter>
   <fr:mainmatter>
     <html:p>
-    This is my forest. <fr:link href="https://www.forester-notes.org/tfmt-000V" type="external">Forests</fr:link> are a way of organizing notes and the project is called <fr:link href="%28https://www.forester-notes.org/)" type="external">forester</fr:link>. Contents under this website are listed below:
-</html:p>
-    <html:ul><html:li><fr:link href="/ml-0001/" title="Machine Learning" uri="https://boatnotabot.com/ml-0001/" display-uri="ml-0001" type="local">Machine Learning</fr:link></html:li>
-    <html:li><fr:link href="/opt-6001/" title="Optimal Control" uri="https://boatnotabot.com/opt-6001/" display-uri="opt-6001" type="local">Optimal Control</fr:link></html:li></html:ul>
-    <html:p>
-    On a computer, you can press Ctrl-K to search for trees.
+    Bolza problem is a fundamental formulation in the calculus of variations and optimal control that minimizes a cost functional consisting of both an integral term (running cost) and a terminal cost <fr:tex display="block"><![CDATA[J:=\int _0^{t_f}L\tup {x(t),u(t)}dt + \Phi  \tup {x(t_f)}]]></fr:tex>.
 </html:p>
   </fr:mainmatter>
   <fr:backmatter>
@@ -39,20 +34,6 @@
       <fr:frontmatter>
         <fr:authors />
         <fr:title text="Context">Context</fr:title>
-      </fr:frontmatter>
-      <fr:mainmatter />
-    </fr:tree>
-    <fr:tree show-metadata="false" hidden-when-empty="true">
-      <fr:frontmatter>
-        <fr:authors />
-        <fr:title text="Backlinks">Backlinks</fr:title>
-      </fr:frontmatter>
-      <fr:mainmatter />
-    </fr:tree>
-    <fr:tree show-metadata="false" hidden-when-empty="true">
-      <fr:frontmatter>
-        <fr:authors />
-        <fr:title text="Related">Related</fr:title>
       </fr:frontmatter>
       <fr:mainmatter>
         <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
@@ -104,30 +85,21 @@
 </html:p>
           </fr:mainmatter>
         </fr:tree>
-        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
-          <fr:frontmatter>
-            <fr:authors>
-              <fr:author>
-                <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
-              </fr:author>
-            </fr:authors>
-            <fr:date>
-              <fr:year>2026</fr:year>
-              <fr:month>1</fr:month>
-              <fr:day>26</fr:day>
-            </fr:date>
-            <fr:uri>https://boatnotabot.com/ml-0001/</fr:uri>
-            <fr:display-uri>ml-0001</fr:display-uri>
-            <fr:route>/ml-0001/</fr:route>
-            <fr:title text="Machine Learning">Machine Learning</fr:title>
-          </fr:frontmatter>
-          <fr:mainmatter>
-            <html:p>
-    This is a test for text writing.
-</html:p>
-          </fr:mainmatter>
-        </fr:tree>
       </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
     </fr:tree>
     <fr:tree show-metadata="false" hidden-when-empty="true">
       <fr:frontmatter>

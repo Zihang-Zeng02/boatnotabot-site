@@ -9,17 +9,43 @@
     </fr:authors>
     <fr:date>
       <fr:year>2026</fr:year>
-      <fr:month>1</fr:month>
-      <fr:day>26</fr:day>
+      <fr:month>2</fr:month>
+      <fr:day>21</fr:day>
     </fr:date>
-    <fr:uri>https://boatnotabot.com/ml-0001/</fr:uri>
-    <fr:display-uri>ml-0001</fr:display-uri>
-    <fr:route>/ml-0001/</fr:route>
-    <fr:title text="Machine Learning">Machine Learning</fr:title>
+    <fr:uri>https://boatnotabot.com/opt-6001/</fr:uri>
+    <fr:display-uri>opt-6001</fr:display-uri>
+    <fr:route>/opt-6001/</fr:route>
+    <fr:title text="Optimal Control">Optimal Control</fr:title>
   </fr:frontmatter>
   <fr:mainmatter>
     <html:p>
-    This is a test for text writing.
+    This is a note for optimal control based on the course ECE6553-Optimal Control at Gatech 2026 Spring.
+</html:p>
+    <fr:tree show-metadata="false">
+      <fr:frontmatter>
+        <fr:authors>
+          <fr:author>
+            <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+          </fr:author>
+        </fr:authors>
+        <fr:date>
+          <fr:year>2026</fr:year>
+          <fr:month>2</fr:month>
+          <fr:day>21</fr:day>
+        </fr:date>
+        <fr:uri>https://boatnotabot.com/opt-6002/</fr:uri>
+        <fr:display-uri>opt-6002</fr:display-uri>
+        <fr:route>/opt-6002/</fr:route>
+        <fr:title text="Bolza Problem">Bolza Problem</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <html:p>
+    Bolza problem is a fundamental formulation in the calculus of variations and optimal control that minimizes a cost functional consisting of both an integral term (running cost) and a terminal cost <fr:tex display="block"><![CDATA[J:=\int _0^{t_f}L\tup {x(t),u(t)}dt + \Phi  \tup {x(t_f)}]]></fr:tex>.
+</html:p>
+      </fr:mainmatter>
+    </fr:tree>
+    <html:p>
+    The content is still being organized and will be updated soon.
 </html:p>
   </fr:mainmatter>
   <fr:backmatter>
