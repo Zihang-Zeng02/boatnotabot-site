@@ -1,6 +1,247 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="refresh" content="0;url=/opt-6001/index.xml" />
-  </head>
+<html xmlns:f="http://www.forester-notes.org" xmlns="http://www.w3.org/1999/xhtml" data-base-url="/">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <base href="/">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" href="/style.css">
+      <link rel="stylesheet" href="/katex.min.css"><script type="text/javascript"></script><script type="module" src="/forester.js"></script><title>Optimal Control</title>
+   </head>
+   <body>
+      <ninja-keys placeholder="Start typing a note title or ID"></ninja-keys>
+      <header class="header">
+         <nav class="nav">
+            <div class="logo"><a href="/index.html" title="Home">« Home</a></div>
+         </nav>
+      </header>
+      <div id="grid-wrapper">
+         <article>
+            <section xmlns="" lang="en" class="block">
+               <details id="d5aB" open>
+                  <summary>
+                     <header>
+                        <h1><span class="taxon"></span>Optimal Control <a class="slug" href="/opt-6001/">[opt-6001]</a> </h1>
+                        <div class="metadata">
+                           <ul>
+                              <li class="meta-item">February 21, 2026</li>
+                              <li class="meta-item">
+                                 <address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address>
+                              </li>
+                           </ul>
+                        </div>
+                     </header>
+                  </summary>
+                  <p xmlns="http://www.w3.org/1999/xhtml">
+    This is a note for optimal control based on the course ECE6553-Optimal Control at Gatech 2026 Spring.
+</p>
+                  <section lang="en" class="block hide-metadata">
+                     <details id="d5aBdD" open>
+                        <summary>
+                           <header>
+                              <h1><span class="taxon">1. </span>Bolza Problem <a class="slug" href="/opt-6002/">[opt-6002]</a> </h1>
+                              <div class="metadata">
+                                 <ul>
+                                    <li class="meta-item">February 21, 2026</li>
+                                    <li class="meta-item">
+                                       <address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </header>
+                        </summary>
+                        <p xmlns="http://www.w3.org/1999/xhtml">
+    Bolza problem is a fundamental formulation in the calculus of variations and optimal control that minimizes a cost functional consisting of both an integral term (running cost) and a terminal cost \[J := \int _0^{t_f} L \big (x(t), u(t)\big ) dt + \Phi  \begin {pmatrix} x(t_f) \end {pmatrix}\] where \(L:\mathbb {R}^n \times  \mathbb {R}^k \to  \mathbb {R}\) is the running cost and \(\Phi :\mathbb {R}^n \to  \mathbb {R}\) is the terminal cost. The goal is to find the optimal control \(u(t)\in  \mathbb {R}^k\) that minimizes this cost functional subject to the system dynamics and boundary conditions.
+</p>
+                        <section lang="en" class="block hide-metadata">
+                           <details id="d5aBdDdD" open>
+                              <summary>
+                                 <header>
+                                    <h1><span class="taxon">1.1. </span>First-order Variation of the Bolza Functional <a class="slug" href="/opt-6003/">[opt-6003]</a> </h1>
+                                    <div class="metadata">
+                                       <ul>
+                                          <li class="meta-item">February 22, 2026</li>
+                                          <li class="meta-item">
+                                             <address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </header>
+                              </summary>
+                              <p xmlns="http://www.w3.org/1999/xhtml">
+    To find the optimal control \(u\), we consider the first-order variation of the functional \(J\) with respect to \(u\). By augmenting the cost functional with system dynamics \(\dot  x = f(x, u)\) using the costate \(p\), we define:
+</p>
+            \[
+    \frac {\partial  J}{\partial  u} = \begin {pmatrix} \frac {\partial  f}{\partial  u} \end {pmatrix}^\intercal  p + \begin {pmatrix} \frac {\partial  L}{\partial  u} \end {pmatrix}^\intercal 
+\]
+            <p xmlns="http://www.w3.org/1999/xhtml">
+    We obtain the stationarity condition \(\frac {\partial  J}{\partial  u} \equiv  0\).
+</p>
+                           </details>
+                        </section>
+                        <section lang="en" class="block hide-metadata">
+                           <details id="d5aBdDdF" open>
+                              <summary>
+                                 <header>
+                                    <h1><span class="taxon">1.2. </span>Optimality Conditions for Bolza Problem <a class="slug" href="/opt-6004/">[opt-6004]</a> </h1>
+                                    <div class="metadata">
+                                       <ul>
+                                          <li class="meta-item">February 22, 2026</li>
+                                          <li class="meta-item">
+                                             <address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </header>
+                              </summary>
+                              <p xmlns="http://www.w3.org/1999/xhtml">
+    The necessary conditions for the optimality of $\(\mathbf {u}\)(t)$ are given by the following set of equations:
+</p>
+                              <section lang="en" class="block hide-metadata" data-taxon="State Equation">
+                                 <details id="d5aBdDdFdD" open>
+                                    <summary>
+                                       <header>
+                                          <h1><span class="taxon">1.2.1. State Equation</span> </h1>
+                                          <div class="metadata">
+                                             <ul>
+                                                <li class="meta-item">February 22, 2026</li>
+                                                <li class="meta-item">
+                                                   <address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </header>
+                                    </summary>
+                \[ \dot  x = f\begin {pmatrix} x, u \end {pmatrix}, \quad  x(0) = x_0 \]
+              </details>
+                              </section>
+                              <section lang="en" class="block hide-metadata" data-taxon="Costate Equation">
+                                 <details id="d5aBdDdFdF" open>
+                                    <summary>
+                                       <header>
+                                          <h1><span class="taxon">1.2.2. Costate Equation</span> </h1>
+                                          <div class="metadata">
+                                             <ul>
+                                                <li class="meta-item">February 22, 2026</li>
+                                                <li class="meta-item">
+                                                   <address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </header>
+                                    </summary>
+                \[ \dot  p = -\begin {pmatrix} \frac {\partial  f}{\partial  x} \end {pmatrix}^\intercal  p - \begin {pmatrix} \frac {\partial  L}{\partial  x} \end {pmatrix}^\intercal  \]
+              </details>
+                              </section>
+                              <section lang="en" class="block hide-metadata" data-taxon="Stationarity Condition">
+                                 <details id="d5aBdDdFdH" open>
+                                    <summary>
+                                       <header>
+                                          <h1><span class="taxon">1.2.3. Stationarity Condition</span> </h1>
+                                          <div class="metadata">
+                                             <ul>
+                                                <li class="meta-item">February 22, 2026</li>
+                                                <li class="meta-item">
+                                                   <address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </header>
+                                    </summary>
+                \[ \begin {pmatrix} \frac {\partial  f}{\partial  u} \end {pmatrix}^\intercal  p + \begin {pmatrix} \frac {\partial  L}{\partial  u} \end {pmatrix}^\intercal   = 0 \]
+              </details>
+                              </section>
+                              <section lang="en" class="block hide-metadata" data-taxon="Boundary Condition (Transversality)">
+                                 <details id="d5aBdDdFdJ" open>
+                                    <summary>
+                                       <header>
+                                          <h1><span class="taxon">1.2.4. Boundary Condition (Transversality)</span> </h1>
+                                          <div class="metadata">
+                                             <ul>
+                                                <li class="meta-item">February 22, 2026</li>
+                                                <li class="meta-item">
+                                                   <address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </header>
+                                    </summary>
+                \[ p(t_f) = \nabla  \Phi \begin {pmatrix} x(t_f) \end {pmatrix} \]
+              </details>
+                              </section>
+                           </details>
+                        </section>
+                     </details>
+                  </section>
+                  <p xmlns="http://www.w3.org/1999/xhtml">
+    The content is still being organized and will be updated soon.
+</p>
+               </details>
+            </section>
+            <footer xmlns="">
+               <section lang="en" class="block hide-metadata">
+                  <details id="d5aBfF" open>
+                     <summary>
+                        <header>
+                           <h1><span class="taxon"></span>Backlinks </h1>
+                           <div class="metadata">
+                              <ul></ul>
+                           </div>
+                        </header>
+                     </summary>
+                     <section lang="en" class="block">
+                        <details id="d5aBfFdB">
+                           <summary>
+                              <header>
+                                 <h1><span class="taxon"></span>Boat's forest <a class="slug" href="/boat-0001/">[boat-0001]</a> </h1>
+                                 <div class="metadata">
+                                    <ul>
+                                       <li class="meta-item">January 26, 2026</li>
+                                       <li class="meta-item">
+                                          <address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </header>
+                           </summary>
+                           <p xmlns="http://www.w3.org/1999/xhtml">
+    This is my forest. <span xmlns="" class="link external"><a href="https://www.forester-notes.org/tfmt-000V" title="">Forests</a></span> are a way of organizing notes and the project is called <span xmlns="" class="link external"><a href="%28https://www.forester-notes.org/)" title="">forester</a></span>. Contents under this website are listed below:
+</p>
+                           <ul xmlns="http://www.w3.org/1999/xhtml">
+                              <li><span xmlns="" class="link local"><a href="/ml-0001/" title="Machine Learning [ml-0001]">Machine Learning</a></span></li>
+                              <li><span xmlns="" class="link local"><a href="/opt-6001/" title="Optimal Control [opt-6001]">Optimal Control</a></span></li>
+                           </ul>
+                           <p xmlns="http://www.w3.org/1999/xhtml">
+    On a computer, you can press Ctrl-K to search for trees.
+</p>
+                        </details>
+                     </section>
+                  </details>
+               </section>
+            </footer>
+         </article>
+         <nav id="toc">
+            <div class="block">
+               <h1>Table of Contents</h1>
+               <ul xmlns="" class="block">
+                  <li><a class="bullet" href="/opt-6002/" title="Bolza Problem [opt-6002]">■</a><span class="link local" data-target="#d5aBdD"><span class="taxon">1. </span>Bolza Problem</span><ul class="block">
+                        <li><a class="bullet" href="/opt-6003/" title="First-order Variation of the Bolza Functional [opt-6003]">■</a><span class="link local" data-target="#d5aBdDdD"><span class="taxon">1.1. </span>First-order Variation of the Bolza Functional</span><ul class="block"></ul>
+                        </li>
+                        <li><a class="bullet" href="/opt-6004/" title="Optimality Conditions for Bolza Problem [opt-6004]">■</a><span class="link local" data-target="#d5aBdDdF"><span class="taxon">1.2. </span>Optimality Conditions for Bolza Problem</span><ul class="block">
+                              <li><a class="bullet" href="#d5aBdDdFdD" title="">■</a><span class="link local" data-target="#d5aBdDdFdD"><span class="taxon">1.2.1. State Equation</span></span><ul class="block"></ul>
+                              </li>
+                              <li><a class="bullet" href="#d5aBdDdFdF" title="">■</a><span class="link local" data-target="#d5aBdDdFdF"><span class="taxon">1.2.2. Costate Equation</span></span><ul class="block"></ul>
+                              </li>
+                              <li><a class="bullet" href="#d5aBdDdFdH" title="">■</a><span class="link local" data-target="#d5aBdDdFdH"><span class="taxon">1.2.3. Stationarity Condition</span></span><ul class="block"></ul>
+                              </li>
+                              <li><a class="bullet" href="#d5aBdDdFdJ" title="">■</a><span class="link local" data-target="#d5aBdDdFdJ"><span class="taxon">1.2.4. Boundary Condition (Transversality)</span></span><ul class="block"></ul>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+      </div>
+   </body>
 </html>

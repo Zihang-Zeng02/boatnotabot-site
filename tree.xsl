@@ -9,6 +9,7 @@
   <xsl:template match="/">
     <html xmlns="http://www.w3.org/1999/xhtml" data-base-url="{/f:tree/@base-url}">
       <head>
+        <base href="{/f:tree/@base-url}" />
         <meta name="viewport" content="width=device-width" />
         <link rel="stylesheet" href="{/f:tree/@base-url}style.css" />
         <link rel="stylesheet" href="{/f:tree/@base-url}katex.min.css" />
@@ -54,46 +55,88 @@
     </html>
   </xsl:template>
 
+  <!-- Recursively outputs "a.b.c." for all counted ancestor tree levels,
+       outermost first.  Called with the context node set to the tree being
+       numbered; switches context to each counted ancestor via xsl:for-each. -->
+  <xsl:template name="tree-level-prefix">
+    <xsl:variable name="parent-counted"
+      select="ancestor::f:tree[ancestor::f:tree and not(@toc='false' or @numbered='false')][1]" />
+    <xsl:if test="$parent-counted">
+      <xsl:for-each select="$parent-counted">
+        <xsl:call-template name="tree-level-prefix" />
+        <xsl:value-of select="count(preceding-sibling::f:tree[not(@toc='false' or @numbered='false')]) + 1" />
+        <xsl:text>.</xsl:text>
+      </xsl:for-each>
+    </xsl:if>
+  </xsl:template>
+
   <xsl:template match="f:tree" mode="tree-taxon-with-number">
     <xsl:param name="suffix" select="''" />
     <xsl:param name="taxon" select="f:frontmatter/f:taxon" />
     <xsl:param name="number" select="f:frontmatter/f:number" />
     <xsl:param name="fallback-number" />
     <xsl:param name="in-backmatter" select="ancestor::f:backmatter" />
+    <!-- When true, render "1.2.3. Taxon" (section headings / TOC).
+         When false (default), render "Taxon 1.2.3." (cross-references). -->
+    <xsl:param name="number-first" select="false()" />
 
     <xsl:variable name="tree-is-root" select="not(parent::*)" />
-
     <xsl:variable name="explicitly-unnumbered" select="boolean(ancestor-or-self::f:tree[@numbered='false' or @toc='false'])" />
     <xsl:variable name="implicitly-unnumbered" select="count(../f:tree) = 1 and not(count(f:mainmatter/f:tree) > 1)" />
-
     <xsl:variable name="should-number" select="$number != '' or (not($in-backmatter) and not($tree-is-root) and not($explicitly-unnumbered)) and not($implicitly-unnumbered)" />
 
-    <xsl:if test="$taxon != ''">
-      <xsl:value-of select="$taxon" />
-      <xsl:if test="$should-number or $fallback-number != ''">
-        <xsl:text>&#160;</xsl:text>
-      </xsl:if>
-    </xsl:if>
-
     <xsl:choose>
-      <xsl:when test="$should-number">
+      <xsl:when test="$number-first">
+        <!-- "1.2.3. Taxon Name" — number+suffix first, then taxon -->
         <xsl:choose>
-          <xsl:when test="$number != ''">
-            <xsl:value-of select="$number" />
+          <xsl:when test="$should-number">
+            <xsl:choose>
+              <xsl:when test="$number != ''">
+                <xsl:value-of select="$number" />
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:call-template name="tree-level-prefix" />
+                <xsl:value-of select="count(preceding-sibling::f:tree[not(@toc='false' or @numbered='false')]) + 1" />
+              </xsl:otherwise>
+            </xsl:choose>
+            <xsl:value-of select="$suffix" />
           </xsl:when>
-          <xsl:otherwise>
-            <xsl:number format="1.1" count="f:tree[ancestor::f:tree and (not(@toc='false' or @numbered='false'))]" level="multiple" />
-          </xsl:otherwise>
+          <xsl:when test="$fallback-number != ''">
+            <xsl:value-of select="$fallback-number" />
+            <xsl:value-of select="$suffix" />
+          </xsl:when>
         </xsl:choose>
+        <xsl:value-of select="$taxon" />
       </xsl:when>
-      <xsl:when test="$fallback-number != ''">
-        <xsl:value-of select="$fallback-number" />
-      </xsl:when>
+      <xsl:otherwise>
+        <!-- "Taxon Name 1.2.3." — original order, used for cross-references -->
+        <xsl:if test="$taxon != ''">
+          <xsl:value-of select="$taxon" />
+          <xsl:if test="$should-number or $fallback-number != ''">
+            <xsl:text>&#160;</xsl:text>
+          </xsl:if>
+        </xsl:if>
+        <xsl:choose>
+          <xsl:when test="$should-number">
+            <xsl:choose>
+              <xsl:when test="$number != ''">
+                <xsl:value-of select="$number" />
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:call-template name="tree-level-prefix" />
+                <xsl:value-of select="count(preceding-sibling::f:tree[not(@toc='false' or @numbered='false')]) + 1" />
+              </xsl:otherwise>
+            </xsl:choose>
+          </xsl:when>
+          <xsl:when test="$fallback-number != ''">
+            <xsl:value-of select="$fallback-number" />
+          </xsl:when>
+        </xsl:choose>
+        <xsl:if test="$taxon != '' or $fallback-number != '' or $should-number">
+          <xsl:value-of select="$suffix" />
+        </xsl:if>
+      </xsl:otherwise>
     </xsl:choose>
-
-    <xsl:if test="$taxon != '' or $fallback-number != '' or $should-number">
-      <xsl:value-of select="$suffix" />
-    </xsl:if>
   </xsl:template>
 
   <xsl:template match="f:tree" mode="contextual-number">
@@ -103,10 +146,8 @@
     <xsl:param name="in-backmatter" select="ancestor::f:backmatter" />
 
     <xsl:variable name="tree-is-root" select="not(parent::*)" />
-
     <xsl:variable name="explicitly-unnumbered" select="boolean(ancestor-or-self::f:tree[@numbered='false' or @toc='false'])" />
     <xsl:variable name="implicitly-unnumbered" select="count(../f:tree) = 1 and not(count(f:mainmatter/f:tree) > 1)" />
-
     <xsl:variable name="should-number" select="$number != '' or (not($in-backmatter) and not($tree-is-root) and not($explicitly-unnumbered)) and not($implicitly-unnumbered)" />
 
     <xsl:choose>
@@ -116,7 +157,8 @@
             <xsl:value-of select="$number" />
           </xsl:when>
           <xsl:otherwise>
-            <xsl:number format="1.1" count="f:tree[ancestor::f:tree and (not(@toc='false' or @numbered='false'))]" level="multiple" />
+            <xsl:call-template name="tree-level-prefix" />
+            <xsl:value-of select="count(preceding-sibling::f:tree[not(@toc='false' or @numbered='false')]) + 1" />
           </xsl:otherwise>
         </xsl:choose>
       </xsl:when>
@@ -162,6 +204,7 @@
           <span class="taxon">
             <xsl:apply-templates select=".." mode="tree-taxon-with-number">
               <xsl:with-param name="suffix">.&#160;</xsl:with-param>
+              <xsl:with-param name="number-first" select="true()" />
             </xsl:apply-templates>
           </span>
 
@@ -221,6 +264,7 @@
         <span class="taxon">
           <xsl:apply-templates select=".." mode="tree-taxon-with-number">
             <xsl:with-param name="suffix">.&#160;</xsl:with-param>
+            <xsl:with-param name="number-first" select="true()" />
           </xsl:apply-templates>
         </span>
 
