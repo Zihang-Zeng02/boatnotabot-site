@@ -1,0 +1,28 @@
+\title{Optimality Conditions for Bolza Problem}
+\date{2026-02-22}
+\author{boat}
+\import{math-lib}
+
+\p{
+    The necessary conditions for the optimality of #{\vu(t)} are given by the following set of equations:
+}
+
+\subtree{
+  \taxon{State Equation}
+  ##{ \dot{\vx} = f\tup{\vx, \vu}, \quad \vx(0) = \vx_0 }
+}
+
+\subtree{
+  \taxon{Costate Equation}
+  ##{ \dot{\vp} = -\tup{\parf{f}{\vx}}^\tps \vp - \tup{\parf{L}{\vx}}^\tps }
+}
+
+\subtree{
+  \taxon{Stationarity Condition}
+  ##{ \tup{\parf{f}{\vu}}^\tps \vp + \tup{\parf{L}{\vu}}^\tps  = 0 }
+}
+
+\subtree{
+  \taxon{Boundary Condition (Transversality)}
+  ##{ \vp(t_f) = \nabla \Phi\tup{\vx(t_f)} }
+}

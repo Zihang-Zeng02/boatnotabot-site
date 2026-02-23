@@ -3,11 +3,13 @@
 \author{boat}
 
 \p{
-    This is my forest. [Forests](https://www.forester-notes.org/tfmt-000V) are a way of organizing notes and the project is called [forester]((https://www.forester-notes.org/)). Contents under this website are listed below:
+    This is my forest. [Forests](https://www.forester-notes.org/tfmt-000V) are a way of organizing notes and the project is called [forester](https://www.forester-notes.org/). Contents under this website are listed below:
 }
 
 \ul{
     \li{[[ml-0001]]}
+    \li{[[opt-6001]]}
+    \li{[[calc-0001]]}
 }
 
 \p{

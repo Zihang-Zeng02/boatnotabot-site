@@ -1,0 +1,7 @@
+{
+  "name": "boat-website-build",
+  "private": true,
+  "devDependencies": {
+    "xslt3": "^2.7.0"
+  }
+}

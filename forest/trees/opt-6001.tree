@@ -1,0 +1,14 @@
+\title{Optimal Control}
+\date{2026-02-21}
+\author{boat}
+
+\p{
+    This is a note for optimal control based on the course ECE6553-Optimal Control at Gatech 2026 Spring.
+}
+
+\transclude{opt-6002}
+\transclude{opt-6003}
+
+\p{
+    The content is still being organized and will be updated soon.
+}

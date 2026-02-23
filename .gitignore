@@ -1,0 +1,5 @@
+node_modules/
+forest/.sef-cache.json
+forest/.sef-cache.hash
+.claude/
+forest/output/
