@@ -19,10 +19,11 @@
   </fr:frontmatter>
   <fr:mainmatter>
     <html:p>
-    This is my forest. <fr:link href="https://www.forester-notes.org/tfmt-000V" type="external">Forests</fr:link> are a way of organizing notes and the project is called <fr:link href="%28https://www.forester-notes.org/)" type="external">forester</fr:link>. Contents under this website are listed below:
+    This is my forest. <fr:link href="https://www.forester-notes.org/tfmt-000V" type="external">Forests</fr:link> are a way of organizing notes and the project is called <fr:link href="https://www.forester-notes.org/" type="external">forester</fr:link>. Contents under this website are listed below:
 </html:p>
     <html:ul><html:li><fr:link href="/ml-0001/" title="Machine Learning" uri="https://boatnotabot.com/ml-0001/" display-uri="ml-0001" type="local">Machine Learning</fr:link></html:li>
-    <html:li><fr:link href="/opt-6001/" title="Optimal Control" uri="https://boatnotabot.com/opt-6001/" display-uri="opt-6001" type="local">Optimal Control</fr:link></html:li></html:ul>
+    <html:li><fr:link href="/opt-6001/" title="Optimal Control" uri="https://boatnotabot.com/opt-6001/" display-uri="opt-6001" type="local">Optimal Control</fr:link></html:li>
+    <html:li><fr:link href="/calc-0001/" title="Calculus" uri="https://boatnotabot.com/calc-0001/" display-uri="calc-0001" type="local">Calculus</fr:link></html:li></html:ul>
     <html:p>
     On a computer, you can press Ctrl-K to search for trees.
 </html:p>
@@ -65,6 +66,34 @@
             <fr:date>
               <fr:year>2026</fr:year>
               <fr:month>2</fr:month>
+              <fr:day>22</fr:day>
+            </fr:date>
+            <fr:uri>https://boatnotabot.com/calc-0001/</fr:uri>
+            <fr:display-uri>calc-0001</fr:display-uri>
+            <fr:route>/calc-0001/</fr:route>
+            <fr:title text="Calculus">Calculus</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>
+    This note serves as a supplement to the other notes which are related to mathmetical analysis and optimization. At the moment, I am not going to write a comprehensive note for <fr:link href="/calc-0001/" title="Calculus" uri="https://boatnotabot.com/calc-0001/" display-uri="calc-0001" type="local">calculus</fr:link>, but I will write some notes for <fr:link href="/opt-6001/" title="Optimal Control" uri="https://boatnotabot.com/opt-6001/" display-uri="opt-6001" type="local">optimal control</fr:link> which is a direct application of <fr:link href="/calc-0002/" title="Calculus of Variations" uri="https://boatnotabot.com/calc-0002/" display-uri="calc-0002" type="local">calculus of variations</fr:link>. Therefore, I tend to directly put the contents below since they are not likely to form a complete note for calculus at this stage.
+</html:p>
+            <html:ul>
+              <html:li>
+                <fr:link href="/calc-0002/" title="Calculus of Variations" uri="https://boatnotabot.com/calc-0002/" display-uri="calc-0002" type="local">Calculus of Variations</fr:link>
+              </html:li>
+            </html:ul>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>2</fr:month>
               <fr:day>21</fr:day>
             </fr:date>
             <fr:uri>https://boatnotabot.com/opt-6001/</fr:uri>
@@ -95,132 +124,37 @@
               </fr:frontmatter>
               <fr:mainmatter>
                 <html:p>
-    Bolza problem is a fundamental formulation in the calculus of variations and optimal control that minimizes a cost functional consisting of both an integral term (running cost) and a terminal cost <fr:tex display="block"><![CDATA[J := \int _0^{t_f} L \big (x(t), u(t)\big ) dt + \Phi  \begin {pmatrix} x(t_f) \end {pmatrix}]]></fr:tex> where <fr:tex display="inline"><![CDATA[L:\mathbb {R}^n \times  \mathbb {R}^k \to  \mathbb {R}]]></fr:tex> is the running cost and <fr:tex display="inline"><![CDATA[\Phi :\mathbb {R}^n \to  \mathbb {R}]]></fr:tex> is the terminal cost. The goal is to find the optimal control <fr:tex display="inline"><![CDATA[u(t)\in  \mathbb {R}^k]]></fr:tex> that minimizes this cost functional subject to the system dynamics and boundary conditions.
+    Bolza problem is a fundamental formulation in the calculus of variations and optimal control that minimizes a cost functional consisting of both an integral term (running cost) and a terminal cost <fr:tex display="block"><![CDATA[J := \int _0^{t_f} L \big (\mathbf {x}(t), \mathbf {u}(t)\big ) dt + \Phi  \left ( \mathbf {x}(t_f) \right )]]></fr:tex> where state <fr:tex display="inline"><![CDATA[\mathbf {x}(t)\in  \mathbb {R}^n]]></fr:tex>, control <fr:tex display="inline"><![CDATA[\mathbf {u}(t)\in  \mathbb {R}^k]]></fr:tex>, <fr:tex display="inline"><![CDATA[L:\mathbb {R}^n \times  \mathbb {R}^k \to  \mathbb {R}]]></fr:tex> is the running cost and <fr:tex display="inline"><![CDATA[\Phi :\mathbb {R}^n \to  \mathbb {R}]]></fr:tex> is the terminal cost. The goal is to find the optimal control <fr:tex display="inline"><![CDATA[\mathbf {u}^*(t)\in  \mathbb {R}^k]]></fr:tex> that minimizes this cost functional subject to the system dynamics and boundary conditions.
 </html:p>
-                <fr:tree show-metadata="false">
-                  <fr:frontmatter>
-                    <fr:authors>
-                      <fr:author>
-                        <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
-                      </fr:author>
-                    </fr:authors>
-                    <fr:date>
-                      <fr:year>2026</fr:year>
-                      <fr:month>2</fr:month>
-                      <fr:day>22</fr:day>
-                    </fr:date>
-                    <fr:uri>https://boatnotabot.com/opt-6003/</fr:uri>
-                    <fr:display-uri>opt-6003</fr:display-uri>
-                    <fr:route>/opt-6003/</fr:route>
-                    <fr:title text="First-order Variation of the Bolza Functional">First-order Variation of the Bolza Functional</fr:title>
-                  </fr:frontmatter>
-                  <fr:mainmatter>
-                    <html:p>
-    To find the optimal control <fr:tex display="inline"><![CDATA[u]]></fr:tex>, we consider the first-order variation of the functional <fr:tex display="inline"><![CDATA[J]]></fr:tex> with respect to <fr:tex display="inline"><![CDATA[u]]></fr:tex>. By augmenting the cost functional with system dynamics <fr:tex display="inline"><![CDATA[\dot  x = f(x, u)]]></fr:tex> using the costate <fr:tex display="inline"><![CDATA[p]]></fr:tex>, we define:
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>22</fr:day>
+                </fr:date>
+                <fr:uri>https://boatnotabot.com/opt-6003/</fr:uri>
+                <fr:display-uri>opt-6003</fr:display-uri>
+                <fr:route>/opt-6003/</fr:route>
+                <fr:title text="First-order Variation of the Bolza Functional">First-order Variation of the Bolza Functional</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+    To find the optimal control <fr:tex display="inline"><![CDATA[\mathbf {u}]]></fr:tex>, we consider the first-order variation of the functional <fr:tex display="inline"><![CDATA[J]]></fr:tex> with respect to <fr:tex display="inline"><![CDATA[\mathbf {u}]]></fr:tex>. By augmenting the cost functional with system dynamics <fr:tex display="inline"><![CDATA[\dot  \mathbf {x} = f(\mathbf {x}, \mathbf {u})]]></fr:tex> using the costate <fr:tex display="inline"><![CDATA[\mathbf {p}]]></fr:tex>, we define:
 </html:p>
-                    <fr:tex display="block"><![CDATA[
-    \frac {\partial  J}{\partial  u} = \begin {pmatrix} \frac {\partial  f}{\partial  u} \end {pmatrix}^\intercal  p + \begin {pmatrix} \frac {\partial  L}{\partial  u} \end {pmatrix}^\intercal 
+                <fr:tex display="block"><![CDATA[
+    \frac {\partial  J}{\partial  \mathbf {u}} = \left ( \frac {\partial  f}{\partial  \mathbf {u}} \right )^\intercal  \mathbf {p} + \left ( \frac {\partial  L}{\partial  \mathbf {u}} \right )^\intercal 
 ]]></fr:tex>
-                    <html:p>
-    We obtain the stationarity condition <fr:tex display="inline"><![CDATA[\frac {\partial  J}{\partial  u} \equiv  0]]></fr:tex>.
+                <html:p>
+    We obtain the stationarity condition <fr:tex display="inline"><![CDATA[\frac {\partial  J}{\partial  \mathbf {u}} \equiv  0]]></fr:tex>.
 </html:p>
-                  </fr:mainmatter>
-                </fr:tree>
-                <fr:tree show-metadata="false">
-                  <fr:frontmatter>
-                    <fr:authors>
-                      <fr:author>
-                        <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
-                      </fr:author>
-                    </fr:authors>
-                    <fr:date>
-                      <fr:year>2026</fr:year>
-                      <fr:month>2</fr:month>
-                      <fr:day>22</fr:day>
-                    </fr:date>
-                    <fr:uri>https://boatnotabot.com/opt-6004/</fr:uri>
-                    <fr:display-uri>opt-6004</fr:display-uri>
-                    <fr:route>/opt-6004/</fr:route>
-                    <fr:title text="Optimality Conditions for Bolza Problem">Optimality Conditions for Bolza Problem</fr:title>
-                  </fr:frontmatter>
-                  <fr:mainmatter>
-                    <html:p>
-    The necessary conditions for the optimality of $<fr:tex display="inline"><![CDATA[\mathbf {u}]]></fr:tex>(t)$ are given by the following set of equations:
-</html:p>
-                    <fr:tree show-metadata="false">
-                      <fr:frontmatter>
-                        <fr:authors>
-                          <fr:author>
-                            <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
-                          </fr:author>
-                        </fr:authors>
-                        <fr:date>
-                          <fr:year>2026</fr:year>
-                          <fr:month>2</fr:month>
-                          <fr:day>22</fr:day>
-                        </fr:date>
-                        <fr:taxon>State Equation</fr:taxon>
-                      </fr:frontmatter>
-                      <fr:mainmatter>
-                        <fr:tex display="block"><![CDATA[ \dot  x = f\begin {pmatrix} x, u \end {pmatrix}, \quad  x(0) = x_0 ]]></fr:tex>
-                      </fr:mainmatter>
-                    </fr:tree>
-                    <fr:tree show-metadata="false">
-                      <fr:frontmatter>
-                        <fr:authors>
-                          <fr:author>
-                            <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
-                          </fr:author>
-                        </fr:authors>
-                        <fr:date>
-                          <fr:year>2026</fr:year>
-                          <fr:month>2</fr:month>
-                          <fr:day>22</fr:day>
-                        </fr:date>
-                        <fr:taxon>Costate Equation</fr:taxon>
-                      </fr:frontmatter>
-                      <fr:mainmatter>
-                        <fr:tex display="block"><![CDATA[ \dot  p = -\begin {pmatrix} \frac {\partial  f}{\partial  x} \end {pmatrix}^\intercal  p - \begin {pmatrix} \frac {\partial  L}{\partial  x} \end {pmatrix}^\intercal  ]]></fr:tex>
-                      </fr:mainmatter>
-                    </fr:tree>
-                    <fr:tree show-metadata="false">
-                      <fr:frontmatter>
-                        <fr:authors>
-                          <fr:author>
-                            <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
-                          </fr:author>
-                        </fr:authors>
-                        <fr:date>
-                          <fr:year>2026</fr:year>
-                          <fr:month>2</fr:month>
-                          <fr:day>22</fr:day>
-                        </fr:date>
-                        <fr:taxon>Stationarity Condition</fr:taxon>
-                      </fr:frontmatter>
-                      <fr:mainmatter>
-                        <fr:tex display="block"><![CDATA[ \begin {pmatrix} \frac {\partial  f}{\partial  u} \end {pmatrix}^\intercal  p + \begin {pmatrix} \frac {\partial  L}{\partial  u} \end {pmatrix}^\intercal   = 0 ]]></fr:tex>
-                      </fr:mainmatter>
-                    </fr:tree>
-                    <fr:tree show-metadata="false">
-                      <fr:frontmatter>
-                        <fr:authors>
-                          <fr:author>
-                            <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
-                          </fr:author>
-                        </fr:authors>
-                        <fr:date>
-                          <fr:year>2026</fr:year>
-                          <fr:month>2</fr:month>
-                          <fr:day>22</fr:day>
-                        </fr:date>
-                        <fr:taxon>Boundary Condition (Transversality)</fr:taxon>
-                      </fr:frontmatter>
-                      <fr:mainmatter>
-                        <fr:tex display="block"><![CDATA[ p(t_f) = \nabla  \Phi \begin {pmatrix} x(t_f) \end {pmatrix} ]]></fr:tex>
-                      </fr:mainmatter>
-                    </fr:tree>
-                  </fr:mainmatter>
-                </fr:tree>
               </fr:mainmatter>
             </fr:tree>
             <html:p>

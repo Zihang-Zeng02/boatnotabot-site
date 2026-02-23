@@ -17,7 +17,7 @@
       <div id="grid-wrapper">
          <article>
             <section xmlns="" lang="en" class="block">
-               <details id="d8aB" open>
+               <details id="d11aB" open>
                   <summary>
                      <header>
                         <h1><span class="taxon"></span>Optimality Conditions for Bolza Problem <a class="slug" href="/opt-6004/">[opt-6004]</a> </h1>
@@ -32,10 +32,10 @@
                      </header>
                   </summary>
                   <p xmlns="http://www.w3.org/1999/xhtml">
-    The necessary conditions for the optimality of $\(\mathbf {u}\)(t)$ are given by the following set of equations:
+    The necessary conditions for the optimality of \(\mathbf {u}(t)\) are given by the following set of equations:
 </p>
                   <section lang="en" class="block hide-metadata" data-taxon="State Equation">
-                     <details id="d8aBdD" open>
+                     <details id="d11aBdD" open>
                         <summary>
                            <header>
                               <h1><span class="taxon">1. State Equation</span> </h1>
@@ -49,11 +49,11 @@
                               </div>
                            </header>
                         </summary>
-        \[ \dot  x = f\begin {pmatrix} x, u \end {pmatrix}, \quad  x(0) = x_0 \]
+        \[ \dot {\mathbf {x}} = f\left ( \mathbf {x}, \mathbf {u} \right ), \quad  \mathbf {x}(0) = \mathbf {x}_0 \]
       </details>
                   </section>
                   <section lang="en" class="block hide-metadata" data-taxon="Costate Equation">
-                     <details id="d8aBdF" open>
+                     <details id="d11aBdF" open>
                         <summary>
                            <header>
                               <h1><span class="taxon">2. Costate Equation</span> </h1>
@@ -67,11 +67,11 @@
                               </div>
                            </header>
                         </summary>
-        \[ \dot  p = -\begin {pmatrix} \frac {\partial  f}{\partial  x} \end {pmatrix}^\intercal  p - \begin {pmatrix} \frac {\partial  L}{\partial  x} \end {pmatrix}^\intercal  \]
+        \[ \dot {\mathbf {p}} = -\left ( \frac {\partial  f}{\partial  \mathbf {x}} \right )^\intercal  \mathbf {p} - \left ( \frac {\partial  L}{\partial  \mathbf {x}} \right )^\intercal  \]
       </details>
                   </section>
                   <section lang="en" class="block hide-metadata" data-taxon="Stationarity Condition">
-                     <details id="d8aBdH" open>
+                     <details id="d11aBdH" open>
                         <summary>
                            <header>
                               <h1><span class="taxon">3. Stationarity Condition</span> </h1>
@@ -85,11 +85,11 @@
                               </div>
                            </header>
                         </summary>
-        \[ \begin {pmatrix} \frac {\partial  f}{\partial  u} \end {pmatrix}^\intercal  p + \begin {pmatrix} \frac {\partial  L}{\partial  u} \end {pmatrix}^\intercal   = 0 \]
+        \[ \left ( \frac {\partial  f}{\partial  \mathbf {u}} \right )^\intercal  \mathbf {p} + \left ( \frac {\partial  L}{\partial  \mathbf {u}} \right )^\intercal   = 0 \]
       </details>
                   </section>
                   <section lang="en" class="block hide-metadata" data-taxon="Boundary Condition (Transversality)">
-                     <details id="d8aBdJ" open>
+                     <details id="d11aBdJ" open>
                         <summary>
                            <header>
                               <h1><span class="taxon">4. Boundary Condition (Transversality)</span> </h1>
@@ -103,175 +103,25 @@
                               </div>
                            </header>
                         </summary>
-        \[ p(t_f) = \nabla  \Phi \begin {pmatrix} x(t_f) \end {pmatrix} \]
+        \[ \mathbf {p}(t_f) = \nabla  \Phi \left ( \mathbf {x}(t_f) \right ) \]
       </details>
                   </section>
                </details>
             </section>
             <footer xmlns="">
-               <section lang="en" class="block hide-metadata">
-                  <details id="d8aBfD" open>
-                     <summary>
-                        <header>
-                           <h1><span class="taxon"></span>Context </h1>
-                           <div class="metadata">
-                              <ul></ul>
-                           </div>
-                        </header>
-                     </summary>
-                     <section lang="en" class="block">
-                        <details id="d8aBfDdB">
-                           <summary>
-                              <header>
-                                 <h1><span class="taxon"></span>Bolza Problem <a class="slug" href="/opt-6002/">[opt-6002]</a> </h1>
-                                 <div class="metadata">
-                                    <ul>
-                                       <li class="meta-item">February 21, 2026</li>
-                                       <li class="meta-item">
-                                          <address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </header>
-                           </summary>
-                           <p xmlns="http://www.w3.org/1999/xhtml">
-    Bolza problem is a fundamental formulation in the calculus of variations and optimal control that minimizes a cost functional consisting of both an integral term (running cost) and a terminal cost \[J := \int _0^{t_f} L \big (x(t), u(t)\big ) dt + \Phi  \begin {pmatrix} x(t_f) \end {pmatrix}\] where \(L:\mathbb {R}^n \times  \mathbb {R}^k \to  \mathbb {R}\) is the running cost and \(\Phi :\mathbb {R}^n \to  \mathbb {R}\) is the terminal cost. The goal is to find the optimal control \(u(t)\in  \mathbb {R}^k\) that minimizes this cost functional subject to the system dynamics and boundary conditions.
-</p>
-                           <section lang="en" class="block hide-metadata">
-                              <details id="d8aBfDdBdD" open>
-                                 <summary>
-                                    <header>
-                                       <h1><span class="taxon"></span>First-order Variation of the Bolza Functional <a class="slug" href="/opt-6003/">[opt-6003]</a> </h1>
-                                       <div class="metadata">
-                                          <ul>
-                                             <li class="meta-item">February 22, 2026</li>
-                                             <li class="meta-item">
-                                                <address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address>
-                                             </li>
-                                          </ul>
-                                       </div>
-                                    </header>
-                                 </summary>
-                                 <p xmlns="http://www.w3.org/1999/xhtml">
-    To find the optimal control \(u\), we consider the first-order variation of the functional \(J\) with respect to \(u\). By augmenting the cost functional with system dynamics \(\dot  x = f(x, u)\) using the costate \(p\), we define:
-</p>
-                \[
-    \frac {\partial  J}{\partial  u} = \begin {pmatrix} \frac {\partial  f}{\partial  u} \end {pmatrix}^\intercal  p + \begin {pmatrix} \frac {\partial  L}{\partial  u} \end {pmatrix}^\intercal 
-\]
-                <p xmlns="http://www.w3.org/1999/xhtml">
-    We obtain the stationarity condition \(\frac {\partial  J}{\partial  u} \equiv  0\).
-</p>
-                              </details>
-                           </section>
-                           <section lang="en" class="block hide-metadata">
-                              <details id="d8aBfDdBdF" open>
-                                 <summary>
-                                    <header>
-                                       <h1><span class="taxon"></span>Optimality Conditions for Bolza Problem <a class="slug" href="/opt-6004/">[opt-6004]</a> </h1>
-                                       <div class="metadata">
-                                          <ul>
-                                             <li class="meta-item">February 22, 2026</li>
-                                             <li class="meta-item">
-                                                <address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address>
-                                             </li>
-                                          </ul>
-                                       </div>
-                                    </header>
-                                 </summary>
-                                 <p xmlns="http://www.w3.org/1999/xhtml">
-    The necessary conditions for the optimality of $\(\mathbf {u}\)(t)$ are given by the following set of equations:
-</p>
-                                 <section lang="en" class="block hide-metadata" data-taxon="State Equation">
-                                    <details id="d8aBfDdBdFdD" open>
-                                       <summary>
-                                          <header>
-                                             <h1><span class="taxon">State Equation</span> </h1>
-                                             <div class="metadata">
-                                                <ul>
-                                                   <li class="meta-item">February 22, 2026</li>
-                                                   <li class="meta-item">
-                                                      <address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address>
-                                                   </li>
-                                                </ul>
-                                             </div>
-                                          </header>
-                                       </summary>
-                    \[ \dot  x = f\begin {pmatrix} x, u \end {pmatrix}, \quad  x(0) = x_0 \]
-                  </details>
-                                 </section>
-                                 <section lang="en" class="block hide-metadata" data-taxon="Costate Equation">
-                                    <details id="d8aBfDdBdFdF" open>
-                                       <summary>
-                                          <header>
-                                             <h1><span class="taxon">Costate Equation</span> </h1>
-                                             <div class="metadata">
-                                                <ul>
-                                                   <li class="meta-item">February 22, 2026</li>
-                                                   <li class="meta-item">
-                                                      <address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address>
-                                                   </li>
-                                                </ul>
-                                             </div>
-                                          </header>
-                                       </summary>
-                    \[ \dot  p = -\begin {pmatrix} \frac {\partial  f}{\partial  x} \end {pmatrix}^\intercal  p - \begin {pmatrix} \frac {\partial  L}{\partial  x} \end {pmatrix}^\intercal  \]
-                  </details>
-                                 </section>
-                                 <section lang="en" class="block hide-metadata" data-taxon="Stationarity Condition">
-                                    <details id="d8aBfDdBdFdH" open>
-                                       <summary>
-                                          <header>
-                                             <h1><span class="taxon">Stationarity Condition</span> </h1>
-                                             <div class="metadata">
-                                                <ul>
-                                                   <li class="meta-item">February 22, 2026</li>
-                                                   <li class="meta-item">
-                                                      <address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address>
-                                                   </li>
-                                                </ul>
-                                             </div>
-                                          </header>
-                                       </summary>
-                    \[ \begin {pmatrix} \frac {\partial  f}{\partial  u} \end {pmatrix}^\intercal  p + \begin {pmatrix} \frac {\partial  L}{\partial  u} \end {pmatrix}^\intercal   = 0 \]
-                  </details>
-                                 </section>
-                                 <section lang="en" class="block hide-metadata" data-taxon="Boundary Condition (Transversality)">
-                                    <details id="d8aBfDdBdFdJ" open>
-                                       <summary>
-                                          <header>
-                                             <h1><span class="taxon">Boundary Condition (Transversality)</span> </h1>
-                                             <div class="metadata">
-                                                <ul>
-                                                   <li class="meta-item">February 22, 2026</li>
-                                                   <li class="meta-item">
-                                                      <address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address>
-                                                   </li>
-                                                </ul>
-                                             </div>
-                                          </header>
-                                       </summary>
-                    \[ p(t_f) = \nabla  \Phi \begin {pmatrix} x(t_f) \end {pmatrix} \]
-                  </details>
-                                 </section>
-                              </details>
-                           </section>
-                        </details>
-                     </section>
-                  </details>
-               </section>
-            </footer>
+  </footer>
          </article>
          <nav id="toc">
             <div class="block">
                <h1>Table of Contents</h1>
                <ul xmlns="" class="block">
-                  <li><a class="bullet" href="#d8aBdD" title="">■</a><span class="link local" data-target="#d8aBdD"><span class="taxon">1. State Equation</span></span><ul class="block"></ul>
+                  <li><a class="bullet" href="#d11aBdD" title="">■</a><span class="link local" data-target="#d11aBdD"><span class="taxon">1. State Equation</span></span><ul class="block"></ul>
                   </li>
-                  <li><a class="bullet" href="#d8aBdF" title="">■</a><span class="link local" data-target="#d8aBdF"><span class="taxon">2. Costate Equation</span></span><ul class="block"></ul>
+                  <li><a class="bullet" href="#d11aBdF" title="">■</a><span class="link local" data-target="#d11aBdF"><span class="taxon">2. Costate Equation</span></span><ul class="block"></ul>
                   </li>
-                  <li><a class="bullet" href="#d8aBdH" title="">■</a><span class="link local" data-target="#d8aBdH"><span class="taxon">3. Stationarity Condition</span></span><ul class="block"></ul>
+                  <li><a class="bullet" href="#d11aBdH" title="">■</a><span class="link local" data-target="#d11aBdH"><span class="taxon">3. Stationarity Condition</span></span><ul class="block"></ul>
                   </li>
-                  <li><a class="bullet" href="#d8aBdJ" title="">■</a><span class="link local" data-target="#d8aBdJ"><span class="taxon">4. Boundary Condition (Transversality)</span></span><ul class="block"></ul>
+                  <li><a class="bullet" href="#d11aBdJ" title="">■</a><span class="link local" data-target="#d11aBdJ"><span class="taxon">4. Boundary Condition (Transversality)</span></span><ul class="block"></ul>
                   </li>
                </ul>
             </div>
