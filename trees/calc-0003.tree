@@ -1,0 +1,7 @@
+\title{Functional Derivative}
+\author{boat}
+\date{2026-02-22}
+
+\p{
+    In the [calculus of variations](calc-0002), the functional derivative (or variational derivative) relates a change in a functional (a functional in this sense is a function that acts on functions) to a change in a function on which the functional depends.
+}

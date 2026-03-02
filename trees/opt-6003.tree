@@ -1,0 +1,17 @@
+\title{First-order Variation of the Bolza Functional}
+\date{2026-02-22}
+\author{boat}
+\import{math-lib}
+
+\p{
+    To find the optimal control #{\vu}, we consider the first-order variation of the functional #{J} with respect to #{\vu}. By augmenting the cost functional with system dynamics #{\dot \vx = f(\vx, \vu)} using the costate #{\vp}, we define:
+}
+
+##{
+    \parf{J}{\vu} = \tup{\parf{f}{\vu}}^\tps \vp + \tup{\parf{L}{\vu}}^\tps
+}
+
+\p{
+    We obtain the stationarity condition #{\parf{J}{\vu} \equiv 0}.
+}
+

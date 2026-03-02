@@ -1,0 +1,43 @@
+\title{Mathematical Macros}
+
+% ===== Sets =====
+\def\rr{#{\mathbb{R}}}
+\def\rn{#{\mathbb{R}^n}}
+\def\empty{#{\varnothing}}
+\def\cset{#{\mathsf{c}}}
+
+% ===== Operators =====
+\def\inner[a][b]{#{\langle \a, \b \rangle}}
+\def\norm[body]{#{\lVert \body \rVert}}
+\def\abs[body]{#{\left\vert \body \right\vert}}
+\def\set[body]{#{\left\{ \body \right\}}}
+\def\parf[f][x]{#{\frac{\partial \f}{\partial \x}}}
+\def\tps{#{\intercal}}
+
+\def\tup[body]{#{\left( \body \right)}}
+\def\vct[body]{#{\left[ \body \right]}}
+
+% ===== Vectors (Boldface) =====
+\def\va{#{\mathbf{a}}} \def\vb{#{\mathbf{b}}} \def\vc{#{\mathbf{c}}} \def\vd{#{\mathbf{d}}}
+\def\ve{#{\mathbf{e}}} \def\vf{#{\mathbf{f}}} \def\vg{#{\mathbf{g}}} \def\vh{#{\mathbf{h}}}
+\def\vi{#{\mathbf{i}}} \def\vj{#{\mathbf{j}}} \def\vk{#{\mathbf{k}}} \let\vl{\mathbf{l}}
+\def\vm{#{\mathbf{m}}} \def\vn{#{\mathbf{n}}} \def\vo{#{\mathbf{o}}} \def\vp{#{\mathbf{p}}}
+\def\vq{#{\mathbf{q}}} \def\vr{#{\mathbf{r}}} \def\vs{#{\mathbf{s}}} \def\vt{#{\mathbf{t}}}
+\def\vu{#{\mathbf{u}}} \def\vv{#{\mathbf{v}}} \def\vw{#{\mathbf{w}}} \def\vx{#{\mathbf{x}}}
+\def\vy{#{\mathbf{y}}} \def\vz{#{\mathbf{z}}}
+
+% ===== Logic =====
+\def\some{#{\exists}}
+
+% ===== Formatting Tools (DRY Helpers) =====
+\def\proof[body]{
+  \scope{
+    \put\transclude/toc{false}
+    \subtree{
+      \taxon{Proof}
+      \body
+    }
+  }
+}
+
+\p{This tree defines mathematical notations for optimal control and robotics research.}

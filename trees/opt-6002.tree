@@ -1,0 +1,8 @@
+\title{Bolza Problem}
+\date{2026-02-21}
+\author{boat}
+\import{math-lib}
+
+\p{
+    Bolza problem is a fundamental formulation in the calculus of variations and optimal control that minimizes a cost functional consisting of both an integral term (running cost) and a terminal cost ##{J := \int_0^{t_f} L \big(\vx(t), \vu(t)\big) dt + \Phi \tup{\vx(t_f)}} where state #{\vx(t)\in \mathbb{R}^n}, control #{\vu(t)\in \mathbb{R}^k}, #{L:\mathbb{R}^n \times \mathbb{R}^k \to \mathbb{R}} is the running cost and #{\Phi:\mathbb{R}^n \to \mathbb{R}} is the terminal cost. The goal is to find the optimal control #{\vu^*(t)\in \mathbb{R}^k} that minimizes this cost functional subject to the system dynamics and boundary conditions.
+}

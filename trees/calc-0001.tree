@@ -1,0 +1,10 @@
+\title{Calculus}
+\date{2026-02-22}
+\author{boat}
+
+\p{
+    This note serves as a supplement to the other notes which are related to mathmetical analysis and optimization. At the moment, I am not going to write a comprehensive note for [calculus](calc-0001), but I will write some notes for [optimal control](opt-6001) which is a direct application of [calculus of variations](calc-0002). Therefore, I tend to directly put the contents below since they are not likely to form a complete note for calculus at this stage.
+}
+\ul{
+    \li{[[calc-0002]]}
+}

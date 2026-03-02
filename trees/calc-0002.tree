@@ -1,0 +1,7 @@
+\title{Calculus of Variations}
+\author{boat}
+\date{2026-02-22}
+
+\p{
+  Calculus of variations is concerned with variations of functionals, which are small changes in the functional's value due to small changes in the function that is its argument. The [first variation](calc-0003) is defined as the linear part of the change in the functional, and the second variation is defined as the quadratic part.
+}
