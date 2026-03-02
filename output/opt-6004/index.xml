@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/boat/" title="Zihang Zeng" uri="https://www.my-great-forest.net/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>2</fr:month>
+      <fr:day>22</fr:day>
+    </fr:date>
+    <fr:uri>https://www.my-great-forest.net/opt-6004/</fr:uri>
+    <fr:display-uri>opt-6004</fr:display-uri>
+    <fr:route>/opt-6004/</fr:route>
+    <fr:title text="Optimality Conditions for Bolza Problem">Optimality Conditions for Bolza Problem</fr:title>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>
+    The necessary conditions for the optimality of <fr:tex display="inline"><![CDATA[\mathbf {u}(t)]]></fr:tex> are given by the following set of equations:
+</html:p>
+    <fr:tree show-metadata="false">
+      <fr:frontmatter>
+        <fr:authors>
+          <fr:author>
+            <fr:link href="/boat/" title="Zihang Zeng" uri="https://www.my-great-forest.net/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+          </fr:author>
+        </fr:authors>
+        <fr:date>
+          <fr:year>2026</fr:year>
+          <fr:month>2</fr:month>
+          <fr:day>22</fr:day>
+        </fr:date>
+        <fr:taxon>State Equation</fr:taxon>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tex display="block"><![CDATA[ \dot {\mathbf {x}} = f\left ( \mathbf {x}, \mathbf {u} \right ), \quad  \mathbf {x}(0) = \mathbf {x}_0 ]]></fr:tex>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false">
+      <fr:frontmatter>
+        <fr:authors>
+          <fr:author>
+            <fr:link href="/boat/" title="Zihang Zeng" uri="https://www.my-great-forest.net/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+          </fr:author>
+        </fr:authors>
+        <fr:date>
+          <fr:year>2026</fr:year>
+          <fr:month>2</fr:month>
+          <fr:day>22</fr:day>
+        </fr:date>
+        <fr:taxon>Costate Equation</fr:taxon>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tex display="block"><![CDATA[ \dot {\mathbf {p}} = -\left ( \frac {\partial  f}{\partial  \mathbf {x}} \right )^\intercal  \mathbf {p} - \left ( \frac {\partial  L}{\partial  \mathbf {x}} \right )^\intercal  ]]></fr:tex>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false">
+      <fr:frontmatter>
+        <fr:authors>
+          <fr:author>
+            <fr:link href="/boat/" title="Zihang Zeng" uri="https://www.my-great-forest.net/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+          </fr:author>
+        </fr:authors>
+        <fr:date>
+          <fr:year>2026</fr:year>
+          <fr:month>2</fr:month>
+          <fr:day>22</fr:day>
+        </fr:date>
+        <fr:taxon>Stationarity Condition</fr:taxon>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tex display="block"><![CDATA[ \left ( \frac {\partial  f}{\partial  \mathbf {u}} \right )^\intercal  \mathbf {p} + \left ( \frac {\partial  L}{\partial  \mathbf {u}} \right )^\intercal   = 0 ]]></fr:tex>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false">
+      <fr:frontmatter>
+        <fr:authors>
+          <fr:author>
+            <fr:link href="/boat/" title="Zihang Zeng" uri="https://www.my-great-forest.net/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+          </fr:author>
+        </fr:authors>
+        <fr:date>
+          <fr:year>2026</fr:year>
+          <fr:month>2</fr:month>
+          <fr:day>22</fr:day>
+        </fr:date>
+        <fr:taxon>Boundary Condition (Transversality)</fr:taxon>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tex display="block"><![CDATA[ \mathbf {p}(t_f) = \nabla  \Phi \left ( \mathbf {x}(t_f) \right ) ]]></fr:tex>
+      </fr:mainmatter>
+    </fr:tree>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>
