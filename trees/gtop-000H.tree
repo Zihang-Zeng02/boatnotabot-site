@@ -1,0 +1,12 @@
+\title{Interior}
+\date{2026-03-11}
+\author{boat}
+\taxon{Definition}
+\import{math-lib}
+
+\p{
+The \strong{interior} of a subset #{S} of a [topological space](gtop-0002) #{X} is the union of all subsets of #{S} that are open in #{X}.
+}
+
+\transclude{gtop-000I}
+\transclude{gtop-000J}

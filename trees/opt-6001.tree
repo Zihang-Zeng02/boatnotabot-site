@@ -3,12 +3,29 @@
 \author{boat}
 
 \p{
-    This is a note for optimal control based on the course ECE6553-Optimal Control at Gatech 2026 Spring.
+    Notes on optimal control based on the course ECE6553-Optimal Control at Gatech 2026 Spring.
 }
 
-\transclude{opt-6002}
-\transclude{opt-6003}
-
-\p{
-    The content is still being organized and will be updated soon.
+\subtree{
+  \title{Problem Formulation}
+  \transclude{opt-6002}
+  \transclude{opt-6006}
 }
+
+\subtree{
+  \title{Necessary Conditions}
+  \transclude{opt-6003}
+  \transclude{opt-6004}
+}
+
+\subtree{
+  \title{Hamiltonian Methods}
+  \transclude{opt-6005}
+  \transclude{opt-6008}
+}
+
+\subtree{
+  \title{Relaxed Control}
+  \transclude{opt-6013}
+}
+

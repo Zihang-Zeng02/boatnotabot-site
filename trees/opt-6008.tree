@@ -1,0 +1,12 @@
+\title{Pontryagin's Maximum Principle}
+\date{2026-03-07}
+\author{boat}
+\taxon{Theorem}
+\import{math-lib}
+
+\p{
+Given a control signal #{\vu}, denote by #{\vx_u} and #{\vp_u} the corresponding state and costate trajectories.}
+\p{
+Suppose that #{\vu} is an admissible optimal control. Then #{\forall t \in [0, t_f],\forall \vv \in U_t}, ##{H\big(\vx_u(t),\vu(t),\vp_u(t)\big) \leq H\big(\vx_u(t), \vv, \vp_u(t)\big)}
+}
+

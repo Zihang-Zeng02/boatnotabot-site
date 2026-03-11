@@ -1,0 +1,23 @@
+\title{Topological Space}
+\date{2026-03-07}
+\taxon{Definition}
+\author{boat}
+\import{math-lib}
+
+\p{
+    A \strong{topological space} is a pair #{(X, \tau)} where #{X} is a set and #{\tau \subseteq \mathcal{P}(X)} is a collection of subsets of #{X}, called a \strong{topology} on #{X}, satisfying:
+}
+
+\ol{
+    \li{#{\empty, X \in \tau}}
+    \li{If #{\set{U_\alpha}_{\alpha \in A} \subseteq \tau}, then #{\bigcup_{\alpha \in A} U_\alpha \in \tau} (closed under arbitrary unions).}
+    \li{If #{U_1, U_2 \in \tau}, then #{U_1 \cap U_2 \in \tau} (closed under finite intersections).}
+}
+
+\p{
+    The elements of #{\tau} are called \strong{[open sets](gtop-0005)}. A set #{C \subseteq X} is called \strong{[closed](gtop-0006)} if its complement #{X \setminus C} is open.
+}
+
+\transclude{gtop-000P}
+\transclude{gtop-000Q}
+

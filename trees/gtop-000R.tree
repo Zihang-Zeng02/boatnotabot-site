@@ -1,0 +1,23 @@
+\title{Metric Topology}
+\date{2026-03-11}
+\author{boat}
+\taxon{Notation}
+\import{math-lib}
+
+\p{
+A [metric space](gtop-0003) #{(X, d)} induces a [topology](gtop-0002) #{\tau_d} on #{X} by declaring #{U \in \tau_d} if and only if for every #{x \in U} there exists #{\epsilon > 0} such that the [open ball](gtop-000S) #{B(x, \epsilon) \subseteq U}.
+}
+
+\p{
+That is, a metric #{d} induces a topology through the following chain:
+}
+
+\ol{
+\li{The metric #{d} defines [open balls](gtop-000S) #{B(x, \epsilon)}.}
+\li{Open balls generate [open sets](gtop-0005): a set is open if and only if it is an arbitrary union of open balls.}
+\li{The collection of all open sets forms #{\tau_d}, a valid [topology](gtop-0002).}
+}
+
+\p{
+Every metric space is a topological space, but not every topological space arises from a metric. A topological space #{(X, \tau)} is called \strong{metrizable} if there exists a metric #{d} on #{X} such that #{\tau = \tau_d}.
+}

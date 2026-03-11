@@ -1,0 +1,17 @@
+\title{Closed Set Characterization in Metric Spaces}
+\date{2026-03-11}
+\author{boat}
+\taxon{Theorem}
+\import{math-lib}
+
+\p{
+Let #{(X, d)} be a [metric space](gtop-0003) and #{C \subseteq X}. Then #{C} is [closed](gtop-0006) if and only if #{C} contains all its [limit points](gtop-000T).
+}
+
+\p{
+Equivalently, #{C} is closed if and only if for every convergent sequence #{\set{x_n} \subseteq C} with #{x_n \to x}, we have #{x \in C}.
+}
+
+\p{
+This characterization relies on the metric structure. In a general [topological space](gtop-0002), sequences may not suffice to detect all limit points.
+}

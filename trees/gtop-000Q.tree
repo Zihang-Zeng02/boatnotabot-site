@@ -1,0 +1,16 @@
+\title{Open, Closed, Both, or Neither}
+\date{2026-03-11}
+\author{boat}
+\taxon{Example}
+\import{math-lib}
+
+\p{
+Let #{X = \set{1,2,3}} with #{\tau = \set{\empty, \set{1}, X}}. A subset need not be [open](gtop-0005) or [closed](gtop-0006) — it can be both, or neither.
+}
+
+\ul{
+\li{#{\set{1}} is open (in #{\tau}), but not closed (#{X \setminus \set{1} = \set{2,3} \notin \tau}).}
+\li{#{\set{2,3}} is closed (#{X \setminus \set{2,3} = \set{1} \in \tau}), but not open.}
+\li{#{\empty} and #{X} are \strong{both} open and closed.}
+\li{#{\set{1,2}} is \strong{neither} open (not in #{\tau}) nor closed (#{X \setminus \set{1,2} = \set{3} \notin \tau}).}
+}

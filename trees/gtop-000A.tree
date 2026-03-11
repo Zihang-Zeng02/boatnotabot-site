@@ -1,0 +1,15 @@
+\title{Radon Measure}
+\date{2026-03-11}
+\author{boat}
+\taxon{Definition}
+\import{math-lib}
+
+\p{
+A \strong{Radon measure} on a [locally compact](gtop-000O) [Hausdorff space](gtop-000B) #{X} is a [Borel measure](gtop-000C) #{\mu} satisfying:
+}
+
+\ol{
+\li{#{\mu(K) < \infty} for every [compact](gtop-0008) set #{K \subseteq X}.}
+\li{#{\mu} is [outer regular](gtop-000D) on all [Borel sets](gtop-000L).}
+\li{#{\mu} is [inner regular](gtop-000E) on all [open sets](gtop-0005).}
+}

@@ -1,0 +1,17 @@
+\title{Euclidean Space}
+\date{2026-03-07}
+\taxon{Definition}
+\author{boat}
+\import{math-lib}
+
+\p{
+    The \strong{Euclidean space} #{\rn} is the [metric space](gtop-0003) equipped with the Euclidean metric
+}
+##{d(x, y) = \norm{x - y} = \sqrt{\sum_{i=1}^{n} (x_i - y_i)^2}}
+\p{
+    The [topology](gtop-0002) induced by this metric is called the \strong{standard topology} on #{\rn}. In this topology, the [open ball](gtop-000S) centered at #{x} with radius #{\epsilon > 0} is
+}
+##{B(x, \epsilon) = \set{y \in \rn : \norm{y - x} < \epsilon}}
+\p{
+    This is a special case of a [metric space](gtop-0003), which in turn induces a [topological space](gtop-0002).
+}

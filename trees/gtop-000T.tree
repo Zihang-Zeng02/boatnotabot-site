@@ -1,0 +1,13 @@
+\title{Limit Point}
+\date{2026-03-11}
+\author{boat}
+\taxon{Definition}
+\import{math-lib}
+
+\p{
+Let #{(X, \tau)} be a [topological space](gtop-0002) and #{S \subseteq X}. A point #{x \in X} is a \strong{limit point} of #{S} if every [open set](gtop-0005) containing #{x} also contains a point of #{S} other than #{x} itself.
+}
+
+\p{
+In a [metric space](gtop-0003), this is equivalent to: there exists a sequence #{\set{x_n} \subseteq S \setminus \set{x}} such that #{x_n \to x}.
+}

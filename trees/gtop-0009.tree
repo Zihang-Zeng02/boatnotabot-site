@@ -1,0 +1,17 @@
+\title{Metric Space}
+\date{2026-03-10}
+\author{boat}
+\taxon{Definition}
+\import{math-lib}
+
+\p{
+A \strong{metric space} is an ordered pair #{(M,d)} where #{M} is a set and #{d} is a \strong{metric} on #{M}, i.e., a function #{d:M\times M \to \rr} satisfying the following axioms for all points #{x,y,z \in M}:
+}
+
+\ul{
+\li{#{d(x,x) = 0}}
+\li{#{\text{If } x\neq y,\text{ then } d(x,y)>0}. (Positivity)}
+\li{#{d(x,y) = d(y,x)}. (Symmetry)}
+\li{#{d(x,z) \leq d(x,y) + d(y,z)}. (Triangle inequality)}
+}
+

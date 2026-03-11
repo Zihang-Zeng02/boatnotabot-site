@@ -1,0 +1,8 @@
+\title{Borel Set}
+\date{2026-03-10}
+\author{boat}
+\taxon{Definition}
+
+\p{
+A \strong{Borel set} in a [topological space](gtop-0002) #{X} is any set belonging to the [Borel #{\sigma}-algebra](gtop-000K) #{\mathcal{B}(X)}.
+}

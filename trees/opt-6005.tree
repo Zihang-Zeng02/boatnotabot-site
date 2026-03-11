@@ -1,0 +1,10 @@
+\title{Hamiltonian function}
+\date{2026-03-07}
+\author{boat}
+\taxon{Definition}
+\import{math-lib}
+
+\p{
+Define the Hamiltonian function at an [admissible control](opt-6006) #{\vu} by ##{H(\vx, \vu, \vp) = {\vp}^ \tps f(\vx,\vu) + L(\vx, \vu)}
+}
+

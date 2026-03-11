@@ -1,0 +1,16 @@
+\title{Intuition: Borel Measure}
+\date{2026-03-11}
+\author{boat}
+\taxon{Intuition}
+
+\p{
+A [Borel measure](gtop-000C) assigns "sizes" (lengths, areas, volumes, probabilities) to sets built from [open sets](gtop-0005).
+}
+
+\p{
+The [topology](gtop-0002) tells you what is open, the [Borel #{\sigma}-algebra](gtop-000K) tells you what is measurable, and a Borel measure tells you how big. It is a function that assigns a non-negative size to each [Borel set](gtop-000L), respecting the rule that the measure of a countable disjoint union equals the sum of the measures.
+}
+
+\p{
+Why not measure all subsets? In spaces like #{\mathbb{R}}, there exist pathological sets (via the axiom of choice) that cannot be assigned a size consistently. The Borel #{\sigma}-algebra avoids this by only including sets constructible from open sets through countable operations — which turns out to be rich enough for essentially all practical purposes.
+}

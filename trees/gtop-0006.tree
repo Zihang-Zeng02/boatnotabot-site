@@ -1,0 +1,20 @@
+\title{Closed Set}
+\date{2026-03-07}
+\taxon{Definition}
+\author{boat}
+\import{math-lib}
+
+\p{
+    Let #{(X, \tau)} be a [topological space](gtop-0002). A subset #{C \subseteq X} is called \strong{closed} if its complement #{X \setminus C} is [open](gtop-0005), i.e. #{X \setminus C \in \tau}.
+}
+
+\p{
+    Equivalently, the collection of closed sets satisfies:
+}
+\ol{
+    \li{#{\empty} and #{X} are closed.}
+    \li{Arbitrary intersections of closed sets are closed.}
+    \li{Finite unions of closed sets are closed.}
+}
+
+\transclude{gtop-000U}

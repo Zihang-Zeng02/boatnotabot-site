@@ -1,0 +1,9 @@
+\title{Neighborhood}
+\date{2026-03-11}
+\author{boat}
+\taxon{Definition}
+\import{math-lib}
+
+\p{
+If #{X} is a [topological space](gtop-0002) and #{p} is a point on #{X}, then a \strong{neighborhood} of #{p} is a subset of #{V} of #{X} that includes an open set #{U} containing #{p},##{p\in U\subseteq V \subseteq X.} This is equivvalent to the point #{p \in X} belonging to the [topological interior](gtop-000H) of #{V} in #{X}.
+}

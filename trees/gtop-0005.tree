@@ -1,0 +1,17 @@
+\title{Open Set}
+\date{2026-03-07}
+\taxon{Definition}
+\author{boat}
+\import{math-lib}
+
+\p{
+    Let #{(X, \tau)} be a [topological space](gtop-0002). A subset #{U \subseteq X} is called \strong{open} if #{U \in \tau}.
+}
+
+\p{
+    In a [Euclidean space](gtop-0004) #{\rn}, a subset #{U \subseteq \rn} is \strong{open} if for every #{x \in U}, there exists #{\epsilon > 0} such that #{B(x, \epsilon) \subseteq U}. More generally, in any [metric space](gtop-0003) #{(X, d)}, a set is open if it is a union of [open balls](gtop-000S).
+}
+
+\p{
+    The [Euclidean](gtop-0004) definition is a special case where the topology is induced by the metric #{d(x, y) = \norm{x - y}}.
+}

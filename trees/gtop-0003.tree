@@ -1,0 +1,20 @@
+\title{Metric Space}
+\date{2026-03-07}
+\taxon{Definition}
+\author{boat}
+\import{math-lib}
+
+\p{
+    A \strong{metric space} is a pair #{(X, d)} where #{X} is a set and #{d : X \times X \to \rr} is a function called a \strong{metric}, satisfying for all #{x, y, z \in X}:
+}
+\ol{
+    \li{#{d(x, y) \geq 0} and #{d(x, y) = 0} if and only if #{x = y} (positive definiteness).}
+    \li{#{d(x, y) = d(y, x)} (symmetry).}
+    \li{#{d(x, z) \leq d(x, y) + d(y, z)} (triangle inequality).}
+}
+\p{
+    Every metric space #{(X, d)} induces a [topology](gtop-0002) on #{X}, called the \strong{metric topology}, where the open sets are unions of [open balls](gtop-000S).
+}
+
+\transclude{gtop-000S}
+\transclude{gtop-000R}

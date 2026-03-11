@@ -4,7 +4,7 @@
 \import{math-lib}
 
 \p{
-    To find the optimal control #{\vu}, we consider the first-order variation of the functional #{J} with respect to #{\vu}. By augmenting the cost functional with system dynamics #{\dot \vx = f(\vx, \vu)} using the costate #{\vp}, we define:
+    To find the optimal control #{\vu}, we consider the first-order variation of the functional #{J} with respect to #{\vu}. By augmenting the cost functional with system dynamics #{\dot{\vx} = f(\vx, \vu)} using the [costate](opt-6009) #{\vp}, we define:
 }
 
 ##{
@@ -12,6 +12,6 @@
 }
 
 \p{
-    We obtain the stationarity condition #{\parf{J}{\vu} \equiv 0}.
+    We obtain the stationarity condition #{\parf{J}{\vu} \equiv 0}. See the [derivation](opt-6010) for how this expression arises from first principles.
 }
 

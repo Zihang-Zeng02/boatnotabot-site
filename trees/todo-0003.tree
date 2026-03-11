@@ -1,0 +1,21 @@
+\title{Intuition: Measure vs Metric}
+\date{2026-03-11}
+\author{boat}
+\taxon{Intuition}
+\import{math-lib}
+
+\p{
+A \strong{measure} assigns a "size" to a set — how much stuff is in it. Length, area, volume, and probability are all measures.
+}
+
+\p{
+A \strong{metric} assigns a "distance" between two points — how far apart they are.
+}
+
+\p{
+They answer fundamentally different questions: measure asks "how big is this region?" while metric asks "how far apart are these two points?"
+}
+
+\p{
+A metric is upstream of measure: a [metric](gtop-0003) defines [open balls](gtop-000S), which give a [topology](gtop-0002), which give a [Borel #{\sigma}-algebra](gtop-000K), which gives sets you can measure. A set can be small in measure but wide in metric (e.g., a thin line segment across a room).
+}

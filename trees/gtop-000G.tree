@@ -1,0 +1,10 @@
+\title{Regularity}
+\date{2026-03-10}
+\author{boat}
+\taxon{Definition}
+\p{
+Regularity properties describe how well a [Borel measure](gtop-000C) can be approximated by [open](gtop-0005) or [compact](gtop-0008) sets. A measure satisfying both [outer](gtop-000D) and [inner regularity](gtop-000E) is called \strong{regular}.
+}
+
+\transclude{gtop-000D}
+\transclude{gtop-000E}

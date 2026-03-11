@@ -1,0 +1,17 @@
+\title{Outer Regularity}
+\date{2026-03-10}
+\author{boat}
+\taxon{Definition}
+\import{math-lib}
+
+\p{
+A [Borel measure](gtop-000C) #{\mu} on a [topological space](gtop-0002) #{X} is \strong{outer regular} on a Borel set #{E} if
+##{
+\mu(E) = \inf \set{ \mu(W) : E \subseteq W, \; W \text{ is open} }
+}
+where #{W} is an [open set](gtop-0005).
+}
+
+\p{
+That is, the measure of #{E} can be approximated from above by the measures of [open sets](gtop-0005) containing #{E}.
+}

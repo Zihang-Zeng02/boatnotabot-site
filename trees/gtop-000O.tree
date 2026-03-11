@@ -1,0 +1,9 @@
+\title{Locally Compact Space}
+\date{2026-03-10}
+\author{boat}
+\taxon{Definition}
+\import{math-lib}
+
+\p{
+A [topological space](gtop-0002) #{X} is \strong{locally compact} if every point #{x \in X} has a [neighbourhood](gtop-000F) contained in a [compact](gtop-0008) subset of #{X}.
+}

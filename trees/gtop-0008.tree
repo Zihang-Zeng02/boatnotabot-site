@@ -1,0 +1,17 @@
+\title{Compactness}
+\date{2026-03-07}
+\taxon{Definition}
+\author{boat}
+\import{math-lib}
+
+\p{
+    A [topological space](gtop-0002) #{(X, \tau)} is \strong{compact} if every [open cover](gtop-0007) of #{X} has a [finite subcover](gtop-0007).
+}
+
+\p{
+    A subset #{K \subseteq X} is compact if it is compact as a topological space with the subspace topology, or equivalently, if every open cover of #{K} by open sets in #{X} has a finite subcover.
+}
+
+\p{
+    In [Euclidean space](gtop-0004) #{\rn}, the Heine-Borel theorem gives a concrete characterization: a subset #{K \subseteq \rn} is compact if and only if it is [closed](gtop-0006) and bounded (i.e. #{K \subseteq B(0, R)} for some #{R > 0}).
+}

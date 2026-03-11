@@ -1,0 +1,9 @@
+\title{Admissible control}
+\date{2026-03-07}
+\author{boat}
+\import{math-lib}
+\taxon{Definition}
+
+\p{
+We say that a control #{\vu} is admissible if #{\forall t \in [0, t_f],\ \vu(t) \in U_t} where #{U_t} is the control constraint set.
+}

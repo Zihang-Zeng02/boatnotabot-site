@@ -1,0 +1,19 @@
+\title{#{\sigma}-algebra}
+\date{2026-03-10}
+\author{boat}
+\taxon{Definition}
+\import{math-lib}
+
+\p{
+A \strong{#{\sigma}-algebra} on a set #{X} is a collection #{\mathcal{F} \subseteq \mathcal{P}(X)} of subsets of #{X} satisfying:
+}
+
+\ol{
+\li{#{X \in \mathcal{F}}.}
+\li{If #{A \in \mathcal{F}}, then #{X \setminus A \in \mathcal{F}} (closed under complements).}
+\li{If #{\set{A_n}_{n=1}^{\infty} \subseteq \mathcal{F}}, then #{\bigcup_{n=1}^{\infty} A_n \in \mathcal{F}} (closed under countable unions).}
+}
+
+\p{
+The pair #{(X, \mathcal{F})} is called a \strong{measurable space}, and the members of #{\mathcal{F}} are called \strong{measurable sets}.
+}

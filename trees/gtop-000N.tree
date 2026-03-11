@@ -1,0 +1,13 @@
+\title{Radon Probability Measure}
+\date{2026-03-10}
+\author{boat}
+\taxon{Definition}
+\import{math-lib}
+
+\p{
+A \strong{Radon probability measure} on a [locally compact](gtop-000O) [Hausdorff space](gtop-000B) #{X} is a [Radon measure](gtop-000A) #{\mu} satisfying #{\mu(X) = 1}.
+}
+
+\p{
+The space of all Radon probability measures on #{X} is denoted #{\mathcal{P}(X)}. When #{X} is a [compact](gtop-0008) [metric space](gtop-0009), #{\mathcal{P}(X)} equipped with the weak-* topology is itself a compact metric space.
+}

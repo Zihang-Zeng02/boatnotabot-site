@@ -1,0 +1,47 @@
+\title{Derivation of the First-order Variation}
+\date{2026-03-07}
+\author{boat}
+\import{math-lib}
+
+\p{
+    We derive #{\parf{J}{\vu}} for the [Bolza problem](opt-6002) from first principles, then show how the [costate](opt-6009) arises naturally.
+}
+
+\subtree{
+  \title{Linearization of #{J}}
+  \p{
+      Expanding #{J(\vu + \Delta \vu) - J(\vu)} to first order:
+  }
+  ##{
+      \int_0^{t_f} \parf{L}{\vx} \Delta \vx \, dt + \int_0^{t_f} \parf{L}{\vu} \Delta \vu \, dt + \frac{d\Phi}{d\vx}\tup{\vx(t_f)} \Delta \vx(t_f)
+  }
+}
+
+\subtree{
+  \title{Variation of the state}
+  \p{
+      Linearizing the dynamics #{\dot{\vx} = f(\vx, \vu)} gives
+  }
+  ##{\dot{\Delta \vx}(t) = \parf{f}{\vx} \Delta \vx(t) + \parf{f}{\vu} \Delta \vu(t)}
+  \p{
+      whose solution, with #{\Delta \vx(0) = 0}, is
+  }
+  ##{\Delta \vx(t) = \int_0^{t} \Psi(t, \tau) \parf{f}{\vu}\tup{\vx(\tau), \vu(\tau)} \Delta \vu(\tau) \, d\tau}
+  \p{
+      where #{\Psi(t, \tau)} is the state transition matrix of #{\parf{f}{\vx}}.
+  }
+}
+
+\subtree{
+  \title{Collecting #{\Delta \vu} terms}
+  \p{
+      Substituting #{\Delta \vx} and swapping integration order (Fubini), all three terms become inner products against #{\Delta \vu(\tau)}, yielding
+  }
+  ##{
+      \tup{\parf{J}{\vu}(\tau)}^\tps = \underbrace{\tup{\int_\tau^{t_f} \parf{L}{\vx} \Psi(t, \tau) \, dt + \frac{d\Phi}{d\vx}\tup{\vx(t_f)} \Psi(t_f, \tau)}}_{\vp^\tps(\tau)} \parf{f}{\vu}\tup{\vx(\tau), \vu(\tau)} + \tup{\parf{L}{\vu}\tup{\vx(\tau), \vu(\tau)}}^\tps
+  }
+  \p{
+      The bracketed expression is precisely the [costate](opt-6009) #{\vp(\tau)}, so we recover
+  }
+  ##{\parf{J}{\vu} = \tup{\parf{f}{\vu}}^\tps \vp + \tup{\parf{L}{\vu}}^\tps}
+}

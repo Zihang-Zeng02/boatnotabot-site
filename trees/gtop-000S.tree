@@ -1,0 +1,10 @@
+\title{Open Ball}
+\date{2026-03-11}
+\author{boat}
+\taxon{Definition}
+\import{math-lib}
+
+\p{
+Let #{(X, d)} be a [metric space](gtop-0003). The \strong{open ball} centered at #{x \in X} with radius #{\epsilon > 0} is
+}
+##{B(x, \epsilon) = \set{y \in X : d(x, y) < \epsilon}}

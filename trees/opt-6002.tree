@@ -2,7 +2,7 @@
 \date{2026-02-21}
 \author{boat}
 \import{math-lib}
-
+\taxon{Definition}
 \p{
-    Bolza problem is a fundamental formulation in the calculus of variations and optimal control that minimizes a cost functional consisting of both an integral term (running cost) and a terminal cost ##{J := \int_0^{t_f} L \big(\vx(t), \vu(t)\big) dt + \Phi \tup{\vx(t_f)}} where state #{\vx(t)\in \mathbb{R}^n}, control #{\vu(t)\in \mathbb{R}^k}, #{L:\mathbb{R}^n \times \mathbb{R}^k \to \mathbb{R}} is the running cost and #{\Phi:\mathbb{R}^n \to \mathbb{R}} is the terminal cost. The goal is to find the optimal control #{\vu^*(t)\in \mathbb{R}^k} that minimizes this cost functional subject to the system dynamics and boundary conditions.
+    Bolza problem is a fundamental formulation in the calculus of variations and optimal control that minimizes a cost functional consisting of both an integral term (running cost) and a terminal cost. It is described with a system dynamic funcation and a cost function. ##{\dot{\vx} = f(\vx, \vu),\quad \vx (0) = x_0}##{J := \int_0^{t_f} L \big(\vx(t), \vu(t)\big) dt + \Phi \tup{\vx(t_f)}} where state #{\vx(t)\in \mathbb{R}^n}, control #{\vu(t)\in \mathbb{R}^k}, #{L:\mathbb{R}^n \times \mathbb{R}^k \to \mathbb{R}} is the running cost and #{\Phi:\mathbb{R}^n \to \mathbb{R}} is the terminal cost. The goal is to find the optimal control #{\vu^*(t)\in \mathbb{R}^k} that minimizes this cost functional subject to the system dynamics and boundary conditions. With input constraint, we minimize #{J} subject to constraints #{\vu(t) \in U_t \subseteq \rr ^k} where #{U_t} is the [set of admissible control](opt-6006) at time #{t} and is guaranteed to be [compact](gtop-0008) and convex.
 }

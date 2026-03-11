@@ -1,0 +1,17 @@
+\title{Intuition: Hausdorff Space}
+\date{2026-03-11}
+\author{boat}
+\taxon{Intuition}
+\import{math-lib}
+
+\p{
+A [Hausdorff space](gtop-000B) is one where distinct points are truly separate — you can always draw non-overlapping [open](gtop-0005) neighbourhoods around them.
+}
+
+\p{
+Without the Hausdorff property, a sequence can converge to multiple limits simultaneously, and single points might not be [closed](gtop-0006) sets.
+}
+
+\p{
+Most spaces encountered naturally ([metric spaces](gtop-0003), manifolds, #{\rn}) are Hausdorff. The indiscrete topology is the classic non-Hausdorff example — the only nonempty open set is #{X} itself, so you can never separate any two points.
+}

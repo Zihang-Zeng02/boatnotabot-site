@@ -1,0 +1,9 @@
+\title{State Equation}
+\date{2026-03-08}
+\author{boat}
+\taxon{Definition}
+\import{math-lib}
+
+\p{
+##{\dot{\vx}=f(\vx, \vu),\quad \vx(0)=x_0}
+}

@@ -1,0 +1,9 @@
+\title{Borel Measure}
+\date{2026-03-11}
+\author{boat}
+\taxon{Definition}
+\import{math-lib}
+
+\p{
+A \strong{Borel measure} on a [topological space](gtop-0002) #{X} is a measure #{\mu : \mathcal{B}(X) \to [0, \infty]} defined on the [Borel #{\sigma}-algebra](gtop-000K).
+}

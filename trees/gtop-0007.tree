@@ -1,0 +1,13 @@
+\title{Open Cover}
+\date{2026-03-08}
+\author{boat}
+\taxon{Definition}
+\import{math-lib}
+
+\p{
+Let #{(X,\tau)} be a [topological space](gtop-0002) and #{A \subseteq X}. An \strong{open cover} of #{A} is a collection #{\{U_\alpha\}_{\alpha \in I}} of [open sets](gtop-0005) such that #{A \subseteq \bigcup_{\alpha \in I}U_{\alpha}}.
+}
+
+\p{
+A \strong{subcover} is a subcollection #{\{U_\alpha\}_{\alpha \in J}} with #{J \subseteq I} that still covers #{A}. A subcover is called \strong{finite} is #{J} is a finite set.
+}

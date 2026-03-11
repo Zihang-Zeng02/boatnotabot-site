@@ -1,0 +1,9 @@
+\title{Hausdorff Space}
+\date{2026-03-11}
+\author{boat}
+\taxon{Definition}
+\import{math-lib}
+
+\p{
+A [topological space](gtop-0002) is \strong{Hausdorff} if for every pair of distinct points therein there exist a [neighbourhood](gtop-000F) of each point that are disjoint from each other.
+}

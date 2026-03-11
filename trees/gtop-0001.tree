@@ -1,0 +1,19 @@
+\title{General Topology}
+\date{2026-03-07}
+\author{boat}
+
+\p{
+    Notes on general (point-set) topology, covering the foundational concepts of topological spaces, open and closed sets, and compactness.
+}
+
+\transclude{gtop-0002}
+\transclude{gtop-0003}
+\transclude{gtop-0004}
+\transclude{gtop-0005}
+\transclude{gtop-0006}
+\transclude{gtop-0007}
+\transclude{gtop-0008}
+\transclude{gtop-000B}
+\transclude{gtop-000C}
+\transclude{gtop-000G}
+\transclude{gtop-000M}

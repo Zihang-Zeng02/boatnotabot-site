@@ -1,0 +1,15 @@
+\title{Interior of a Set}
+\date{2026-03-11}
+\author{boat}
+\taxon{Definition}
+\import{math-lib}
+
+\p{
+The \strong{interior} of a subset #{S} of a topological space #{X}, denoted by #{\operatorname{int}_X\, S} or #{\operatorname{int}\, S} or #{S^{\circ}}, can be defined in any of the following equivalent ways:
+}
+
+\ol{
+\li{#{\operatorname{int}\, S} is the largest open subset of #{X} contained in #{S}.}
+\li{#{\operatorname{int}\, S} is the union of all open sets of #{X} contained in #{S}.}
+\li{#{\operatorname{int}\, S} is the set of all [interior points](gtop-000H) of #{S}.}
+}

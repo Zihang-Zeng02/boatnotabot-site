@@ -1,0 +1,20 @@
+\title{Intuition: #{\sigma}-algebra}
+\date{2026-03-11}
+\author{boat}
+\taxon{Intuition}
+
+\p{
+A [#{\sigma}-algebra](gtop-000M) is a collection of sets that is closed under the operations you need to do measurement: complements and countable unions.
+}
+
+\p{
+Think of it as a budget of measurable sets — it decides what you are allowed to measure. Not every subset needs to be included, but whatever is included must be self-consistent: if you can measure #{A}, you can measure "not #{A}"; if you can measure #{A_1, A_2, A_3, \ldots}, you can measure their union.
+}
+
+\p{
+Why not just measure everything? In #{\mathbb{R}}, you cannot assign a consistent length to all subsets (Vitali sets). The #{\sigma}-algebra avoids this by restricting to a well-behaved collection where measurement stays consistent.
+}
+
+\p{
+The #{\sigma} specifically means countable — closed under countable unions, not just finite ones. This is what distinguishes it from a plain algebra of sets and is essential for doing limits and integration.
+}

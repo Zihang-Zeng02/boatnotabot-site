@@ -1,0 +1,7 @@
+\title{Costate Equation}
+\date{2026-03-07}
+\author{boat}
+\taxon{Definition}
+\import{math-lib}
+
+##{\dot{\vp} = -\tup{\parf{f}{\vx}}^\tps \vp - \tup{\parf{L}{\vx}}^\tps, \quad #{\vp(t_f) = \nabla \Phi\tup{\vx(t_f)}}}

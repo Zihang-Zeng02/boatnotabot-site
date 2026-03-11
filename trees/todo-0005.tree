@@ -1,0 +1,16 @@
+\title{Intuition: Borel #{\sigma}-algebra}
+\date{2026-03-11}
+\author{boat}
+\taxon{Intuition}
+
+\p{
+The [Borel #{\sigma}-algebra](gtop-000K) is what you get by starting from the [open sets](gtop-0005) and asking: what is the smallest [#{\sigma}-algebra](gtop-000M) containing all of them?
+}
+
+\p{
+The [topology](gtop-0002) decides what is open. The Borel #{\sigma}-algebra is the cheapest way to turn that into something you can measure. You take the open sets and "complete" them: add all [closed](gtop-0006) sets (complements), countable intersections of open sets (#{G_\delta} sets), countable unions of closed sets (#{F_\sigma} sets), and so on.
+}
+
+\p{
+Why minimal? A bigger #{\sigma}-algebra means more sets to measure, which is harder to do consistently. The Borel #{\sigma}-algebra includes exactly the sets that the topology forces you to measure — nothing more.
+}

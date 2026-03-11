@@ -1,0 +1,17 @@
+\title{Inner Regularity}
+\date{2026-03-10}
+\author{boat}
+\taxon{Definition}
+\import{math-lib}
+
+\p{
+A [Borel measure](gtop-000C) #{\mu} on a [topological space](gtop-0002) #{X} is \strong{inner regular} on a [Borel set](gtop-000L) #{E} if
+##{
+\mu(E) = \sup \set{ \mu(M) : M \subseteq E, \; M \text{ is compact} }
+}
+where #{M} is a [compact](gtop-0008) subset.
+}
+
+\p{
+That is, the measure of #{E} can be approximated from below by the measures of [compact](gtop-0008) subsets of #{E}.
+}

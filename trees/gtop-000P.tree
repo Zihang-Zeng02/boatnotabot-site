@@ -1,0 +1,19 @@
+\title{Topologies on a Three-Point Set}
+\date{2026-03-11}
+\author{boat}
+\taxon{Example}
+\import{math-lib}
+
+\p{
+Let #{X = \set{1, 2, 3}}. The following are all valid topologies on #{X}:
+}
+
+\ul{
+\li{\strong{Indiscrete}: #{\tau_1 = \set{\empty, X}}. Only #{\empty} and #{X} are open.}
+\li{\strong{Partial}: #{\tau_2 = \set{\empty, \set{1}, X}}. Only #{\set{1}} and the trivial sets are open.}
+\li{\strong{Discrete}: #{\tau_3 = \mathcal{P}(X)}. Every subset is open.}
+}
+
+\p{
+Each satisfies the three axioms of a [topological space](gtop-0002). The same set #{X} carries different topological structure depending on the choice of #{\tau}.
+}

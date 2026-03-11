@@ -1,0 +1,13 @@
+\title{Relaxed Control}
+\date{2026-03-10}
+\author{boat}
+\taxon{Definition}
+\import{math-lib}
+
+\p{
+Consider the [bolza problem](opt-6002) subject to #{\dot{\vx} (t) = f(t,\vx (t), \vu (t)),\ \vu (t) \in U}, where #{U} is a [compact](gtop-0008) [metric space](gtop-0009).
+}
+
+\p{
+Relaxed controls replace the set #{U} by the space of [Radon probability measures](gtop-000N) on #{U}.
+}

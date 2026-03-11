@@ -1,0 +1,9 @@
+\title{Interior Point}
+\date{2026-03-11}
+\author{boat}
+\taxon{Definition}
+\import{math-lib}
+
+\p{
+If #{S} is a subset of a [Euclidean space](gtop-0004), then #{x} is an \strong{interior point} of #{S} if there exists an [open ball](gtop-000S) centered at #{x} which is completely contained in #{S}.
+}
