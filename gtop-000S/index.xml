@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>3</fr:month>
+      <fr:day>11</fr:day>
+    </fr:date>
+    <fr:uri>https://boatnotabot.com/gtop-000S/</fr:uri>
+    <fr:display-uri>gtop-000S</fr:display-uri>
+    <fr:route>/gtop-000S/</fr:route>
+    <fr:title text="Open Ball">Open Ball</fr:title>
+    <fr:taxon>Definition</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>
+Let <fr:tex display="inline"><![CDATA[(X, d)]]></fr:tex> be a <fr:link href="/gtop-0003/" title="Metric Space" uri="https://boatnotabot.com/gtop-0003/" display-uri="gtop-0003" type="local">metric space</fr:link>. The <html:strong>open ball</html:strong> centered at <fr:tex display="inline"><![CDATA[x \in  X]]></fr:tex> with radius <fr:tex display="inline"><![CDATA[\epsilon  > 0]]></fr:tex> is
+</html:p>
+    <fr:tex display="block"><![CDATA[B(x, \epsilon ) = \left \{ y \in  X : d(x, y) < \epsilon  \right \}]]></fr:tex>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>7</fr:day>
+            </fr:date>
+            <fr:uri>https://boatnotabot.com/gtop-0003/</fr:uri>
+            <fr:display-uri>gtop-0003</fr:display-uri>
+            <fr:route>/gtop-0003/</fr:route>
+            <fr:title text="Metric Space">Metric Space</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>
+    A <html:strong>metric space</html:strong> is a pair <fr:tex display="inline"><![CDATA[(X, d)]]></fr:tex> where <fr:tex display="inline"><![CDATA[X]]></fr:tex> is a set and <fr:tex display="inline"><![CDATA[d : X \times  X \to  \mathbb {R}]]></fr:tex> is a function called a <html:strong>metric</html:strong>, satisfying for all <fr:tex display="inline"><![CDATA[x, y, z \in  X]]></fr:tex>:
+</html:p>
+            <html:ol><html:li><fr:tex display="inline"><![CDATA[d(x, y) \geq  0]]></fr:tex> and <fr:tex display="inline"><![CDATA[d(x, y) = 0]]></fr:tex> if and only if <fr:tex display="inline"><![CDATA[x = y]]></fr:tex> (positive definiteness).</html:li>
+    <html:li><fr:tex display="inline"><![CDATA[d(x, y) = d(y, x)]]></fr:tex> (symmetry).</html:li>
+    <html:li><fr:tex display="inline"><![CDATA[d(x, z) \leq  d(x, y) + d(y, z)]]></fr:tex> (triangle inequality).</html:li></html:ol>
+            <html:p>
+    Every metric space <fr:tex display="inline"><![CDATA[(X, d)]]></fr:tex> induces a <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topology</fr:link> on <fr:tex display="inline"><![CDATA[X]]></fr:tex>, called the <html:strong>metric topology</html:strong>, where the open sets are unions of <fr:link href="/gtop-000S/" title="Open Ball" uri="https://boatnotabot.com/gtop-000S/" display-uri="gtop-000S" type="local">open balls</fr:link>.
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>11</fr:day>
+                </fr:date>
+                <fr:uri>https://boatnotabot.com/gtop-000S/</fr:uri>
+                <fr:display-uri>gtop-000S</fr:display-uri>
+                <fr:route>/gtop-000S/</fr:route>
+                <fr:title text="Open Ball">Open Ball</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+Let <fr:tex display="inline"><![CDATA[(X, d)]]></fr:tex> be a <fr:link href="/gtop-0003/" title="Metric Space" uri="https://boatnotabot.com/gtop-0003/" display-uri="gtop-0003" type="local">metric space</fr:link>. The <html:strong>open ball</html:strong> centered at <fr:tex display="inline"><![CDATA[x \in  X]]></fr:tex> with radius <fr:tex display="inline"><![CDATA[\epsilon  > 0]]></fr:tex> is
+</html:p>
+                <fr:tex display="block"><![CDATA[B(x, \epsilon ) = \left \{ y \in  X : d(x, y) < \epsilon  \right \}]]></fr:tex>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>11</fr:day>
+                </fr:date>
+                <fr:uri>https://boatnotabot.com/gtop-000R/</fr:uri>
+                <fr:display-uri>gtop-000R</fr:display-uri>
+                <fr:route>/gtop-000R/</fr:route>
+                <fr:title text="Metric Topology">Metric Topology</fr:title>
+                <fr:taxon>Notation</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+A <fr:link href="/gtop-0003/" title="Metric Space" uri="https://boatnotabot.com/gtop-0003/" display-uri="gtop-0003" type="local">metric space</fr:link> <fr:tex display="inline"><![CDATA[(X, d)]]></fr:tex> induces a <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topology</fr:link> <fr:tex display="inline"><![CDATA[\tau _d]]></fr:tex> on <fr:tex display="inline"><![CDATA[X]]></fr:tex> by declaring <fr:tex display="inline"><![CDATA[U \in  \tau _d]]></fr:tex> if and only if for every <fr:tex display="inline"><![CDATA[x \in  U]]></fr:tex> there exists <fr:tex display="inline"><![CDATA[\epsilon  > 0]]></fr:tex> such that the <fr:link href="/gtop-000S/" title="Open Ball" uri="https://boatnotabot.com/gtop-000S/" display-uri="gtop-000S" type="local">open ball</fr:link> <fr:tex display="inline"><![CDATA[B(x, \epsilon ) \subseteq  U]]></fr:tex>.
+</html:p>
+                <html:p>
+That is, a metric <fr:tex display="inline"><![CDATA[d]]></fr:tex> induces a topology through the following chain:
+</html:p>
+                <html:ol><html:li>The metric <fr:tex display="inline"><![CDATA[d]]></fr:tex> defines <fr:link href="/gtop-000S/" title="Open Ball" uri="https://boatnotabot.com/gtop-000S/" display-uri="gtop-000S" type="local">open balls</fr:link> <fr:tex display="inline"><![CDATA[B(x, \epsilon )]]></fr:tex>.</html:li>
+<html:li>Open balls generate <fr:link href="/gtop-0005/" title="Open Set" uri="https://boatnotabot.com/gtop-0005/" display-uri="gtop-0005" type="local">open sets</fr:link>: a set is open if and only if it is an arbitrary union of open balls.</html:li>
+<html:li>The collection of all open sets forms <fr:tex display="inline"><![CDATA[\tau _d]]></fr:tex>, a valid <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topology</fr:link>.</html:li></html:ol>
+                <html:p>
+Every metric space is a topological space, but not every topological space arises from a metric. A topological space <fr:tex display="inline"><![CDATA[(X, \tau )]]></fr:tex> is called <html:strong>metrizable</html:strong> if there exists a metric <fr:tex display="inline"><![CDATA[d]]></fr:tex> on <fr:tex display="inline"><![CDATA[X]]></fr:tex> such that <fr:tex display="inline"><![CDATA[\tau  = \tau _d]]></fr:tex>.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>11</fr:day>
+            </fr:date>
+            <fr:uri>https://boatnotabot.com/gtop-000I/</fr:uri>
+            <fr:display-uri>gtop-000I</fr:display-uri>
+            <fr:route>/gtop-000I/</fr:route>
+            <fr:title text="Interior Point">Interior Point</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>
+If <fr:tex display="inline"><![CDATA[S]]></fr:tex> is a subset of a <fr:link href="/gtop-0004/" title="Euclidean Space" uri="https://boatnotabot.com/gtop-0004/" display-uri="gtop-0004" type="local">Euclidean space</fr:link>, then <fr:tex display="inline"><![CDATA[x]]></fr:tex> is an <html:strong>interior point</html:strong> of <fr:tex display="inline"><![CDATA[S]]></fr:tex> if there exists an <fr:link href="/gtop-000S/" title="Open Ball" uri="https://boatnotabot.com/gtop-000S/" display-uri="gtop-000S" type="local">open ball</fr:link> centered at <fr:tex display="inline"><![CDATA[x]]></fr:tex> which is completely contained in <fr:tex display="inline"><![CDATA[S]]></fr:tex>.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>11</fr:day>
+            </fr:date>
+            <fr:uri>https://boatnotabot.com/todo-0003/</fr:uri>
+            <fr:display-uri>todo-0003</fr:display-uri>
+            <fr:route>/todo-0003/</fr:route>
+            <fr:title text="Intuition: Measure vs Metric">Intuition: Measure vs Metric</fr:title>
+            <fr:taxon>Intuition</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>
+A <html:strong>measure</html:strong> assigns a "size" to a set — how much stuff is in it. Length, area, volume, and probability are all measures.
+</html:p>
+            <html:p>
+A <html:strong>metric</html:strong> assigns a "distance" between two points — how far apart they are.
+</html:p>
+            <html:p>
+They answer fundamentally different questions: measure asks "how big is this region?" while metric asks "how far apart are these two points?"
+</html:p>
+            <html:p>
+A metric is upstream of measure: a <fr:link href="/gtop-0003/" title="Metric Space" uri="https://boatnotabot.com/gtop-0003/" display-uri="gtop-0003" type="local">metric</fr:link> defines <fr:link href="/gtop-000S/" title="Open Ball" uri="https://boatnotabot.com/gtop-000S/" display-uri="gtop-000S" type="local">open balls</fr:link>, which give a <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topology</fr:link>, which give a <fr:link href="/gtop-000K/" title="Borel \sigma -algebra" uri="https://boatnotabot.com/gtop-000K/" display-uri="gtop-000K" type="local">Borel <fr:tex display="inline"><![CDATA[\sigma ]]></fr:tex>-algebra</fr:link>, which gives sets you can measure. A set can be small in measure but wide in metric (e.g., a thin line segment across a room).
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>11</fr:day>
+            </fr:date>
+            <fr:uri>https://boatnotabot.com/gtop-000R/</fr:uri>
+            <fr:display-uri>gtop-000R</fr:display-uri>
+            <fr:route>/gtop-000R/</fr:route>
+            <fr:title text="Metric Topology">Metric Topology</fr:title>
+            <fr:taxon>Notation</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>
+A <fr:link href="/gtop-0003/" title="Metric Space" uri="https://boatnotabot.com/gtop-0003/" display-uri="gtop-0003" type="local">metric space</fr:link> <fr:tex display="inline"><![CDATA[(X, d)]]></fr:tex> induces a <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topology</fr:link> <fr:tex display="inline"><![CDATA[\tau _d]]></fr:tex> on <fr:tex display="inline"><![CDATA[X]]></fr:tex> by declaring <fr:tex display="inline"><![CDATA[U \in  \tau _d]]></fr:tex> if and only if for every <fr:tex display="inline"><![CDATA[x \in  U]]></fr:tex> there exists <fr:tex display="inline"><![CDATA[\epsilon  > 0]]></fr:tex> such that the <fr:link href="/gtop-000S/" title="Open Ball" uri="https://boatnotabot.com/gtop-000S/" display-uri="gtop-000S" type="local">open ball</fr:link> <fr:tex display="inline"><![CDATA[B(x, \epsilon ) \subseteq  U]]></fr:tex>.
+</html:p>
+            <html:p>
+That is, a metric <fr:tex display="inline"><![CDATA[d]]></fr:tex> induces a topology through the following chain:
+</html:p>
+            <html:ol><html:li>The metric <fr:tex display="inline"><![CDATA[d]]></fr:tex> defines <fr:link href="/gtop-000S/" title="Open Ball" uri="https://boatnotabot.com/gtop-000S/" display-uri="gtop-000S" type="local">open balls</fr:link> <fr:tex display="inline"><![CDATA[B(x, \epsilon )]]></fr:tex>.</html:li>
+<html:li>Open balls generate <fr:link href="/gtop-0005/" title="Open Set" uri="https://boatnotabot.com/gtop-0005/" display-uri="gtop-0005" type="local">open sets</fr:link>: a set is open if and only if it is an arbitrary union of open balls.</html:li>
+<html:li>The collection of all open sets forms <fr:tex display="inline"><![CDATA[\tau _d]]></fr:tex>, a valid <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topology</fr:link>.</html:li></html:ol>
+            <html:p>
+Every metric space is a topological space, but not every topological space arises from a metric. A topological space <fr:tex display="inline"><![CDATA[(X, \tau )]]></fr:tex> is called <html:strong>metrizable</html:strong> if there exists a metric <fr:tex display="inline"><![CDATA[d]]></fr:tex> on <fr:tex display="inline"><![CDATA[X]]></fr:tex> such that <fr:tex display="inline"><![CDATA[\tau  = \tau _d]]></fr:tex>.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>7</fr:day>
+            </fr:date>
+            <fr:uri>https://boatnotabot.com/gtop-0004/</fr:uri>
+            <fr:display-uri>gtop-0004</fr:display-uri>
+            <fr:route>/gtop-0004/</fr:route>
+            <fr:title text="Euclidean Space">Euclidean Space</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>
+    The <html:strong>Euclidean space</html:strong> <fr:tex display="inline"><![CDATA[\mathbb {R}^n]]></fr:tex> is the <fr:link href="/gtop-0003/" title="Metric Space" uri="https://boatnotabot.com/gtop-0003/" display-uri="gtop-0003" type="local">metric space</fr:link> equipped with the Euclidean metric
+</html:p>
+            <fr:tex display="block"><![CDATA[d(x, y) = \lVert  x - y \rVert  = \sqrt {\sum _{i=1}^{n} (x_i - y_i)^2}]]></fr:tex>
+            <html:p>
+    The <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topology</fr:link> induced by this metric is called the <html:strong>standard topology</html:strong> on <fr:tex display="inline"><![CDATA[\mathbb {R}^n]]></fr:tex>. In this topology, the <fr:link href="/gtop-000S/" title="Open Ball" uri="https://boatnotabot.com/gtop-000S/" display-uri="gtop-000S" type="local">open ball</fr:link> centered at <fr:tex display="inline"><![CDATA[x]]></fr:tex> with radius <fr:tex display="inline"><![CDATA[\epsilon  > 0]]></fr:tex> is
+</html:p>
+            <fr:tex display="block"><![CDATA[B(x, \epsilon ) = \left \{ y \in  \mathbb {R}^n : \lVert  y - x \rVert  < \epsilon  \right \}]]></fr:tex>
+            <html:p>
+    This is a special case of a <fr:link href="/gtop-0003/" title="Metric Space" uri="https://boatnotabot.com/gtop-0003/" display-uri="gtop-0003" type="local">metric space</fr:link>, which in turn induces a <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topological space</fr:link>.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>7</fr:day>
+            </fr:date>
+            <fr:uri>https://boatnotabot.com/gtop-0003/</fr:uri>
+            <fr:display-uri>gtop-0003</fr:display-uri>
+            <fr:route>/gtop-0003/</fr:route>
+            <fr:title text="Metric Space">Metric Space</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>
+    A <html:strong>metric space</html:strong> is a pair <fr:tex display="inline"><![CDATA[(X, d)]]></fr:tex> where <fr:tex display="inline"><![CDATA[X]]></fr:tex> is a set and <fr:tex display="inline"><![CDATA[d : X \times  X \to  \mathbb {R}]]></fr:tex> is a function called a <html:strong>metric</html:strong>, satisfying for all <fr:tex display="inline"><![CDATA[x, y, z \in  X]]></fr:tex>:
+</html:p>
+            <html:ol><html:li><fr:tex display="inline"><![CDATA[d(x, y) \geq  0]]></fr:tex> and <fr:tex display="inline"><![CDATA[d(x, y) = 0]]></fr:tex> if and only if <fr:tex display="inline"><![CDATA[x = y]]></fr:tex> (positive definiteness).</html:li>
+    <html:li><fr:tex display="inline"><![CDATA[d(x, y) = d(y, x)]]></fr:tex> (symmetry).</html:li>
+    <html:li><fr:tex display="inline"><![CDATA[d(x, z) \leq  d(x, y) + d(y, z)]]></fr:tex> (triangle inequality).</html:li></html:ol>
+            <html:p>
+    Every metric space <fr:tex display="inline"><![CDATA[(X, d)]]></fr:tex> induces a <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topology</fr:link> on <fr:tex display="inline"><![CDATA[X]]></fr:tex>, called the <html:strong>metric topology</html:strong>, where the open sets are unions of <fr:link href="/gtop-000S/" title="Open Ball" uri="https://boatnotabot.com/gtop-000S/" display-uri="gtop-000S" type="local">open balls</fr:link>.
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>11</fr:day>
+                </fr:date>
+                <fr:uri>https://boatnotabot.com/gtop-000S/</fr:uri>
+                <fr:display-uri>gtop-000S</fr:display-uri>
+                <fr:route>/gtop-000S/</fr:route>
+                <fr:title text="Open Ball">Open Ball</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+Let <fr:tex display="inline"><![CDATA[(X, d)]]></fr:tex> be a <fr:link href="/gtop-0003/" title="Metric Space" uri="https://boatnotabot.com/gtop-0003/" display-uri="gtop-0003" type="local">metric space</fr:link>. The <html:strong>open ball</html:strong> centered at <fr:tex display="inline"><![CDATA[x \in  X]]></fr:tex> with radius <fr:tex display="inline"><![CDATA[\epsilon  > 0]]></fr:tex> is
+</html:p>
+                <fr:tex display="block"><![CDATA[B(x, \epsilon ) = \left \{ y \in  X : d(x, y) < \epsilon  \right \}]]></fr:tex>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>11</fr:day>
+                </fr:date>
+                <fr:uri>https://boatnotabot.com/gtop-000R/</fr:uri>
+                <fr:display-uri>gtop-000R</fr:display-uri>
+                <fr:route>/gtop-000R/</fr:route>
+                <fr:title text="Metric Topology">Metric Topology</fr:title>
+                <fr:taxon>Notation</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+A <fr:link href="/gtop-0003/" title="Metric Space" uri="https://boatnotabot.com/gtop-0003/" display-uri="gtop-0003" type="local">metric space</fr:link> <fr:tex display="inline"><![CDATA[(X, d)]]></fr:tex> induces a <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topology</fr:link> <fr:tex display="inline"><![CDATA[\tau _d]]></fr:tex> on <fr:tex display="inline"><![CDATA[X]]></fr:tex> by declaring <fr:tex display="inline"><![CDATA[U \in  \tau _d]]></fr:tex> if and only if for every <fr:tex display="inline"><![CDATA[x \in  U]]></fr:tex> there exists <fr:tex display="inline"><![CDATA[\epsilon  > 0]]></fr:tex> such that the <fr:link href="/gtop-000S/" title="Open Ball" uri="https://boatnotabot.com/gtop-000S/" display-uri="gtop-000S" type="local">open ball</fr:link> <fr:tex display="inline"><![CDATA[B(x, \epsilon ) \subseteq  U]]></fr:tex>.
+</html:p>
+                <html:p>
+That is, a metric <fr:tex display="inline"><![CDATA[d]]></fr:tex> induces a topology through the following chain:
+</html:p>
+                <html:ol><html:li>The metric <fr:tex display="inline"><![CDATA[d]]></fr:tex> defines <fr:link href="/gtop-000S/" title="Open Ball" uri="https://boatnotabot.com/gtop-000S/" display-uri="gtop-000S" type="local">open balls</fr:link> <fr:tex display="inline"><![CDATA[B(x, \epsilon )]]></fr:tex>.</html:li>
+<html:li>Open balls generate <fr:link href="/gtop-0005/" title="Open Set" uri="https://boatnotabot.com/gtop-0005/" display-uri="gtop-0005" type="local">open sets</fr:link>: a set is open if and only if it is an arbitrary union of open balls.</html:li>
+<html:li>The collection of all open sets forms <fr:tex display="inline"><![CDATA[\tau _d]]></fr:tex>, a valid <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topology</fr:link>.</html:li></html:ol>
+                <html:p>
+Every metric space is a topological space, but not every topological space arises from a metric. A topological space <fr:tex display="inline"><![CDATA[(X, \tau )]]></fr:tex> is called <html:strong>metrizable</html:strong> if there exists a metric <fr:tex display="inline"><![CDATA[d]]></fr:tex> on <fr:tex display="inline"><![CDATA[X]]></fr:tex> such that <fr:tex display="inline"><![CDATA[\tau  = \tau _d]]></fr:tex>.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>7</fr:day>
+            </fr:date>
+            <fr:uri>https://boatnotabot.com/gtop-0005/</fr:uri>
+            <fr:display-uri>gtop-0005</fr:display-uri>
+            <fr:route>/gtop-0005/</fr:route>
+            <fr:title text="Open Set">Open Set</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>
+    Let <fr:tex display="inline"><![CDATA[(X, \tau )]]></fr:tex> be a <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topological space</fr:link>. A subset <fr:tex display="inline"><![CDATA[U \subseteq  X]]></fr:tex> is called <html:strong>open</html:strong> if <fr:tex display="inline"><![CDATA[U \in  \tau ]]></fr:tex>.
+</html:p>
+            <html:p>
+    In a <fr:link href="/gtop-0004/" title="Euclidean Space" uri="https://boatnotabot.com/gtop-0004/" display-uri="gtop-0004" type="local">Euclidean space</fr:link> <fr:tex display="inline"><![CDATA[\mathbb {R}^n]]></fr:tex>, a subset <fr:tex display="inline"><![CDATA[U \subseteq  \mathbb {R}^n]]></fr:tex> is <html:strong>open</html:strong> if for every <fr:tex display="inline"><![CDATA[x \in  U]]></fr:tex>, there exists <fr:tex display="inline"><![CDATA[\epsilon  > 0]]></fr:tex> such that <fr:tex display="inline"><![CDATA[B(x, \epsilon ) \subseteq  U]]></fr:tex>. More generally, in any <fr:link href="/gtop-0003/" title="Metric Space" uri="https://boatnotabot.com/gtop-0003/" display-uri="gtop-0003" type="local">metric space</fr:link> <fr:tex display="inline"><![CDATA[(X, d)]]></fr:tex>, a set is open if it is a union of <fr:link href="/gtop-000S/" title="Open Ball" uri="https://boatnotabot.com/gtop-000S/" display-uri="gtop-000S" type="local">open balls</fr:link>.
+</html:p>
+            <html:p>
+    The <fr:link href="/gtop-0004/" title="Euclidean Space" uri="https://boatnotabot.com/gtop-0004/" display-uri="gtop-0004" type="local">Euclidean</fr:link> definition is a special case where the topology is induced by the metric <fr:tex display="inline"><![CDATA[d(x, y) = \lVert  x - y \rVert ]]></fr:tex>.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>7</fr:day>
+            </fr:date>
+            <fr:uri>https://boatnotabot.com/gtop-0003/</fr:uri>
+            <fr:display-uri>gtop-0003</fr:display-uri>
+            <fr:route>/gtop-0003/</fr:route>
+            <fr:title text="Metric Space">Metric Space</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>
+    A <html:strong>metric space</html:strong> is a pair <fr:tex display="inline"><![CDATA[(X, d)]]></fr:tex> where <fr:tex display="inline"><![CDATA[X]]></fr:tex> is a set and <fr:tex display="inline"><![CDATA[d : X \times  X \to  \mathbb {R}]]></fr:tex> is a function called a <html:strong>metric</html:strong>, satisfying for all <fr:tex display="inline"><![CDATA[x, y, z \in  X]]></fr:tex>:
+</html:p>
+            <html:ol><html:li><fr:tex display="inline"><![CDATA[d(x, y) \geq  0]]></fr:tex> and <fr:tex display="inline"><![CDATA[d(x, y) = 0]]></fr:tex> if and only if <fr:tex display="inline"><![CDATA[x = y]]></fr:tex> (positive definiteness).</html:li>
+    <html:li><fr:tex display="inline"><![CDATA[d(x, y) = d(y, x)]]></fr:tex> (symmetry).</html:li>
+    <html:li><fr:tex display="inline"><![CDATA[d(x, z) \leq  d(x, y) + d(y, z)]]></fr:tex> (triangle inequality).</html:li></html:ol>
+            <html:p>
+    Every metric space <fr:tex display="inline"><![CDATA[(X, d)]]></fr:tex> induces a <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topology</fr:link> on <fr:tex display="inline"><![CDATA[X]]></fr:tex>, called the <html:strong>metric topology</html:strong>, where the open sets are unions of <fr:link href="/gtop-000S/" title="Open Ball" uri="https://boatnotabot.com/gtop-000S/" display-uri="gtop-000S" type="local">open balls</fr:link>.
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>11</fr:day>
+                </fr:date>
+                <fr:uri>https://boatnotabot.com/gtop-000S/</fr:uri>
+                <fr:display-uri>gtop-000S</fr:display-uri>
+                <fr:route>/gtop-000S/</fr:route>
+                <fr:title text="Open Ball">Open Ball</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+Let <fr:tex display="inline"><![CDATA[(X, d)]]></fr:tex> be a <fr:link href="/gtop-0003/" title="Metric Space" uri="https://boatnotabot.com/gtop-0003/" display-uri="gtop-0003" type="local">metric space</fr:link>. The <html:strong>open ball</html:strong> centered at <fr:tex display="inline"><![CDATA[x \in  X]]></fr:tex> with radius <fr:tex display="inline"><![CDATA[\epsilon  > 0]]></fr:tex> is
+</html:p>
+                <fr:tex display="block"><![CDATA[B(x, \epsilon ) = \left \{ y \in  X : d(x, y) < \epsilon  \right \}]]></fr:tex>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>11</fr:day>
+                </fr:date>
+                <fr:uri>https://boatnotabot.com/gtop-000R/</fr:uri>
+                <fr:display-uri>gtop-000R</fr:display-uri>
+                <fr:route>/gtop-000R/</fr:route>
+                <fr:title text="Metric Topology">Metric Topology</fr:title>
+                <fr:taxon>Notation</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+A <fr:link href="/gtop-0003/" title="Metric Space" uri="https://boatnotabot.com/gtop-0003/" display-uri="gtop-0003" type="local">metric space</fr:link> <fr:tex display="inline"><![CDATA[(X, d)]]></fr:tex> induces a <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topology</fr:link> <fr:tex display="inline"><![CDATA[\tau _d]]></fr:tex> on <fr:tex display="inline"><![CDATA[X]]></fr:tex> by declaring <fr:tex display="inline"><![CDATA[U \in  \tau _d]]></fr:tex> if and only if for every <fr:tex display="inline"><![CDATA[x \in  U]]></fr:tex> there exists <fr:tex display="inline"><![CDATA[\epsilon  > 0]]></fr:tex> such that the <fr:link href="/gtop-000S/" title="Open Ball" uri="https://boatnotabot.com/gtop-000S/" display-uri="gtop-000S" type="local">open ball</fr:link> <fr:tex display="inline"><![CDATA[B(x, \epsilon ) \subseteq  U]]></fr:tex>.
+</html:p>
+                <html:p>
+That is, a metric <fr:tex display="inline"><![CDATA[d]]></fr:tex> induces a topology through the following chain:
+</html:p>
+                <html:ol><html:li>The metric <fr:tex display="inline"><![CDATA[d]]></fr:tex> defines <fr:link href="/gtop-000S/" title="Open Ball" uri="https://boatnotabot.com/gtop-000S/" display-uri="gtop-000S" type="local">open balls</fr:link> <fr:tex display="inline"><![CDATA[B(x, \epsilon )]]></fr:tex>.</html:li>
+<html:li>Open balls generate <fr:link href="/gtop-0005/" title="Open Set" uri="https://boatnotabot.com/gtop-0005/" display-uri="gtop-0005" type="local">open sets</fr:link>: a set is open if and only if it is an arbitrary union of open balls.</html:li>
+<html:li>The collection of all open sets forms <fr:tex display="inline"><![CDATA[\tau _d]]></fr:tex>, a valid <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topology</fr:link>.</html:li></html:ol>
+                <html:p>
+Every metric space is a topological space, but not every topological space arises from a metric. A topological space <fr:tex display="inline"><![CDATA[(X, \tau )]]></fr:tex> is called <html:strong>metrizable</html:strong> if there exists a metric <fr:tex display="inline"><![CDATA[d]]></fr:tex> on <fr:tex display="inline"><![CDATA[X]]></fr:tex> such that <fr:tex display="inline"><![CDATA[\tau  = \tau _d]]></fr:tex>.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

@@ -66,7 +66,8 @@
 </html:p>
             <html:ul><html:li><fr:link href="/ml-0001/" title="Machine Learning" uri="https://boatnotabot.com/ml-0001/" display-uri="ml-0001" type="local">Machine Learning</fr:link></html:li>
     <html:li><fr:link href="/opt-6001/" title="Optimal Control" uri="https://boatnotabot.com/opt-6001/" display-uri="opt-6001" type="local">Optimal Control</fr:link></html:li>
-    <html:li><fr:link href="/calc-0001/" title="Calculus" uri="https://boatnotabot.com/calc-0001/" display-uri="calc-0001" type="local">Calculus</fr:link></html:li></html:ul>
+    <html:li><fr:link href="/calc-0001/" title="Calculus" uri="https://boatnotabot.com/calc-0001/" display-uri="calc-0001" type="local">Calculus</fr:link></html:li>
+    <html:li><fr:link href="/gtop-0001/" title="General Topology" uri="https://boatnotabot.com/gtop-0001/" display-uri="gtop-0001" type="local">General Topology</fr:link></html:li></html:ul>
             <html:p>
     On a computer, you can press Ctrl-K to search for trees.
 </html:p>

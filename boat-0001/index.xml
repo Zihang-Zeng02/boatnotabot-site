@@ -23,7 +23,8 @@
 </html:p>
     <html:ul><html:li><fr:link href="/ml-0001/" title="Machine Learning" uri="https://boatnotabot.com/ml-0001/" display-uri="ml-0001" type="local">Machine Learning</fr:link></html:li>
     <html:li><fr:link href="/opt-6001/" title="Optimal Control" uri="https://boatnotabot.com/opt-6001/" display-uri="opt-6001" type="local">Optimal Control</fr:link></html:li>
-    <html:li><fr:link href="/calc-0001/" title="Calculus" uri="https://boatnotabot.com/calc-0001/" display-uri="calc-0001" type="local">Calculus</fr:link></html:li></html:ul>
+    <html:li><fr:link href="/calc-0001/" title="Calculus" uri="https://boatnotabot.com/calc-0001/" display-uri="calc-0001" type="local">Calculus</fr:link></html:li>
+    <html:li><fr:link href="/gtop-0001/" title="General Topology" uri="https://boatnotabot.com/gtop-0001/" display-uri="gtop-0001" type="local">General Topology</fr:link></html:li></html:ul>
     <html:p>
     On a computer, you can press Ctrl-K to search for trees.
 </html:p>
@@ -65,6 +66,548 @@
             </fr:authors>
             <fr:date>
               <fr:year>2026</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>7</fr:day>
+            </fr:date>
+            <fr:uri>https://boatnotabot.com/gtop-0001/</fr:uri>
+            <fr:display-uri>gtop-0001</fr:display-uri>
+            <fr:route>/gtop-0001/</fr:route>
+            <fr:title text="General Topology">General Topology</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>
+    Notes on general (point-set) topology, covering the foundational concepts of topological spaces, open and closed sets, and compactness.
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>7</fr:day>
+                </fr:date>
+                <fr:uri>https://boatnotabot.com/gtop-0002/</fr:uri>
+                <fr:display-uri>gtop-0002</fr:display-uri>
+                <fr:route>/gtop-0002/</fr:route>
+                <fr:title text="Topological Space">Topological Space</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+    A <html:strong>topological space</html:strong> is a pair <fr:tex display="inline"><![CDATA[(X, \tau )]]></fr:tex> where <fr:tex display="inline"><![CDATA[X]]></fr:tex> is a set and <fr:tex display="inline"><![CDATA[\tau  \subseteq  \mathcal {P}(X)]]></fr:tex> is a collection of subsets of <fr:tex display="inline"><![CDATA[X]]></fr:tex>, called a <html:strong>topology</html:strong> on <fr:tex display="inline"><![CDATA[X]]></fr:tex>, satisfying:
+</html:p>
+                <html:ol><html:li><fr:tex display="inline"><![CDATA[\varnothing , X \in  \tau ]]></fr:tex></html:li>
+    <html:li>If <fr:tex display="inline"><![CDATA[\left \{ U_\alpha  \right \}_{\alpha  \in  A} \subseteq  \tau ]]></fr:tex>, then <fr:tex display="inline"><![CDATA[\bigcup _{\alpha  \in  A} U_\alpha  \in  \tau ]]></fr:tex> (closed under arbitrary unions).</html:li>
+    <html:li>If <fr:tex display="inline"><![CDATA[U_1, U_2 \in  \tau ]]></fr:tex>, then <fr:tex display="inline"><![CDATA[U_1 \cap  U_2 \in  \tau ]]></fr:tex> (closed under finite intersections).</html:li></html:ol>
+                <html:p>
+    The elements of <fr:tex display="inline"><![CDATA[\tau ]]></fr:tex> are called <html:strong><fr:link href="/gtop-0005/" title="Open Set" uri="https://boatnotabot.com/gtop-0005/" display-uri="gtop-0005" type="local">open sets</fr:link></html:strong>. A set <fr:tex display="inline"><![CDATA[C \subseteq  X]]></fr:tex> is called <html:strong><fr:link href="/gtop-0006/" title="Closed Set" uri="https://boatnotabot.com/gtop-0006/" display-uri="gtop-0006" type="local">closed</fr:link></html:strong> if its complement <fr:tex display="inline"><![CDATA[X \setminus  C]]></fr:tex> is open.
+</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>3</fr:month>
+                      <fr:day>11</fr:day>
+                    </fr:date>
+                    <fr:uri>https://boatnotabot.com/gtop-000P/</fr:uri>
+                    <fr:display-uri>gtop-000P</fr:display-uri>
+                    <fr:route>/gtop-000P/</fr:route>
+                    <fr:title text="Topologies on a Three-Point Set">Topologies on a Three-Point Set</fr:title>
+                    <fr:taxon>Example</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>
+Let <fr:tex display="inline"><![CDATA[X = \left \{ 1, 2, 3 \right \}]]></fr:tex>. The following are all valid topologies on <fr:tex display="inline"><![CDATA[X]]></fr:tex>:
+</html:p>
+                    <html:ul><html:li><html:strong>Indiscrete</html:strong>: <fr:tex display="inline"><![CDATA[\tau _1 = \left \{ \varnothing , X \right \}]]></fr:tex>. Only <fr:tex display="inline"><![CDATA[\varnothing ]]></fr:tex> and <fr:tex display="inline"><![CDATA[X]]></fr:tex> are open.</html:li>
+<html:li><html:strong>Partial</html:strong>: <fr:tex display="inline"><![CDATA[\tau _2 = \left \{ \varnothing , \left \{ 1 \right \}, X \right \}]]></fr:tex>. Only <fr:tex display="inline"><![CDATA[\left \{ 1 \right \}]]></fr:tex> and the trivial sets are open.</html:li>
+<html:li><html:strong>Discrete</html:strong>: <fr:tex display="inline"><![CDATA[\tau _3 = \mathcal {P}(X)]]></fr:tex>. Every subset is open.</html:li></html:ul>
+                    <html:p>
+Each satisfies the three axioms of a <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topological space</fr:link>. The same set <fr:tex display="inline"><![CDATA[X]]></fr:tex> carries different topological structure depending on the choice of <fr:tex display="inline"><![CDATA[\tau ]]></fr:tex>.
+</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>3</fr:month>
+                      <fr:day>11</fr:day>
+                    </fr:date>
+                    <fr:uri>https://boatnotabot.com/gtop-000Q/</fr:uri>
+                    <fr:display-uri>gtop-000Q</fr:display-uri>
+                    <fr:route>/gtop-000Q/</fr:route>
+                    <fr:title text="Open, Closed, Both, or Neither">Open, Closed, Both, or Neither</fr:title>
+                    <fr:taxon>Example</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>
+Let <fr:tex display="inline"><![CDATA[X = \left \{ 1,2,3 \right \}]]></fr:tex> with <fr:tex display="inline"><![CDATA[\tau  = \left \{ \varnothing , \left \{ 1 \right \}, X \right \}]]></fr:tex>. A subset need not be <fr:link href="/gtop-0005/" title="Open Set" uri="https://boatnotabot.com/gtop-0005/" display-uri="gtop-0005" type="local">open</fr:link> or <fr:link href="/gtop-0006/" title="Closed Set" uri="https://boatnotabot.com/gtop-0006/" display-uri="gtop-0006" type="local">closed</fr:link> — it can be both, or neither.
+</html:p>
+                    <html:ul><html:li><fr:tex display="inline"><![CDATA[\left \{ 1 \right \}]]></fr:tex> is open (in <fr:tex display="inline"><![CDATA[\tau ]]></fr:tex>), but not closed (<fr:tex display="inline"><![CDATA[X \setminus  \left \{ 1 \right \} = \left \{ 2,3 \right \} \notin  \tau ]]></fr:tex>).</html:li>
+<html:li><fr:tex display="inline"><![CDATA[\left \{ 2,3 \right \}]]></fr:tex> is closed (<fr:tex display="inline"><![CDATA[X \setminus  \left \{ 2,3 \right \} = \left \{ 1 \right \} \in  \tau ]]></fr:tex>), but not open.</html:li>
+<html:li><fr:tex display="inline"><![CDATA[\varnothing ]]></fr:tex> and <fr:tex display="inline"><![CDATA[X]]></fr:tex> are <html:strong>both</html:strong> open and closed.</html:li>
+<html:li><fr:tex display="inline"><![CDATA[\left \{ 1,2 \right \}]]></fr:tex> is <html:strong>neither</html:strong> open (not in <fr:tex display="inline"><![CDATA[\tau ]]></fr:tex>) nor closed (<fr:tex display="inline"><![CDATA[X \setminus  \left \{ 1,2 \right \} = \left \{ 3 \right \} \notin  \tau ]]></fr:tex>).</html:li></html:ul>
+                  </fr:mainmatter>
+                </fr:tree>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>7</fr:day>
+                </fr:date>
+                <fr:uri>https://boatnotabot.com/gtop-0003/</fr:uri>
+                <fr:display-uri>gtop-0003</fr:display-uri>
+                <fr:route>/gtop-0003/</fr:route>
+                <fr:title text="Metric Space">Metric Space</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+    A <html:strong>metric space</html:strong> is a pair <fr:tex display="inline"><![CDATA[(X, d)]]></fr:tex> where <fr:tex display="inline"><![CDATA[X]]></fr:tex> is a set and <fr:tex display="inline"><![CDATA[d : X \times  X \to  \mathbb {R}]]></fr:tex> is a function called a <html:strong>metric</html:strong>, satisfying for all <fr:tex display="inline"><![CDATA[x, y, z \in  X]]></fr:tex>:
+</html:p>
+                <html:ol><html:li><fr:tex display="inline"><![CDATA[d(x, y) \geq  0]]></fr:tex> and <fr:tex display="inline"><![CDATA[d(x, y) = 0]]></fr:tex> if and only if <fr:tex display="inline"><![CDATA[x = y]]></fr:tex> (positive definiteness).</html:li>
+    <html:li><fr:tex display="inline"><![CDATA[d(x, y) = d(y, x)]]></fr:tex> (symmetry).</html:li>
+    <html:li><fr:tex display="inline"><![CDATA[d(x, z) \leq  d(x, y) + d(y, z)]]></fr:tex> (triangle inequality).</html:li></html:ol>
+                <html:p>
+    Every metric space <fr:tex display="inline"><![CDATA[(X, d)]]></fr:tex> induces a <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topology</fr:link> on <fr:tex display="inline"><![CDATA[X]]></fr:tex>, called the <html:strong>metric topology</html:strong>, where the open sets are unions of <fr:link href="/gtop-000S/" title="Open Ball" uri="https://boatnotabot.com/gtop-000S/" display-uri="gtop-000S" type="local">open balls</fr:link>.
+</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>3</fr:month>
+                      <fr:day>11</fr:day>
+                    </fr:date>
+                    <fr:uri>https://boatnotabot.com/gtop-000S/</fr:uri>
+                    <fr:display-uri>gtop-000S</fr:display-uri>
+                    <fr:route>/gtop-000S/</fr:route>
+                    <fr:title text="Open Ball">Open Ball</fr:title>
+                    <fr:taxon>Definition</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>
+Let <fr:tex display="inline"><![CDATA[(X, d)]]></fr:tex> be a <fr:link href="/gtop-0003/" title="Metric Space" uri="https://boatnotabot.com/gtop-0003/" display-uri="gtop-0003" type="local">metric space</fr:link>. The <html:strong>open ball</html:strong> centered at <fr:tex display="inline"><![CDATA[x \in  X]]></fr:tex> with radius <fr:tex display="inline"><![CDATA[\epsilon  > 0]]></fr:tex> is
+</html:p>
+                    <fr:tex display="block"><![CDATA[B(x, \epsilon ) = \left \{ y \in  X : d(x, y) < \epsilon  \right \}]]></fr:tex>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>3</fr:month>
+                      <fr:day>11</fr:day>
+                    </fr:date>
+                    <fr:uri>https://boatnotabot.com/gtop-000R/</fr:uri>
+                    <fr:display-uri>gtop-000R</fr:display-uri>
+                    <fr:route>/gtop-000R/</fr:route>
+                    <fr:title text="Metric Topology">Metric Topology</fr:title>
+                    <fr:taxon>Notation</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>
+A <fr:link href="/gtop-0003/" title="Metric Space" uri="https://boatnotabot.com/gtop-0003/" display-uri="gtop-0003" type="local">metric space</fr:link> <fr:tex display="inline"><![CDATA[(X, d)]]></fr:tex> induces a <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topology</fr:link> <fr:tex display="inline"><![CDATA[\tau _d]]></fr:tex> on <fr:tex display="inline"><![CDATA[X]]></fr:tex> by declaring <fr:tex display="inline"><![CDATA[U \in  \tau _d]]></fr:tex> if and only if for every <fr:tex display="inline"><![CDATA[x \in  U]]></fr:tex> there exists <fr:tex display="inline"><![CDATA[\epsilon  > 0]]></fr:tex> such that the <fr:link href="/gtop-000S/" title="Open Ball" uri="https://boatnotabot.com/gtop-000S/" display-uri="gtop-000S" type="local">open ball</fr:link> <fr:tex display="inline"><![CDATA[B(x, \epsilon ) \subseteq  U]]></fr:tex>.
+</html:p>
+                    <html:p>
+That is, a metric <fr:tex display="inline"><![CDATA[d]]></fr:tex> induces a topology through the following chain:
+</html:p>
+                    <html:ol><html:li>The metric <fr:tex display="inline"><![CDATA[d]]></fr:tex> defines <fr:link href="/gtop-000S/" title="Open Ball" uri="https://boatnotabot.com/gtop-000S/" display-uri="gtop-000S" type="local">open balls</fr:link> <fr:tex display="inline"><![CDATA[B(x, \epsilon )]]></fr:tex>.</html:li>
+<html:li>Open balls generate <fr:link href="/gtop-0005/" title="Open Set" uri="https://boatnotabot.com/gtop-0005/" display-uri="gtop-0005" type="local">open sets</fr:link>: a set is open if and only if it is an arbitrary union of open balls.</html:li>
+<html:li>The collection of all open sets forms <fr:tex display="inline"><![CDATA[\tau _d]]></fr:tex>, a valid <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topology</fr:link>.</html:li></html:ol>
+                    <html:p>
+Every metric space is a topological space, but not every topological space arises from a metric. A topological space <fr:tex display="inline"><![CDATA[(X, \tau )]]></fr:tex> is called <html:strong>metrizable</html:strong> if there exists a metric <fr:tex display="inline"><![CDATA[d]]></fr:tex> on <fr:tex display="inline"><![CDATA[X]]></fr:tex> such that <fr:tex display="inline"><![CDATA[\tau  = \tau _d]]></fr:tex>.
+</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>7</fr:day>
+                </fr:date>
+                <fr:uri>https://boatnotabot.com/gtop-0004/</fr:uri>
+                <fr:display-uri>gtop-0004</fr:display-uri>
+                <fr:route>/gtop-0004/</fr:route>
+                <fr:title text="Euclidean Space">Euclidean Space</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+    The <html:strong>Euclidean space</html:strong> <fr:tex display="inline"><![CDATA[\mathbb {R}^n]]></fr:tex> is the <fr:link href="/gtop-0003/" title="Metric Space" uri="https://boatnotabot.com/gtop-0003/" display-uri="gtop-0003" type="local">metric space</fr:link> equipped with the Euclidean metric
+</html:p>
+                <fr:tex display="block"><![CDATA[d(x, y) = \lVert  x - y \rVert  = \sqrt {\sum _{i=1}^{n} (x_i - y_i)^2}]]></fr:tex>
+                <html:p>
+    The <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topology</fr:link> induced by this metric is called the <html:strong>standard topology</html:strong> on <fr:tex display="inline"><![CDATA[\mathbb {R}^n]]></fr:tex>. In this topology, the <fr:link href="/gtop-000S/" title="Open Ball" uri="https://boatnotabot.com/gtop-000S/" display-uri="gtop-000S" type="local">open ball</fr:link> centered at <fr:tex display="inline"><![CDATA[x]]></fr:tex> with radius <fr:tex display="inline"><![CDATA[\epsilon  > 0]]></fr:tex> is
+</html:p>
+                <fr:tex display="block"><![CDATA[B(x, \epsilon ) = \left \{ y \in  \mathbb {R}^n : \lVert  y - x \rVert  < \epsilon  \right \}]]></fr:tex>
+                <html:p>
+    This is a special case of a <fr:link href="/gtop-0003/" title="Metric Space" uri="https://boatnotabot.com/gtop-0003/" display-uri="gtop-0003" type="local">metric space</fr:link>, which in turn induces a <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topological space</fr:link>.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>7</fr:day>
+                </fr:date>
+                <fr:uri>https://boatnotabot.com/gtop-0005/</fr:uri>
+                <fr:display-uri>gtop-0005</fr:display-uri>
+                <fr:route>/gtop-0005/</fr:route>
+                <fr:title text="Open Set">Open Set</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+    Let <fr:tex display="inline"><![CDATA[(X, \tau )]]></fr:tex> be a <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topological space</fr:link>. A subset <fr:tex display="inline"><![CDATA[U \subseteq  X]]></fr:tex> is called <html:strong>open</html:strong> if <fr:tex display="inline"><![CDATA[U \in  \tau ]]></fr:tex>.
+</html:p>
+                <html:p>
+    In a <fr:link href="/gtop-0004/" title="Euclidean Space" uri="https://boatnotabot.com/gtop-0004/" display-uri="gtop-0004" type="local">Euclidean space</fr:link> <fr:tex display="inline"><![CDATA[\mathbb {R}^n]]></fr:tex>, a subset <fr:tex display="inline"><![CDATA[U \subseteq  \mathbb {R}^n]]></fr:tex> is <html:strong>open</html:strong> if for every <fr:tex display="inline"><![CDATA[x \in  U]]></fr:tex>, there exists <fr:tex display="inline"><![CDATA[\epsilon  > 0]]></fr:tex> such that <fr:tex display="inline"><![CDATA[B(x, \epsilon ) \subseteq  U]]></fr:tex>. More generally, in any <fr:link href="/gtop-0003/" title="Metric Space" uri="https://boatnotabot.com/gtop-0003/" display-uri="gtop-0003" type="local">metric space</fr:link> <fr:tex display="inline"><![CDATA[(X, d)]]></fr:tex>, a set is open if it is a union of <fr:link href="/gtop-000S/" title="Open Ball" uri="https://boatnotabot.com/gtop-000S/" display-uri="gtop-000S" type="local">open balls</fr:link>.
+</html:p>
+                <html:p>
+    The <fr:link href="/gtop-0004/" title="Euclidean Space" uri="https://boatnotabot.com/gtop-0004/" display-uri="gtop-0004" type="local">Euclidean</fr:link> definition is a special case where the topology is induced by the metric <fr:tex display="inline"><![CDATA[d(x, y) = \lVert  x - y \rVert ]]></fr:tex>.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>7</fr:day>
+                </fr:date>
+                <fr:uri>https://boatnotabot.com/gtop-0006/</fr:uri>
+                <fr:display-uri>gtop-0006</fr:display-uri>
+                <fr:route>/gtop-0006/</fr:route>
+                <fr:title text="Closed Set">Closed Set</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+    Let <fr:tex display="inline"><![CDATA[(X, \tau )]]></fr:tex> be a <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topological space</fr:link>. A subset <fr:tex display="inline"><![CDATA[C \subseteq  X]]></fr:tex> is called <html:strong>closed</html:strong> if its complement <fr:tex display="inline"><![CDATA[X \setminus  C]]></fr:tex> is <fr:link href="/gtop-0005/" title="Open Set" uri="https://boatnotabot.com/gtop-0005/" display-uri="gtop-0005" type="local">open</fr:link>, i.e. <fr:tex display="inline"><![CDATA[X \setminus  C \in  \tau ]]></fr:tex>.
+</html:p>
+                <html:p>
+    Equivalently, the collection of closed sets satisfies:
+</html:p>
+                <html:ol><html:li><fr:tex display="inline"><![CDATA[\varnothing ]]></fr:tex> and <fr:tex display="inline"><![CDATA[X]]></fr:tex> are closed.</html:li>
+    <html:li>Arbitrary intersections of closed sets are closed.</html:li>
+    <html:li>Finite unions of closed sets are closed.</html:li></html:ol>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>3</fr:month>
+                      <fr:day>11</fr:day>
+                    </fr:date>
+                    <fr:uri>https://boatnotabot.com/gtop-000U/</fr:uri>
+                    <fr:display-uri>gtop-000U</fr:display-uri>
+                    <fr:route>/gtop-000U/</fr:route>
+                    <fr:title text="Closed Set Characterization in Metric Spaces">Closed Set Characterization in Metric Spaces</fr:title>
+                    <fr:taxon>Theorem</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>
+Let <fr:tex display="inline"><![CDATA[(X, d)]]></fr:tex> be a <fr:link href="/gtop-0003/" title="Metric Space" uri="https://boatnotabot.com/gtop-0003/" display-uri="gtop-0003" type="local">metric space</fr:link> and <fr:tex display="inline"><![CDATA[C \subseteq  X]]></fr:tex>. Then <fr:tex display="inline"><![CDATA[C]]></fr:tex> is <fr:link href="/gtop-0006/" title="Closed Set" uri="https://boatnotabot.com/gtop-0006/" display-uri="gtop-0006" type="local">closed</fr:link> if and only if <fr:tex display="inline"><![CDATA[C]]></fr:tex> contains all its <fr:link href="/gtop-000T/" title="Limit Point" uri="https://boatnotabot.com/gtop-000T/" display-uri="gtop-000T" type="local">limit points</fr:link>.
+</html:p>
+                    <html:p>
+Equivalently, <fr:tex display="inline"><![CDATA[C]]></fr:tex> is closed if and only if for every convergent sequence <fr:tex display="inline"><![CDATA[\left \{ x_n \right \} \subseteq  C]]></fr:tex> with <fr:tex display="inline"><![CDATA[x_n \to  x]]></fr:tex>, we have <fr:tex display="inline"><![CDATA[x \in  C]]></fr:tex>.
+</html:p>
+                    <html:p>
+This characterization relies on the metric structure. In a general <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topological space</fr:link>, sequences may not suffice to detect all limit points.
+</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>8</fr:day>
+                </fr:date>
+                <fr:uri>https://boatnotabot.com/gtop-0007/</fr:uri>
+                <fr:display-uri>gtop-0007</fr:display-uri>
+                <fr:route>/gtop-0007/</fr:route>
+                <fr:title text="Open Cover">Open Cover</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+Let <fr:tex display="inline"><![CDATA[(X,\tau )]]></fr:tex> be a <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topological space</fr:link> and <fr:tex display="inline"><![CDATA[A \subseteq  X]]></fr:tex>. An <html:strong>open cover</html:strong> of <fr:tex display="inline"><![CDATA[A]]></fr:tex> is a collection <fr:tex display="inline"><![CDATA[\{U_\alpha \}_{\alpha  \in  I}]]></fr:tex> of <fr:link href="/gtop-0005/" title="Open Set" uri="https://boatnotabot.com/gtop-0005/" display-uri="gtop-0005" type="local">open sets</fr:link> such that <fr:tex display="inline"><![CDATA[A \subseteq  \bigcup _{\alpha  \in  I}U_{\alpha }]]></fr:tex>.
+</html:p>
+                <html:p>
+A <html:strong>subcover</html:strong> is a subcollection <fr:tex display="inline"><![CDATA[\{U_\alpha \}_{\alpha  \in  J}]]></fr:tex> with <fr:tex display="inline"><![CDATA[J \subseteq  I]]></fr:tex> that still covers <fr:tex display="inline"><![CDATA[A]]></fr:tex>. A subcover is called <html:strong>finite</html:strong> is <fr:tex display="inline"><![CDATA[J]]></fr:tex> is a finite set.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>7</fr:day>
+                </fr:date>
+                <fr:uri>https://boatnotabot.com/gtop-0008/</fr:uri>
+                <fr:display-uri>gtop-0008</fr:display-uri>
+                <fr:route>/gtop-0008/</fr:route>
+                <fr:title text="Compactness">Compactness</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+    A <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topological space</fr:link> <fr:tex display="inline"><![CDATA[(X, \tau )]]></fr:tex> is <html:strong>compact</html:strong> if every <fr:link href="/gtop-0007/" title="Open Cover" uri="https://boatnotabot.com/gtop-0007/" display-uri="gtop-0007" type="local">open cover</fr:link> of <fr:tex display="inline"><![CDATA[X]]></fr:tex> has a <fr:link href="/gtop-0007/" title="Open Cover" uri="https://boatnotabot.com/gtop-0007/" display-uri="gtop-0007" type="local">finite subcover</fr:link>.
+</html:p>
+                <html:p>
+    A subset <fr:tex display="inline"><![CDATA[K \subseteq  X]]></fr:tex> is compact if it is compact as a topological space with the subspace topology, or equivalently, if every open cover of <fr:tex display="inline"><![CDATA[K]]></fr:tex> by open sets in <fr:tex display="inline"><![CDATA[X]]></fr:tex> has a finite subcover.
+</html:p>
+                <html:p>
+    In <fr:link href="/gtop-0004/" title="Euclidean Space" uri="https://boatnotabot.com/gtop-0004/" display-uri="gtop-0004" type="local">Euclidean space</fr:link> <fr:tex display="inline"><![CDATA[\mathbb {R}^n]]></fr:tex>, the Heine-Borel theorem gives a concrete characterization: a subset <fr:tex display="inline"><![CDATA[K \subseteq  \mathbb {R}^n]]></fr:tex> is compact if and only if it is <fr:link href="/gtop-0006/" title="Closed Set" uri="https://boatnotabot.com/gtop-0006/" display-uri="gtop-0006" type="local">closed</fr:link> and bounded (i.e. <fr:tex display="inline"><![CDATA[K \subseteq  B(0, R)]]></fr:tex> for some <fr:tex display="inline"><![CDATA[R > 0]]></fr:tex>).
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>11</fr:day>
+                </fr:date>
+                <fr:uri>https://boatnotabot.com/gtop-000B/</fr:uri>
+                <fr:display-uri>gtop-000B</fr:display-uri>
+                <fr:route>/gtop-000B/</fr:route>
+                <fr:title text="Hausdorff Space">Hausdorff Space</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+A <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topological space</fr:link> is <html:strong>Hausdorff</html:strong> if for every pair of distinct points therein there exist a <fr:link href="/gtop-000F/" title="Neighborhood" uri="https://boatnotabot.com/gtop-000F/" display-uri="gtop-000F" type="local">neighbourhood</fr:link> of each point that are disjoint from each other.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>11</fr:day>
+                </fr:date>
+                <fr:uri>https://boatnotabot.com/gtop-000C/</fr:uri>
+                <fr:display-uri>gtop-000C</fr:display-uri>
+                <fr:route>/gtop-000C/</fr:route>
+                <fr:title text="Borel Measure">Borel Measure</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+A <html:strong>Borel measure</html:strong> on a <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topological space</fr:link> <fr:tex display="inline"><![CDATA[X]]></fr:tex> is a measure <fr:tex display="inline"><![CDATA[\mu  : \mathcal {B}(X) \to  [0, \infty ]]]></fr:tex> defined on the <fr:link href="/gtop-000K/" title="Borel \sigma -algebra" uri="https://boatnotabot.com/gtop-000K/" display-uri="gtop-000K" type="local">Borel <fr:tex display="inline"><![CDATA[\sigma ]]></fr:tex>-algebra</fr:link>.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>10</fr:day>
+                </fr:date>
+                <fr:uri>https://boatnotabot.com/gtop-000G/</fr:uri>
+                <fr:display-uri>gtop-000G</fr:display-uri>
+                <fr:route>/gtop-000G/</fr:route>
+                <fr:title text="Regularity">Regularity</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+Regularity properties describe how well a <fr:link href="/gtop-000C/" title="Borel Measure" uri="https://boatnotabot.com/gtop-000C/" display-uri="gtop-000C" type="local">Borel measure</fr:link> can be approximated by <fr:link href="/gtop-0005/" title="Open Set" uri="https://boatnotabot.com/gtop-0005/" display-uri="gtop-0005" type="local">open</fr:link> or <fr:link href="/gtop-0008/" title="Compactness" uri="https://boatnotabot.com/gtop-0008/" display-uri="gtop-0008" type="local">compact</fr:link> sets. A measure satisfying both <fr:link href="/gtop-000D/" title="Outer Regularity" uri="https://boatnotabot.com/gtop-000D/" display-uri="gtop-000D" type="local">outer</fr:link> and <fr:link href="/gtop-000E/" title="Inner Regularity" uri="https://boatnotabot.com/gtop-000E/" display-uri="gtop-000E" type="local">inner regularity</fr:link> is called <html:strong>regular</html:strong>.
+</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>3</fr:month>
+                      <fr:day>10</fr:day>
+                    </fr:date>
+                    <fr:uri>https://boatnotabot.com/gtop-000D/</fr:uri>
+                    <fr:display-uri>gtop-000D</fr:display-uri>
+                    <fr:route>/gtop-000D/</fr:route>
+                    <fr:title text="Outer Regularity">Outer Regularity</fr:title>
+                    <fr:taxon>Definition</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>
+A <fr:link href="/gtop-000C/" title="Borel Measure" uri="https://boatnotabot.com/gtop-000C/" display-uri="gtop-000C" type="local">Borel measure</fr:link> <fr:tex display="inline"><![CDATA[\mu ]]></fr:tex> on a <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topological space</fr:link> <fr:tex display="inline"><![CDATA[X]]></fr:tex> is <html:strong>outer regular</html:strong> on a Borel set <fr:tex display="inline"><![CDATA[E]]></fr:tex> if
+<fr:tex display="block"><![CDATA[
+\mu (E) = \inf  \left \{  \mu (W) : E \subseteq  W, \; W \text { is open}  \right \}
+]]></fr:tex>
+where <fr:tex display="inline"><![CDATA[W]]></fr:tex> is an <fr:link href="/gtop-0005/" title="Open Set" uri="https://boatnotabot.com/gtop-0005/" display-uri="gtop-0005" type="local">open set</fr:link>.
+</html:p>
+                    <html:p>
+That is, the measure of <fr:tex display="inline"><![CDATA[E]]></fr:tex> can be approximated from above by the measures of <fr:link href="/gtop-0005/" title="Open Set" uri="https://boatnotabot.com/gtop-0005/" display-uri="gtop-0005" type="local">open sets</fr:link> containing <fr:tex display="inline"><![CDATA[E]]></fr:tex>.
+</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>3</fr:month>
+                      <fr:day>10</fr:day>
+                    </fr:date>
+                    <fr:uri>https://boatnotabot.com/gtop-000E/</fr:uri>
+                    <fr:display-uri>gtop-000E</fr:display-uri>
+                    <fr:route>/gtop-000E/</fr:route>
+                    <fr:title text="Inner Regularity">Inner Regularity</fr:title>
+                    <fr:taxon>Definition</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>
+A <fr:link href="/gtop-000C/" title="Borel Measure" uri="https://boatnotabot.com/gtop-000C/" display-uri="gtop-000C" type="local">Borel measure</fr:link> <fr:tex display="inline"><![CDATA[\mu ]]></fr:tex> on a <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topological space</fr:link> <fr:tex display="inline"><![CDATA[X]]></fr:tex> is <html:strong>inner regular</html:strong> on a <fr:link href="/gtop-000L/" title="Borel Set" uri="https://boatnotabot.com/gtop-000L/" display-uri="gtop-000L" type="local">Borel set</fr:link> <fr:tex display="inline"><![CDATA[E]]></fr:tex> if
+<fr:tex display="block"><![CDATA[
+\mu (E) = \sup  \left \{  \mu (M) : M \subseteq  E, \; M \text { is compact}  \right \}
+]]></fr:tex>
+where <fr:tex display="inline"><![CDATA[M]]></fr:tex> is a <fr:link href="/gtop-0008/" title="Compactness" uri="https://boatnotabot.com/gtop-0008/" display-uri="gtop-0008" type="local">compact</fr:link> subset.
+</html:p>
+                    <html:p>
+That is, the measure of <fr:tex display="inline"><![CDATA[E]]></fr:tex> can be approximated from below by the measures of <fr:link href="/gtop-0008/" title="Compactness" uri="https://boatnotabot.com/gtop-0008/" display-uri="gtop-0008" type="local">compact</fr:link> subsets of <fr:tex display="inline"><![CDATA[E]]></fr:tex>.
+</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>10</fr:day>
+                </fr:date>
+                <fr:uri>https://boatnotabot.com/gtop-000M/</fr:uri>
+                <fr:display-uri>gtop-000M</fr:display-uri>
+                <fr:route>/gtop-000M/</fr:route>
+                <fr:title text="\sigma -algebra"><fr:tex display="inline"><![CDATA[\sigma ]]></fr:tex>-algebra</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+A <html:strong><fr:tex display="inline"><![CDATA[\sigma ]]></fr:tex>-algebra</html:strong> on a set <fr:tex display="inline"><![CDATA[X]]></fr:tex> is a collection <fr:tex display="inline"><![CDATA[\mathcal {F} \subseteq  \mathcal {P}(X)]]></fr:tex> of subsets of <fr:tex display="inline"><![CDATA[X]]></fr:tex> satisfying:
+</html:p>
+                <html:ol><html:li><fr:tex display="inline"><![CDATA[X \in  \mathcal {F}]]></fr:tex>.</html:li>
+<html:li>If <fr:tex display="inline"><![CDATA[A \in  \mathcal {F}]]></fr:tex>, then <fr:tex display="inline"><![CDATA[X \setminus  A \in  \mathcal {F}]]></fr:tex> (closed under complements).</html:li>
+<html:li>If <fr:tex display="inline"><![CDATA[\left \{ A_n \right \}_{n=1}^{\infty } \subseteq  \mathcal {F}]]></fr:tex>, then <fr:tex display="inline"><![CDATA[\bigcup _{n=1}^{\infty } A_n \in  \mathcal {F}]]></fr:tex> (closed under countable unions).</html:li></html:ol>
+                <html:p>
+The pair <fr:tex display="inline"><![CDATA[(X, \mathcal {F})]]></fr:tex> is called a <html:strong>measurable space</html:strong>, and the members of <fr:tex display="inline"><![CDATA[\mathcal {F}]]></fr:tex> are called <html:strong>measurable sets</html:strong>.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
               <fr:month>2</fr:month>
               <fr:day>22</fr:day>
             </fr:date>
@@ -75,13 +618,54 @@
           </fr:frontmatter>
           <fr:mainmatter>
             <html:p>
-    This note serves as a supplement to the other notes which are related to mathmetical analysis and optimization. At the moment, I am not going to write a comprehensive note for <fr:link href="/calc-0001/" title="Calculus" uri="https://boatnotabot.com/calc-0001/" display-uri="calc-0001" type="local">calculus</fr:link>, but I will write some notes for <fr:link href="/opt-6001/" title="Optimal Control" uri="https://boatnotabot.com/opt-6001/" display-uri="opt-6001" type="local">optimal control</fr:link> which is a direct application of <fr:link href="/calc-0002/" title="Calculus of Variations" uri="https://boatnotabot.com/calc-0002/" display-uri="calc-0002" type="local">calculus of variations</fr:link>. Therefore, I tend to directly put the contents below since they are not likely to form a complete note for calculus at this stage.
+    This note serves as a supplement to the other notes which are related to mathematical analysis and optimization. At the moment, I am not going to write a comprehensive note for calculus, but I will write some notes for <fr:link href="/opt-6001/" title="Optimal Control" uri="https://boatnotabot.com/opt-6001/" display-uri="opt-6001" type="local">optimal control</fr:link> which is a direct application of <fr:link href="/calc-0002/" title="Calculus of Variations" uri="https://boatnotabot.com/calc-0002/" display-uri="calc-0002" type="local">calculus of variations</fr:link>.
 </html:p>
-            <html:ul>
-              <html:li>
-                <fr:link href="/calc-0002/" title="Calculus of Variations" uri="https://boatnotabot.com/calc-0002/" display-uri="calc-0002" type="local">Calculus of Variations</fr:link>
-              </html:li>
-            </html:ul>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>22</fr:day>
+                </fr:date>
+                <fr:uri>https://boatnotabot.com/calc-0002/</fr:uri>
+                <fr:display-uri>calc-0002</fr:display-uri>
+                <fr:route>/calc-0002/</fr:route>
+                <fr:title text="Calculus of Variations">Calculus of Variations</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+  Calculus of variations is concerned with variations of functionals, which are small changes in the functional's value due to small changes in the function that is its argument. The <fr:link href="/calc-0003/" title="Functional Derivative" uri="https://boatnotabot.com/calc-0003/" display-uri="calc-0003" type="local">first variation</fr:link> is defined as the linear part of the change in the functional, and the second variation is defined as the quadratic part.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>22</fr:day>
+                </fr:date>
+                <fr:uri>https://boatnotabot.com/calc-0003/</fr:uri>
+                <fr:display-uri>calc-0003</fr:display-uri>
+                <fr:route>/calc-0003/</fr:route>
+                <fr:title text="Functional Derivative">Functional Derivative</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+    In the <fr:link href="/calc-0002/" title="Calculus of Variations" uri="https://boatnotabot.com/calc-0002/" display-uri="calc-0002" type="local">calculus of variations</fr:link>, the functional derivative (or variational derivative) relates a change in a functional (a functional in this sense is a function that acts on functions) to a change in a function on which the functional depends.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
           </fr:mainmatter>
         </fr:tree>
         <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
@@ -103,7 +687,7 @@
           </fr:frontmatter>
           <fr:mainmatter>
             <html:p>
-    This is a note for optimal control based on the course ECE6553-Optimal Control at Gatech 2026 Spring.
+    Notes on optimal control based on the course ECE6553-Optimal Control at Gatech 2026 Spring.
 </html:p>
             <fr:tree show-metadata="false">
               <fr:frontmatter>
@@ -117,15 +701,57 @@
                   <fr:month>2</fr:month>
                   <fr:day>21</fr:day>
                 </fr:date>
-                <fr:uri>https://boatnotabot.com/opt-6002/</fr:uri>
-                <fr:display-uri>opt-6002</fr:display-uri>
-                <fr:route>/opt-6002/</fr:route>
-                <fr:title text="Bolza Problem">Bolza Problem</fr:title>
+                <fr:title text="Problem Formulation">Problem Formulation</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
-                <html:p>
-    Bolza problem is a fundamental formulation in the calculus of variations and optimal control that minimizes a cost functional consisting of both an integral term (running cost) and a terminal cost <fr:tex display="block"><![CDATA[J := \int _0^{t_f} L \big (\mathbf {x}(t), \mathbf {u}(t)\big ) dt + \Phi  \left ( \mathbf {x}(t_f) \right )]]></fr:tex> where state <fr:tex display="inline"><![CDATA[\mathbf {x}(t)\in  \mathbb {R}^n]]></fr:tex>, control <fr:tex display="inline"><![CDATA[\mathbf {u}(t)\in  \mathbb {R}^k]]></fr:tex>, <fr:tex display="inline"><![CDATA[L:\mathbb {R}^n \times  \mathbb {R}^k \to  \mathbb {R}]]></fr:tex> is the running cost and <fr:tex display="inline"><![CDATA[\Phi :\mathbb {R}^n \to  \mathbb {R}]]></fr:tex> is the terminal cost. The goal is to find the optimal control <fr:tex display="inline"><![CDATA[\mathbf {u}^*(t)\in  \mathbb {R}^k]]></fr:tex> that minimizes this cost functional subject to the system dynamics and boundary conditions.
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>21</fr:day>
+                    </fr:date>
+                    <fr:uri>https://boatnotabot.com/opt-6002/</fr:uri>
+                    <fr:display-uri>opt-6002</fr:display-uri>
+                    <fr:route>/opt-6002/</fr:route>
+                    <fr:title text="Bolza Problem">Bolza Problem</fr:title>
+                    <fr:taxon>Definition</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>
+    Bolza problem is a fundamental formulation in the calculus of variations and optimal control that minimizes a cost functional consisting of both an integral term (running cost) and a terminal cost. It is described with a system dynamic funcation and a cost function. <fr:tex display="block"><![CDATA[\dot {\mathbf {x}} = f(\mathbf {x}, \mathbf {u}),\quad  \mathbf {x} (0) = x_0]]></fr:tex><fr:tex display="block"><![CDATA[J := \int _0^{t_f} L \big (\mathbf {x}(t), \mathbf {u}(t)\big ) dt + \Phi  \left ( \mathbf {x}(t_f) \right )]]></fr:tex> where state <fr:tex display="inline"><![CDATA[\mathbf {x}(t)\in  \mathbb {R}^n]]></fr:tex>, control <fr:tex display="inline"><![CDATA[\mathbf {u}(t)\in  \mathbb {R}^k]]></fr:tex>, <fr:tex display="inline"><![CDATA[L:\mathbb {R}^n \times  \mathbb {R}^k \to  \mathbb {R}]]></fr:tex> is the running cost and <fr:tex display="inline"><![CDATA[\Phi :\mathbb {R}^n \to  \mathbb {R}]]></fr:tex> is the terminal cost. The goal is to find the optimal control <fr:tex display="inline"><![CDATA[\mathbf {u}^*(t)\in  \mathbb {R}^k]]></fr:tex> that minimizes this cost functional subject to the system dynamics and boundary conditions. With input constraint, we minimize <fr:tex display="inline"><![CDATA[J]]></fr:tex> subject to constraints <fr:tex display="inline"><![CDATA[\mathbf {u}(t) \in  U_t \subseteq  \mathbb {R} ^k]]></fr:tex> where <fr:tex display="inline"><![CDATA[U_t]]></fr:tex> is the <fr:link href="/opt-6006/" title="Admissible control" uri="https://boatnotabot.com/opt-6006/" display-uri="opt-6006" type="local">set of admissible control</fr:link> at time <fr:tex display="inline"><![CDATA[t]]></fr:tex> and is guaranteed to be <fr:link href="/gtop-0008/" title="Compactness" uri="https://boatnotabot.com/gtop-0008/" display-uri="gtop-0008" type="local">compact</fr:link> and convex.
 </html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>3</fr:month>
+                      <fr:day>7</fr:day>
+                    </fr:date>
+                    <fr:uri>https://boatnotabot.com/opt-6006/</fr:uri>
+                    <fr:display-uri>opt-6006</fr:display-uri>
+                    <fr:route>/opt-6006/</fr:route>
+                    <fr:title text="Admissible control">Admissible control</fr:title>
+                    <fr:taxon>Definition</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>
+We say that a control <fr:tex display="inline"><![CDATA[\mathbf {u}]]></fr:tex> is admissible if <fr:tex display="inline"><![CDATA[\forall  t \in  [0, t_f],\ \mathbf {u}(t) \in  U_t]]></fr:tex> where <fr:tex display="inline"><![CDATA[U_t]]></fr:tex> is the control constraint set.
+</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
               </fr:mainmatter>
             </fr:tree>
             <fr:tree show-metadata="false">
@@ -138,28 +764,244 @@
                 <fr:date>
                   <fr:year>2026</fr:year>
                   <fr:month>2</fr:month>
-                  <fr:day>22</fr:day>
+                  <fr:day>21</fr:day>
                 </fr:date>
-                <fr:uri>https://boatnotabot.com/opt-6003/</fr:uri>
-                <fr:display-uri>opt-6003</fr:display-uri>
-                <fr:route>/opt-6003/</fr:route>
-                <fr:title text="First-order Variation of the Bolza Functional">First-order Variation of the Bolza Functional</fr:title>
+                <fr:title text="Necessary Conditions">Necessary Conditions</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
-                <html:p>
-    To find the optimal control <fr:tex display="inline"><![CDATA[\mathbf {u}]]></fr:tex>, we consider the first-order variation of the functional <fr:tex display="inline"><![CDATA[J]]></fr:tex> with respect to <fr:tex display="inline"><![CDATA[\mathbf {u}]]></fr:tex>. By augmenting the cost functional with system dynamics <fr:tex display="inline"><![CDATA[\dot  \mathbf {x} = f(\mathbf {x}, \mathbf {u})]]></fr:tex> using the costate <fr:tex display="inline"><![CDATA[\mathbf {p}]]></fr:tex>, we define:
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>22</fr:day>
+                    </fr:date>
+                    <fr:uri>https://boatnotabot.com/opt-6003/</fr:uri>
+                    <fr:display-uri>opt-6003</fr:display-uri>
+                    <fr:route>/opt-6003/</fr:route>
+                    <fr:title text="First-order Variation of the Bolza Functional">First-order Variation of the Bolza Functional</fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>
+    To find the optimal control <fr:tex display="inline"><![CDATA[\mathbf {u}]]></fr:tex>, we consider the first-order variation of the functional <fr:tex display="inline"><![CDATA[J]]></fr:tex> with respect to <fr:tex display="inline"><![CDATA[\mathbf {u}]]></fr:tex>. By augmenting the cost functional with system dynamics <fr:tex display="inline"><![CDATA[\dot {\mathbf {x}} = f(\mathbf {x}, \mathbf {u})]]></fr:tex> using the <fr:link href="/opt-6009/" title="Costate Equation" uri="https://boatnotabot.com/opt-6009/" display-uri="opt-6009" type="local">costate</fr:link> <fr:tex display="inline"><![CDATA[\mathbf {p}]]></fr:tex>, we define:
 </html:p>
-                <fr:tex display="block"><![CDATA[
+                    <fr:tex display="block"><![CDATA[
     \frac {\partial  J}{\partial  \mathbf {u}} = \left ( \frac {\partial  f}{\partial  \mathbf {u}} \right )^\intercal  \mathbf {p} + \left ( \frac {\partial  L}{\partial  \mathbf {u}} \right )^\intercal 
 ]]></fr:tex>
-                <html:p>
-    We obtain the stationarity condition <fr:tex display="inline"><![CDATA[\frac {\partial  J}{\partial  \mathbf {u}} \equiv  0]]></fr:tex>.
+                    <html:p>
+    We obtain the stationarity condition <fr:tex display="inline"><![CDATA[\frac {\partial  J}{\partial  \mathbf {u}} \equiv  0]]></fr:tex>. See the <fr:link href="/opt-6010/" title="Derivation of the First-order Variation" uri="https://boatnotabot.com/opt-6010/" display-uri="opt-6010" type="local">derivation</fr:link> for how this expression arises from first principles.
 </html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>2</fr:month>
+                      <fr:day>22</fr:day>
+                    </fr:date>
+                    <fr:uri>https://boatnotabot.com/opt-6004/</fr:uri>
+                    <fr:display-uri>opt-6004</fr:display-uri>
+                    <fr:route>/opt-6004/</fr:route>
+                    <fr:title text="Optimality Conditions for Bolza Problem">Optimality Conditions for Bolza Problem</fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>
+    The necessary conditions for the optimality of <fr:tex display="inline"><![CDATA[\mathbf {u}(t)]]></fr:tex> are given by the following set of equations:
+</html:p>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>3</fr:month>
+                          <fr:day>8</fr:day>
+                        </fr:date>
+                        <fr:uri>https://boatnotabot.com/opt-6011/</fr:uri>
+                        <fr:display-uri>opt-6011</fr:display-uri>
+                        <fr:route>/opt-6011/</fr:route>
+                        <fr:title text="State Equation">State Equation</fr:title>
+                        <fr:taxon>Definition</fr:taxon>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:p>
+                          <fr:tex display="block"><![CDATA[\dot {\mathbf {x}}=f(\mathbf {x}, \mathbf {u}),\quad  \mathbf {x}(0)=x_0]]></fr:tex>
+                        </html:p>
+                      </fr:mainmatter>
+                    </fr:tree>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>3</fr:month>
+                          <fr:day>7</fr:day>
+                        </fr:date>
+                        <fr:uri>https://boatnotabot.com/opt-6009/</fr:uri>
+                        <fr:display-uri>opt-6009</fr:display-uri>
+                        <fr:route>/opt-6009/</fr:route>
+                        <fr:title text="Costate Equation">Costate Equation</fr:title>
+                        <fr:taxon>Definition</fr:taxon>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <fr:tex display="block"><![CDATA[\dot {\mathbf {p}} = -\left ( \frac {\partial  f}{\partial  \mathbf {x}} \right )^\intercal  \mathbf {p} - \left ( \frac {\partial  L}{\partial  \mathbf {x}} \right )^\intercal , \quad  \mathbf {p}(t_f) = \nabla  \Phi \left ( \mathbf {x}(t_f) \right )]]></fr:tex>
+                      </fr:mainmatter>
+                    </fr:tree>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2026</fr:year>
+                          <fr:month>3</fr:month>
+                          <fr:day>8</fr:day>
+                        </fr:date>
+                        <fr:uri>https://boatnotabot.com/opt-6012/</fr:uri>
+                        <fr:display-uri>opt-6012</fr:display-uri>
+                        <fr:route>/opt-6012/</fr:route>
+                        <fr:title text="Stationarity Condition">Stationarity Condition</fr:title>
+                        <fr:taxon>Definition</fr:taxon>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:p>
+                          <fr:tex display="block"><![CDATA[\left (\frac {\partial  f}{\partial  \mathbf {u}}\right )^\intercal  \mathbf {p} + \left (\frac {\partial  L}{\partial  \mathbf {u}}\right )^\intercal  \equiv  0]]></fr:tex>
+                        </html:p>
+                      </fr:mainmatter>
+                    </fr:tree>
+                  </fr:mainmatter>
+                </fr:tree>
               </fr:mainmatter>
             </fr:tree>
-            <html:p>
-    The content is still being organized and will be updated soon.
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>21</fr:day>
+                </fr:date>
+                <fr:title text="Hamiltonian Methods">Hamiltonian Methods</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>3</fr:month>
+                      <fr:day>7</fr:day>
+                    </fr:date>
+                    <fr:uri>https://boatnotabot.com/opt-6005/</fr:uri>
+                    <fr:display-uri>opt-6005</fr:display-uri>
+                    <fr:route>/opt-6005/</fr:route>
+                    <fr:title text="Hamiltonian function">Hamiltonian function</fr:title>
+                    <fr:taxon>Definition</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>
+Define the Hamiltonian function at an <fr:link href="/opt-6006/" title="Admissible control" uri="https://boatnotabot.com/opt-6006/" display-uri="opt-6006" type="local">admissible control</fr:link> <fr:tex display="inline"><![CDATA[\mathbf {u}]]></fr:tex> by <fr:tex display="block"><![CDATA[H(\mathbf {x}, \mathbf {u}, \mathbf {p}) = {\mathbf {p}}^ \intercal  f(\mathbf {x},\mathbf {u}) + L(\mathbf {x}, \mathbf {u})]]></fr:tex></html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>3</fr:month>
+                      <fr:day>7</fr:day>
+                    </fr:date>
+                    <fr:uri>https://boatnotabot.com/opt-6008/</fr:uri>
+                    <fr:display-uri>opt-6008</fr:display-uri>
+                    <fr:route>/opt-6008/</fr:route>
+                    <fr:title text="Pontryagin's Maximum Principle">Pontryagin's Maximum Principle</fr:title>
+                    <fr:taxon>Theorem</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>
+Given a control signal <fr:tex display="inline"><![CDATA[\mathbf {u}]]></fr:tex>, denote by <fr:tex display="inline"><![CDATA[\mathbf {x}_u]]></fr:tex> and <fr:tex display="inline"><![CDATA[\mathbf {p}_u]]></fr:tex> the corresponding state and costate trajectories.</html:p>
+                    <html:p>
+Suppose that <fr:tex display="inline"><![CDATA[\mathbf {u}]]></fr:tex> is an admissible optimal control. Then <fr:tex display="inline"><![CDATA[\forall  t \in  [0, t_f],\forall  \mathbf {v} \in  U_t]]></fr:tex>, <fr:tex display="block"><![CDATA[H\big (\mathbf {x}_u(t),\mathbf {u}(t),\mathbf {p}_u(t)\big ) \leq  H\big (\mathbf {x}_u(t), \mathbf {v}, \mathbf {p}_u(t)\big )]]></fr:tex></html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>2</fr:month>
+                  <fr:day>21</fr:day>
+                </fr:date>
+                <fr:title text="Relaxed Control">Relaxed Control</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2026</fr:year>
+                      <fr:month>3</fr:month>
+                      <fr:day>10</fr:day>
+                    </fr:date>
+                    <fr:uri>https://boatnotabot.com/opt-6013/</fr:uri>
+                    <fr:display-uri>opt-6013</fr:display-uri>
+                    <fr:route>/opt-6013/</fr:route>
+                    <fr:title text="Relaxed Control">Relaxed Control</fr:title>
+                    <fr:taxon>Definition</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>
+Consider the <fr:link href="/opt-6002/" title="Bolza Problem" uri="https://boatnotabot.com/opt-6002/" display-uri="opt-6002" type="local">bolza problem</fr:link> subject to <fr:tex display="inline"><![CDATA[\dot {\mathbf {x}} (t) = f(t,\mathbf {x} (t), \mathbf {u} (t)),\ \mathbf {u} (t) \in  U]]></fr:tex>, where <fr:tex display="inline"><![CDATA[U]]></fr:tex> is a <fr:link href="/gtop-0008/" title="Compactness" uri="https://boatnotabot.com/gtop-0008/" display-uri="gtop-0008" type="local">compact</fr:link> <fr:link href="/gtop-0009/" title="Metric Space" uri="https://boatnotabot.com/gtop-0009/" display-uri="gtop-0009" type="local">metric space</fr:link>.
 </html:p>
+                    <html:p>
+Relaxed controls replace the set <fr:tex display="inline"><![CDATA[U]]></fr:tex> by the space of <fr:link href="/gtop-000N/" title="Radon Probability Measure" uri="https://boatnotabot.com/gtop-000N/" display-uri="gtop-000N" type="local">Radon probability measures</fr:link> on <fr:tex display="inline"><![CDATA[U]]></fr:tex>.
+</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+              </fr:mainmatter>
+            </fr:tree>
           </fr:mainmatter>
         </fr:tree>
         <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">

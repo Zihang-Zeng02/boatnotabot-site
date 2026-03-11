@@ -31,7 +31,7 @@ window.addEventListener("load", (event) => {
   const selector = link.getAttribute('data-target')
   const tree = document.querySelector(selector)
   openAllDetailsAbove(tree)
-  window.location.hash = selector.slice(1)
+  window.location = selector
  }
 
 
@@ -47,10 +47,10 @@ window.addEventListener("load", (event) => {
   .then((res) => res.json())
   .then((trees) => {
    const items = []
-
+ 
    const editIcon = '<svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20"><path d="M480-120v-71l216-216 71 71-216 216h-71ZM120-330v-60h300v60H120Zm690-49-71-71 29-29q8-8 21-8t21 8l29 29q8 8 8 21t-8 21l-29 29ZM120-495v-60h470v60H120Zm0-165v-60h470v60H120Z"/></svg>'
    const bookmarkIcon = '<svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20"><path d="M120-40v-700q0-24 18-42t42-18h480q24 0 42.5 18t18.5 42v700L420-167 120-40Zm60-91 240-103 240 103v-609H180v609Zm600 1v-730H233v-60h547q24 0 42 18t18 42v730h-60ZM180-740h480-480Z"/></svg>'
-
+ 
    if (window.sourcePath) {
     items.push({
      id: 'edit',
@@ -63,11 +63,11 @@ window.addEventListener("load", (event) => {
      }
     })
    }
-
+ 
    const isTopTree = (item) => {
     return item.tags ? item.tags.includes('top') : false
    }
-
+ 
    const addItemToSection = (item, section, icon) => {
     const title =
      item.taxon
@@ -84,13 +84,13 @@ window.addEventListener("load", (event) => {
      }
     })
    }
-
+ 
    const [top, rest] = partition(trees, isTopTree)
    top.forEach((item) => addItemToSection(item, "Top Trees", bookmarkIcon))
    rest.forEach((item) => addItemToSection(item, "All Trees", null))
-
+ 
    ninja.data = items
-  });
+  }); 
 });
 
 

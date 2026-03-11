@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>3</fr:month>
+      <fr:day>11</fr:day>
+    </fr:date>
+    <fr:uri>https://boatnotabot.com/gtop-000I/</fr:uri>
+    <fr:display-uri>gtop-000I</fr:display-uri>
+    <fr:route>/gtop-000I/</fr:route>
+    <fr:title text="Interior Point">Interior Point</fr:title>
+    <fr:taxon>Definition</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>
+If <fr:tex display="inline"><![CDATA[S]]></fr:tex> is a subset of a <fr:link href="/gtop-0004/" title="Euclidean Space" uri="https://boatnotabot.com/gtop-0004/" display-uri="gtop-0004" type="local">Euclidean space</fr:link>, then <fr:tex display="inline"><![CDATA[x]]></fr:tex> is an <html:strong>interior point</html:strong> of <fr:tex display="inline"><![CDATA[S]]></fr:tex> if there exists an <fr:link href="/gtop-000S/" title="Open Ball" uri="https://boatnotabot.com/gtop-000S/" display-uri="gtop-000S" type="local">open ball</fr:link> centered at <fr:tex display="inline"><![CDATA[x]]></fr:tex> which is completely contained in <fr:tex display="inline"><![CDATA[S]]></fr:tex>.
+</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>11</fr:day>
+            </fr:date>
+            <fr:uri>https://boatnotabot.com/gtop-000H/</fr:uri>
+            <fr:display-uri>gtop-000H</fr:display-uri>
+            <fr:route>/gtop-000H/</fr:route>
+            <fr:title text="Interior">Interior</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>
+The <html:strong>interior</html:strong> of a subset <fr:tex display="inline"><![CDATA[S]]></fr:tex> of a <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topological space</fr:link> <fr:tex display="inline"><![CDATA[X]]></fr:tex> is the union of all subsets of <fr:tex display="inline"><![CDATA[S]]></fr:tex> that are open in <fr:tex display="inline"><![CDATA[X]]></fr:tex>.
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>11</fr:day>
+                </fr:date>
+                <fr:uri>https://boatnotabot.com/gtop-000I/</fr:uri>
+                <fr:display-uri>gtop-000I</fr:display-uri>
+                <fr:route>/gtop-000I/</fr:route>
+                <fr:title text="Interior Point">Interior Point</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+If <fr:tex display="inline"><![CDATA[S]]></fr:tex> is a subset of a <fr:link href="/gtop-0004/" title="Euclidean Space" uri="https://boatnotabot.com/gtop-0004/" display-uri="gtop-0004" type="local">Euclidean space</fr:link>, then <fr:tex display="inline"><![CDATA[x]]></fr:tex> is an <html:strong>interior point</html:strong> of <fr:tex display="inline"><![CDATA[S]]></fr:tex> if there exists an <fr:link href="/gtop-000S/" title="Open Ball" uri="https://boatnotabot.com/gtop-000S/" display-uri="gtop-000S" type="local">open ball</fr:link> centered at <fr:tex display="inline"><![CDATA[x]]></fr:tex> which is completely contained in <fr:tex display="inline"><![CDATA[S]]></fr:tex>.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>11</fr:day>
+                </fr:date>
+                <fr:uri>https://boatnotabot.com/gtop-000J/</fr:uri>
+                <fr:display-uri>gtop-000J</fr:display-uri>
+                <fr:route>/gtop-000J/</fr:route>
+                <fr:title text="Interior of a Set">Interior of a Set</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+The <html:strong>interior</html:strong> of a subset <fr:tex display="inline"><![CDATA[S]]></fr:tex> of a topological space <fr:tex display="inline"><![CDATA[X]]></fr:tex>, denoted by <fr:tex display="inline"><![CDATA[\operatorname {int}_X\, S]]></fr:tex> or <fr:tex display="inline"><![CDATA[\operatorname {int}\, S]]></fr:tex> or <fr:tex display="inline"><![CDATA[S^{\circ }]]></fr:tex>, can be defined in any of the following equivalent ways:
+</html:p>
+                <html:ol><html:li><fr:tex display="inline"><![CDATA[\operatorname {int}\, S]]></fr:tex> is the largest open subset of <fr:tex display="inline"><![CDATA[X]]></fr:tex> contained in <fr:tex display="inline"><![CDATA[S]]></fr:tex>.</html:li>
+<html:li><fr:tex display="inline"><![CDATA[\operatorname {int}\, S]]></fr:tex> is the union of all open sets of <fr:tex display="inline"><![CDATA[X]]></fr:tex> contained in <fr:tex display="inline"><![CDATA[S]]></fr:tex>.</html:li>
+<html:li><fr:tex display="inline"><![CDATA[\operatorname {int}\, S]]></fr:tex> is the set of all <fr:link href="/gtop-000H/" title="Interior" uri="https://boatnotabot.com/gtop-000H/" display-uri="gtop-000H" type="local">interior points</fr:link> of <fr:tex display="inline"><![CDATA[S]]></fr:tex>.</html:li></html:ol>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>11</fr:day>
+            </fr:date>
+            <fr:uri>https://boatnotabot.com/gtop-000S/</fr:uri>
+            <fr:display-uri>gtop-000S</fr:display-uri>
+            <fr:route>/gtop-000S/</fr:route>
+            <fr:title text="Open Ball">Open Ball</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>
+Let <fr:tex display="inline"><![CDATA[(X, d)]]></fr:tex> be a <fr:link href="/gtop-0003/" title="Metric Space" uri="https://boatnotabot.com/gtop-0003/" display-uri="gtop-0003" type="local">metric space</fr:link>. The <html:strong>open ball</html:strong> centered at <fr:tex display="inline"><![CDATA[x \in  X]]></fr:tex> with radius <fr:tex display="inline"><![CDATA[\epsilon  > 0]]></fr:tex> is
+</html:p>
+            <fr:tex display="block"><![CDATA[B(x, \epsilon ) = \left \{ y \in  X : d(x, y) < \epsilon  \right \}]]></fr:tex>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>7</fr:day>
+            </fr:date>
+            <fr:uri>https://boatnotabot.com/gtop-0004/</fr:uri>
+            <fr:display-uri>gtop-0004</fr:display-uri>
+            <fr:route>/gtop-0004/</fr:route>
+            <fr:title text="Euclidean Space">Euclidean Space</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>
+    The <html:strong>Euclidean space</html:strong> <fr:tex display="inline"><![CDATA[\mathbb {R}^n]]></fr:tex> is the <fr:link href="/gtop-0003/" title="Metric Space" uri="https://boatnotabot.com/gtop-0003/" display-uri="gtop-0003" type="local">metric space</fr:link> equipped with the Euclidean metric
+</html:p>
+            <fr:tex display="block"><![CDATA[d(x, y) = \lVert  x - y \rVert  = \sqrt {\sum _{i=1}^{n} (x_i - y_i)^2}]]></fr:tex>
+            <html:p>
+    The <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topology</fr:link> induced by this metric is called the <html:strong>standard topology</html:strong> on <fr:tex display="inline"><![CDATA[\mathbb {R}^n]]></fr:tex>. In this topology, the <fr:link href="/gtop-000S/" title="Open Ball" uri="https://boatnotabot.com/gtop-000S/" display-uri="gtop-000S" type="local">open ball</fr:link> centered at <fr:tex display="inline"><![CDATA[x]]></fr:tex> with radius <fr:tex display="inline"><![CDATA[\epsilon  > 0]]></fr:tex> is
+</html:p>
+            <fr:tex display="block"><![CDATA[B(x, \epsilon ) = \left \{ y \in  \mathbb {R}^n : \lVert  y - x \rVert  < \epsilon  \right \}]]></fr:tex>
+            <html:p>
+    This is a special case of a <fr:link href="/gtop-0003/" title="Metric Space" uri="https://boatnotabot.com/gtop-0003/" display-uri="gtop-0003" type="local">metric space</fr:link>, which in turn induces a <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topological space</fr:link>.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>
