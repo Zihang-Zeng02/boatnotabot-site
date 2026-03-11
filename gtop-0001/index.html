@@ -1,6 +1,362 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="refresh" content="0;url=/gtop-0001/index.xml" />
-  </head>
-</html>
+<!DOCTYPE html PUBLIC "" "">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://www.forester-notes.org" data-base-url="/"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width"></meta><link rel="stylesheet" href="/style.css"></link><link rel="stylesheet" href="/katex.min.css"></link><script type="text/javascript"></script><script type="module" src="/forester.js"></script><title>General Topology</title></head><body><ninja-keys placeholder="Start typing a note title or ID"></ninja-keys><header class="header"><nav class="nav"><div class="logo"><a href="/index.html" title="Home">« Home</a></div></nav></header><div id="grid-wrapper"><article><section xmlns="" lang="en" class="block"><details id="id1" open="open"><summary><header><h1>
+<span class="taxon"></span>General Topology <a class="slug" href="/gtop-0001/">[gtop-0001]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 7, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+    <p xmlns="http://www.w3.org/1999/xhtml">
+    Notes on general (point-set) topology, covering the foundational concepts of topological spaces, open and closed sets, and compactness.
+</p>
+    <section lang="en" class="block hide-metadata" data-taxon="Definition"><details id="id2" open="open"><summary><header><h1>
+<span class="taxon">Definition 1. </span>Topological Space <a class="slug" href="/gtop-0002/">[gtop-0002]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 7, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+    A <strong>topological space</strong> is a pair \((X, \tau )\) where \(X\) is a set and \(\tau  \subseteq  \mathcal {P}(X)\) is a collection of subsets of \(X\), called a <strong>topology</strong> on \(X\), satisfying:
+</p>
+        <ol xmlns="http://www.w3.org/1999/xhtml"><li>\(\varnothing , X \in  \tau \)</li>
+    <li>If \(\left \{ U_\alpha  \right \}_{\alpha  \in  A} \subseteq  \tau \), then \(\bigcup _{\alpha  \in  A} U_\alpha  \in  \tau \) (closed under arbitrary unions).</li>
+    <li>If \(U_1, U_2 \in  \tau \), then \(U_1 \cap  U_2 \in  \tau \) (closed under finite intersections).</li></ol>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+    The elements of \(\tau \) are called <strong><span xmlns="" class="link local"><a href="/gtop-0005/" title="Open Set [gtop-0005]">open sets</a></span></strong>. A set \(C \subseteq  X\) is called <strong><span xmlns="" class="link local"><a href="/gtop-0006/" title="Closed Set [gtop-0006]">closed</a></span></strong> if its complement \(X \setminus  C\) is open.
+</p>
+        <section lang="en" class="block hide-metadata" data-taxon="Example"><details id="id3" open="open"><summary><header><h1>
+<span class="taxon">Example 1.1. </span>Topologies on a Three-Point Set <a class="slug" href="/gtop-000P/">[gtop-000P]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 11, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+Let \(X = \left \{ 1, 2, 3 \right \}\). The following are all valid topologies on \(X\):
+</p>
+            <ul xmlns="http://www.w3.org/1999/xhtml"><li><strong>Indiscrete</strong>: \(\tau _1 = \left \{ \varnothing , X \right \}\). Only \(\varnothing \) and \(X\) are open.</li>
+<li><strong>Partial</strong>: \(\tau _2 = \left \{ \varnothing , \left \{ 1 \right \}, X \right \}\). Only \(\left \{ 1 \right \}\) and the trivial sets are open.</li>
+<li><strong>Discrete</strong>: \(\tau _3 = \mathcal {P}(X)\). Every subset is open.</li></ul>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+Each satisfies the three axioms of a <span xmlns="" class="link local"><a href="/gtop-0002/" title="Topological Space [gtop-0002]">topological space</a></span>. The same set \(X\) carries different topological structure depending on the choice of \(\tau \).
+</p>
+          </details></section>
+        <section lang="en" class="block hide-metadata" data-taxon="Example"><details id="id4" open="open"><summary><header><h1>
+<span class="taxon">Example 1.2. </span>Open, Closed, Both, or Neither <a class="slug" href="/gtop-000Q/">[gtop-000Q]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 11, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+Let \(X = \left \{ 1,2,3 \right \}\) with \(\tau  = \left \{ \varnothing , \left \{ 1 \right \}, X \right \}\). A subset need not be <span xmlns="" class="link local"><a href="/gtop-0005/" title="Open Set [gtop-0005]">open</a></span> or <span xmlns="" class="link local"><a href="/gtop-0006/" title="Closed Set [gtop-0006]">closed</a></span> — it can be both, or neither.
+</p>
+            <ul xmlns="http://www.w3.org/1999/xhtml"><li>\(\left \{ 1 \right \}\) is open (in \(\tau \)), but not closed (\(X \setminus  \left \{ 1 \right \} = \left \{ 2,3 \right \} \notin  \tau \)).</li>
+<li>\(\left \{ 2,3 \right \}\) is closed (\(X \setminus  \left \{ 2,3 \right \} = \left \{ 1 \right \} \in  \tau \)), but not open.</li>
+<li>\(\varnothing \) and \(X\) are <strong>both</strong> open and closed.</li>
+<li>\(\left \{ 1,2 \right \}\) is <strong>neither</strong> open (not in \(\tau \)) nor closed (\(X \setminus  \left \{ 1,2 \right \} = \left \{ 3 \right \} \notin  \tau \)).</li></ul>
+          </details></section>
+      </details></section>
+    <section lang="en" class="block hide-metadata" data-taxon="Definition"><details id="id5" open="open"><summary><header><h1>
+<span class="taxon">Definition 2. </span>Metric Space <a class="slug" href="/gtop-0003/">[gtop-0003]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 7, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+    A <strong>metric space</strong> is a pair \((X, d)\) where \(X\) is a set and \(d : X \times  X \to  \mathbb {R}\) is a function called a <strong>metric</strong>, satisfying for all \(x, y, z \in  X\):
+</p>
+        <ol xmlns="http://www.w3.org/1999/xhtml"><li>\(d(x, y) \geq  0\) and \(d(x, y) = 0\) if and only if \(x = y\) (positive definiteness).</li>
+    <li>\(d(x, y) = d(y, x)\) (symmetry).</li>
+    <li>\(d(x, z) \leq  d(x, y) + d(y, z)\) (triangle inequality).</li></ol>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+    Every metric space \((X, d)\) induces a <span xmlns="" class="link local"><a href="/gtop-0002/" title="Topological Space [gtop-0002]">topology</a></span> on \(X\), called the <strong>metric topology</strong>, where the open sets are unions of <span xmlns="" class="link local"><a href="/gtop-000S/" title="Open Ball [gtop-000S]">open balls</a></span>.
+</p>
+        <section lang="en" class="block hide-metadata" data-taxon="Definition"><details id="id6" open="open"><summary><header><h1>
+<span class="taxon">Definition 2.1. </span>Open Ball <a class="slug" href="/gtop-000S/">[gtop-000S]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 11, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+Let \((X, d)\) be a <span xmlns="" class="link local"><a href="/gtop-0003/" title="Metric Space [gtop-0003]">metric space</a></span>. The <strong>open ball</strong> centered at \(x \in  X\) with radius \(\epsilon  &gt; 0\) is
+</p>
+            \[B(x, \epsilon ) = \left \{ y \in  X : d(x, y) &lt; \epsilon  \right \}\]
+          </details></section>
+        <section lang="en" class="block hide-metadata" data-taxon="Notation"><details id="id7" open="open"><summary><header><h1>
+<span class="taxon">Notation 2.2. </span>Metric Topology <a class="slug" href="/gtop-000R/">[gtop-000R]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 11, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+A <span xmlns="" class="link local"><a href="/gtop-0003/" title="Metric Space [gtop-0003]">metric space</a></span> \((X, d)\) induces a <span xmlns="" class="link local"><a href="/gtop-0002/" title="Topological Space [gtop-0002]">topology</a></span> \(\tau _d\) on \(X\) by declaring \(U \in  \tau _d\) if and only if for every \(x \in  U\) there exists \(\epsilon  &gt; 0\) such that the <span xmlns="" class="link local"><a href="/gtop-000S/" title="Open Ball [gtop-000S]">open ball</a></span> \(B(x, \epsilon ) \subseteq  U\).
+</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+That is, a metric \(d\) induces a topology through the following chain:
+</p>
+            <ol xmlns="http://www.w3.org/1999/xhtml"><li>The metric \(d\) defines <span xmlns="" class="link local"><a href="/gtop-000S/" title="Open Ball [gtop-000S]">open balls</a></span> \(B(x, \epsilon )\).</li>
+<li>Open balls generate <span xmlns="" class="link local"><a href="/gtop-0005/" title="Open Set [gtop-0005]">open sets</a></span>: a set is open if and only if it is an arbitrary union of open balls.</li>
+<li>The collection of all open sets forms \(\tau _d\), a valid <span xmlns="" class="link local"><a href="/gtop-0002/" title="Topological Space [gtop-0002]">topology</a></span>.</li></ol>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+Every metric space is a topological space, but not every topological space arises from a metric. A topological space \((X, \tau )\) is called <strong>metrizable</strong> if there exists a metric \(d\) on \(X\) such that \(\tau  = \tau _d\).
+</p>
+          </details></section>
+      </details></section>
+    <section lang="en" class="block hide-metadata" data-taxon="Definition"><details id="id8" open="open"><summary><header><h1>
+<span class="taxon">Definition 3. </span>Euclidean Space <a class="slug" href="/gtop-0004/">[gtop-0004]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 7, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+    The <strong>Euclidean space</strong> \(\mathbb {R}^n\) is the <span xmlns="" class="link local"><a href="/gtop-0003/" title="Metric Space [gtop-0003]">metric space</a></span> equipped with the Euclidean metric
+</p>
+        \[d(x, y) = \lVert  x - y \rVert  = \sqrt {\sum _{i=1}^{n} (x_i - y_i)^2}\]
+        <p xmlns="http://www.w3.org/1999/xhtml">
+    The <span xmlns="" class="link local"><a href="/gtop-0002/" title="Topological Space [gtop-0002]">topology</a></span> induced by this metric is called the <strong>standard topology</strong> on \(\mathbb {R}^n\). In this topology, the <span xmlns="" class="link local"><a href="/gtop-000S/" title="Open Ball [gtop-000S]">open ball</a></span> centered at \(x\) with radius \(\epsilon  &gt; 0\) is
+</p>
+        \[B(x, \epsilon ) = \left \{ y \in  \mathbb {R}^n : \lVert  y - x \rVert  &lt; \epsilon  \right \}\]
+        <p xmlns="http://www.w3.org/1999/xhtml">
+    This is a special case of a <span xmlns="" class="link local"><a href="/gtop-0003/" title="Metric Space [gtop-0003]">metric space</a></span>, which in turn induces a <span xmlns="" class="link local"><a href="/gtop-0002/" title="Topological Space [gtop-0002]">topological space</a></span>.
+</p>
+      </details></section>
+    <section lang="en" class="block hide-metadata" data-taxon="Definition"><details id="id9" open="open"><summary><header><h1>
+<span class="taxon">Definition 4. </span>Open Set <a class="slug" href="/gtop-0005/">[gtop-0005]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 7, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+    Let \((X, \tau )\) be a <span xmlns="" class="link local"><a href="/gtop-0002/" title="Topological Space [gtop-0002]">topological space</a></span>. A subset \(U \subseteq  X\) is called <strong>open</strong> if \(U \in  \tau \).
+</p>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+    In a <span xmlns="" class="link local"><a href="/gtop-0004/" title="Euclidean Space [gtop-0004]">Euclidean space</a></span> \(\mathbb {R}^n\), a subset \(U \subseteq  \mathbb {R}^n\) is <strong>open</strong> if for every \(x \in  U\), there exists \(\epsilon  &gt; 0\) such that \(B(x, \epsilon ) \subseteq  U\). More generally, in any <span xmlns="" class="link local"><a href="/gtop-0003/" title="Metric Space [gtop-0003]">metric space</a></span> \((X, d)\), a set is open if it is a union of <span xmlns="" class="link local"><a href="/gtop-000S/" title="Open Ball [gtop-000S]">open balls</a></span>.
+</p>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+    The <span xmlns="" class="link local"><a href="/gtop-0004/" title="Euclidean Space [gtop-0004]">Euclidean</a></span> definition is a special case where the topology is induced by the metric \(d(x, y) = \lVert  x - y \rVert \).
+</p>
+      </details></section>
+    <section lang="en" class="block hide-metadata" data-taxon="Definition"><details id="id10" open="open"><summary><header><h1>
+<span class="taxon">Definition 5. </span>Closed Set <a class="slug" href="/gtop-0006/">[gtop-0006]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 7, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+    Let \((X, \tau )\) be a <span xmlns="" class="link local"><a href="/gtop-0002/" title="Topological Space [gtop-0002]">topological space</a></span>. A subset \(C \subseteq  X\) is called <strong>closed</strong> if its complement \(X \setminus  C\) is <span xmlns="" class="link local"><a href="/gtop-0005/" title="Open Set [gtop-0005]">open</a></span>, i.e. \(X \setminus  C \in  \tau \).
+</p>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+    Equivalently, the collection of closed sets satisfies:
+</p>
+        <ol xmlns="http://www.w3.org/1999/xhtml"><li>\(\varnothing \) and \(X\) are closed.</li>
+    <li>Arbitrary intersections of closed sets are closed.</li>
+    <li>Finite unions of closed sets are closed.</li></ol>
+        <section lang="en" class="block hide-metadata" data-taxon="Theorem"><details id="id11" open="open"><summary><header><h1>
+<span class="taxon">Theorem. </span>Closed Set Characterization in Metric Spaces <a class="slug" href="/gtop-000U/">[gtop-000U]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 11, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+Let \((X, d)\) be a <span xmlns="" class="link local"><a href="/gtop-0003/" title="Metric Space [gtop-0003]">metric space</a></span> and \(C \subseteq  X\). Then \(C\) is <span xmlns="" class="link local"><a href="/gtop-0006/" title="Closed Set [gtop-0006]">closed</a></span> if and only if \(C\) contains all its <span xmlns="" class="link local"><a href="/gtop-000T/" title="Limit Point [gtop-000T]">limit points</a></span>.
+</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+Equivalently, \(C\) is closed if and only if for every convergent sequence \(\left \{ x_n \right \} \subseteq  C\) with \(x_n \to  x\), we have \(x \in  C\).
+</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+This characterization relies on the metric structure. In a general <span xmlns="" class="link local"><a href="/gtop-0002/" title="Topological Space [gtop-0002]">topological space</a></span>, sequences may not suffice to detect all limit points.
+</p>
+          </details></section>
+      </details></section>
+    <section lang="en" class="block hide-metadata" data-taxon="Definition"><details id="id12" open="open"><summary><header><h1>
+<span class="taxon">Definition 6. </span>Open Cover <a class="slug" href="/gtop-0007/">[gtop-0007]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 8, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+Let \((X,\tau )\) be a <span xmlns="" class="link local"><a href="/gtop-0002/" title="Topological Space [gtop-0002]">topological space</a></span> and \(A \subseteq  X\). An <strong>open cover</strong> of \(A\) is a collection \(\{U_\alpha \}_{\alpha  \in  I}\) of <span xmlns="" class="link local"><a href="/gtop-0005/" title="Open Set [gtop-0005]">open sets</a></span> such that \(A \subseteq  \bigcup _{\alpha  \in  I}U_{\alpha }\).
+</p>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+A <strong>subcover</strong> is a subcollection \(\{U_\alpha \}_{\alpha  \in  J}\) with \(J \subseteq  I\) that still covers \(A\). A subcover is called <strong>finite</strong> is \(J\) is a finite set.
+</p>
+      </details></section>
+    <section lang="en" class="block hide-metadata" data-taxon="Definition"><details id="id13" open="open"><summary><header><h1>
+<span class="taxon">Definition 7. </span>Compactness <a class="slug" href="/gtop-0008/">[gtop-0008]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 7, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+    A <span xmlns="" class="link local"><a href="/gtop-0002/" title="Topological Space [gtop-0002]">topological space</a></span> \((X, \tau )\) is <strong>compact</strong> if every <span xmlns="" class="link local"><a href="/gtop-0007/" title="Open Cover [gtop-0007]">open cover</a></span> of \(X\) has a <span xmlns="" class="link local"><a href="/gtop-0007/" title="Open Cover [gtop-0007]">finite subcover</a></span>.
+</p>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+    A subset \(K \subseteq  X\) is compact if it is compact as a topological space with the subspace topology, or equivalently, if every open cover of \(K\) by open sets in \(X\) has a finite subcover.
+</p>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+    In <span xmlns="" class="link local"><a href="/gtop-0004/" title="Euclidean Space [gtop-0004]">Euclidean space</a></span> \(\mathbb {R}^n\), the Heine-Borel theorem gives a concrete characterization: a subset \(K \subseteq  \mathbb {R}^n\) is compact if and only if it is <span xmlns="" class="link local"><a href="/gtop-0006/" title="Closed Set [gtop-0006]">closed</a></span> and bounded (i.e. \(K \subseteq  B(0, R)\) for some \(R &gt; 0\)).
+</p>
+      </details></section>
+    <section lang="en" class="block hide-metadata" data-taxon="Definition"><details id="id14" open="open"><summary><header><h1>
+<span class="taxon">Definition 8. </span>Hausdorff Space <a class="slug" href="/gtop-000B/">[gtop-000B]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 11, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+A <span xmlns="" class="link local"><a href="/gtop-0002/" title="Topological Space [gtop-0002]">topological space</a></span> is <strong>Hausdorff</strong> if for every pair of distinct points therein there exist a <span xmlns="" class="link local"><a href="/gtop-000F/" title="Neighborhood [gtop-000F]">neighbourhood</a></span> of each point that are disjoint from each other.
+</p>
+      </details></section>
+    <section lang="en" class="block hide-metadata" data-taxon="Definition"><details id="id15" open="open"><summary><header><h1>
+<span class="taxon">Definition 9. </span>Borel Measure <a class="slug" href="/gtop-000C/">[gtop-000C]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 11, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+A <strong>Borel measure</strong> on a <span xmlns="" class="link local"><a href="/gtop-0002/" title="Topological Space [gtop-0002]">topological space</a></span> \(X\) is a measure \(\mu  : \mathcal {B}(X) \to  [0, \infty ]\) defined on the <span xmlns="" class="link local"><a href="/gtop-000K/" title="Borel \sigma -algebra [gtop-000K]">Borel </a>\(\sigma \)<a href="/gtop-000K/" title="Borel \sigma -algebra [gtop-000K]">-algebra</a></span>.
+</p>
+      </details></section>
+    <section lang="en" class="block hide-metadata" data-taxon="Definition"><details id="id16" open="open"><summary><header><h1>
+<span class="taxon">Definition 10. </span>Regularity <a class="slug" href="/gtop-000G/">[gtop-000G]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 10, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+Regularity properties describe how well a <span xmlns="" class="link local"><a href="/gtop-000C/" title="Borel Measure [gtop-000C]">Borel measure</a></span> can be approximated by <span xmlns="" class="link local"><a href="/gtop-0005/" title="Open Set [gtop-0005]">open</a></span> or <span xmlns="" class="link local"><a href="/gtop-0008/" title="Compactness [gtop-0008]">compact</a></span> sets. A measure satisfying both <span xmlns="" class="link local"><a href="/gtop-000D/" title="Outer Regularity [gtop-000D]">outer</a></span> and <span xmlns="" class="link local"><a href="/gtop-000E/" title="Inner Regularity [gtop-000E]">inner regularity</a></span> is called <strong>regular</strong>.
+</p>
+        <section lang="en" class="block hide-metadata" data-taxon="Definition"><details id="id17" open="open"><summary><header><h1>
+<span class="taxon">Definition 10.1. </span>Outer Regularity <a class="slug" href="/gtop-000D/">[gtop-000D]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 10, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+A <span xmlns="" class="link local"><a href="/gtop-000C/" title="Borel Measure [gtop-000C]">Borel measure</a></span> \(\mu \) on a <span xmlns="" class="link local"><a href="/gtop-0002/" title="Topological Space [gtop-0002]">topological space</a></span> \(X\) is <strong>outer regular</strong> on a Borel set \(E\) if
+\[
+\mu (E) = \inf  \left \{  \mu (W) : E \subseteq  W, \; W \text { is open}  \right \}
+\]
+where \(W\) is an <span xmlns="" class="link local"><a href="/gtop-0005/" title="Open Set [gtop-0005]">open set</a></span>.
+</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+That is, the measure of \(E\) can be approximated from above by the measures of <span xmlns="" class="link local"><a href="/gtop-0005/" title="Open Set [gtop-0005]">open sets</a></span> containing \(E\).
+</p>
+          </details></section>
+        <section lang="en" class="block hide-metadata" data-taxon="Definition"><details id="id18" open="open"><summary><header><h1>
+<span class="taxon">Definition 10.2. </span>Inner Regularity <a class="slug" href="/gtop-000E/">[gtop-000E]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 10, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+A <span xmlns="" class="link local"><a href="/gtop-000C/" title="Borel Measure [gtop-000C]">Borel measure</a></span> \(\mu \) on a <span xmlns="" class="link local"><a href="/gtop-0002/" title="Topological Space [gtop-0002]">topological space</a></span> \(X\) is <strong>inner regular</strong> on a <span xmlns="" class="link local"><a href="/gtop-000L/" title="Borel Set [gtop-000L]">Borel set</a></span> \(E\) if
+\[
+\mu (E) = \sup  \left \{  \mu (M) : M \subseteq  E, \; M \text { is compact}  \right \}
+\]
+where \(M\) is a <span xmlns="" class="link local"><a href="/gtop-0008/" title="Compactness [gtop-0008]">compact</a></span> subset.
+</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+That is, the measure of \(E\) can be approximated from below by the measures of <span xmlns="" class="link local"><a href="/gtop-0008/" title="Compactness [gtop-0008]">compact</a></span> subsets of \(E\).
+</p>
+          </details></section>
+      </details></section>
+    <section lang="en" class="block hide-metadata" data-taxon="Definition"><details id="id19" open="open"><summary><header><h1>
+<span class="taxon">Definition 11. </span>\(\sigma \)-algebra <a class="slug" href="/gtop-000M/">[gtop-000M]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 10, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+A <strong>\(\sigma \)-algebra</strong> on a set \(X\) is a collection \(\mathcal {F} \subseteq  \mathcal {P}(X)\) of subsets of \(X\) satisfying:
+</p>
+        <ol xmlns="http://www.w3.org/1999/xhtml"><li>\(X \in  \mathcal {F}\).</li>
+<li>If \(A \in  \mathcal {F}\), then \(X \setminus  A \in  \mathcal {F}\) (closed under complements).</li>
+<li>If \(\left \{ A_n \right \}_{n=1}^{\infty } \subseteq  \mathcal {F}\), then \(\bigcup _{n=1}^{\infty } A_n \in  \mathcal {F}\) (closed under countable unions).</li></ol>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+The pair \((X, \mathcal {F})\) is called a <strong>measurable space</strong>, and the members of \(\mathcal {F}\) are called <strong>measurable sets</strong>.
+</p>
+      </details></section>
+  </details></section><footer xmlns="">
+    
+    
+    <section lang="en" class="block hide-metadata"><details id="id20" open="open"><summary><header><h1>
+<span class="taxon"></span>Backlinks  </h1>
+<div class="metadata"><ul></ul></div></header></summary>
+        <section lang="en" class="block"><details id="id21"><summary><header><h1>
+<span class="taxon"></span>Boat's forest <a class="slug" href="/boat-0001/">[boat-0001]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">January 26, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+    This is my forest. <span xmlns="" class="link external"><a href="https://www.forester-notes.org/tfmt-000V" title="">Forests</a></span> are a way of organizing notes and the project is called <span xmlns="" class="link external"><a href="https://www.forester-notes.org/" title="">forester</a></span>. Contents under this website are listed below:
+</p>
+            <ul xmlns="http://www.w3.org/1999/xhtml"><li><span xmlns="" class="link local"><a href="/ml-0001/" title="Machine Learning [ml-0001]">Machine Learning</a></span></li>
+    <li><span xmlns="" class="link local"><a href="/opt-6001/" title="Optimal Control [opt-6001]">Optimal Control</a></span></li>
+    <li><span xmlns="" class="link local"><a href="/calc-0001/" title="Calculus [calc-0001]">Calculus</a></span></li>
+    <li><span xmlns="" class="link local"><a href="/gtop-0001/" title="General Topology [gtop-0001]">General Topology</a></span></li></ul>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+    On a computer, you can press Ctrl-K to search for trees.
+</p>
+          </details></section>
+      </details></section>
+    
+    
+  </footer></article><nav id="toc"><div class="block"><h1>Table of Contents</h1><ul xmlns="" class="block">
+<li>
+<a class="bullet" href="/gtop-0002/" title="Topological Space [gtop-0002]">■</a><span class="link local" data-target="#id2"><span class="taxon">Definition 1. </span>Topological Space</span><ul class="block">
+<li>
+<a class="bullet" href="/gtop-000P/" title="Topologies on a Three-Point Set [gtop-000P]">■</a><span class="link local" data-target="#id3"><span class="taxon">Example 1.1. </span>Topologies on a Three-Point Set</span><ul class="block"></ul>
+</li>
+<li>
+<a class="bullet" href="/gtop-000Q/" title="Open, Closed, Both, or Neither [gtop-000Q]">■</a><span class="link local" data-target="#id4"><span class="taxon">Example 1.2. </span>Open, Closed, Both, or Neither</span><ul class="block"></ul>
+</li>
+</ul>
+</li>
+<li>
+<a class="bullet" href="/gtop-0003/" title="Metric Space [gtop-0003]">■</a><span class="link local" data-target="#id5"><span class="taxon">Definition 2. </span>Metric Space</span><ul class="block">
+<li>
+<a class="bullet" href="/gtop-000S/" title="Open Ball [gtop-000S]">■</a><span class="link local" data-target="#id6"><span class="taxon">Definition 2.1. </span>Open Ball</span><ul class="block"></ul>
+</li>
+<li>
+<a class="bullet" href="/gtop-000R/" title="Metric Topology [gtop-000R]">■</a><span class="link local" data-target="#id7"><span class="taxon">Notation 2.2. </span>Metric Topology</span><ul class="block"></ul>
+</li>
+</ul>
+</li>
+<li>
+<a class="bullet" href="/gtop-0004/" title="Euclidean Space [gtop-0004]">■</a><span class="link local" data-target="#id8"><span class="taxon">Definition 3. </span>Euclidean Space</span><ul class="block"></ul>
+</li>
+<li>
+<a class="bullet" href="/gtop-0005/" title="Open Set [gtop-0005]">■</a><span class="link local" data-target="#id9"><span class="taxon">Definition 4. </span>Open Set</span><ul class="block"></ul>
+</li>
+<li>
+<a class="bullet" href="/gtop-0006/" title="Closed Set [gtop-0006]">■</a><span class="link local" data-target="#id10"><span class="taxon">Definition 5. </span>Closed Set</span><ul class="block"><li>
+<a class="bullet" href="/gtop-000U/" title="Closed Set Characterization in Metric Spaces [gtop-000U]">■</a><span class="link local" data-target="#id11"><span class="taxon">Theorem. </span>Closed Set Characterization in Metric Spaces</span><ul class="block"></ul>
+</li></ul>
+</li>
+<li>
+<a class="bullet" href="/gtop-0007/" title="Open Cover [gtop-0007]">■</a><span class="link local" data-target="#id12"><span class="taxon">Definition 6. </span>Open Cover</span><ul class="block"></ul>
+</li>
+<li>
+<a class="bullet" href="/gtop-0008/" title="Compactness [gtop-0008]">■</a><span class="link local" data-target="#id13"><span class="taxon">Definition 7. </span>Compactness</span><ul class="block"></ul>
+</li>
+<li>
+<a class="bullet" href="/gtop-000B/" title="Hausdorff Space [gtop-000B]">■</a><span class="link local" data-target="#id14"><span class="taxon">Definition 8. </span>Hausdorff Space</span><ul class="block"></ul>
+</li>
+<li>
+<a class="bullet" href="/gtop-000C/" title="Borel Measure [gtop-000C]">■</a><span class="link local" data-target="#id15"><span class="taxon">Definition 9. </span>Borel Measure</span><ul class="block"></ul>
+</li>
+<li>
+<a class="bullet" href="/gtop-000G/" title="Regularity [gtop-000G]">■</a><span class="link local" data-target="#id16"><span class="taxon">Definition 10. </span>Regularity</span><ul class="block">
+<li>
+<a class="bullet" href="/gtop-000D/" title="Outer Regularity [gtop-000D]">■</a><span class="link local" data-target="#id17"><span class="taxon">Definition 10.1. </span>Outer Regularity</span><ul class="block"></ul>
+</li>
+<li>
+<a class="bullet" href="/gtop-000E/" title="Inner Regularity [gtop-000E]">■</a><span class="link local" data-target="#id18"><span class="taxon">Definition 10.2. </span>Inner Regularity</span><ul class="block"></ul>
+</li>
+</ul>
+</li>
+<li>
+<a class="bullet" href="/gtop-000M/" title="\sigma -algebra [gtop-000M]">■</a><span class="link local" data-target="#id19"><span class="taxon">Definition 11. </span>\(\sigma \)-algebra</span><ul class="block"></ul>
+</li>
+</ul></div></nav></div></body></html>
