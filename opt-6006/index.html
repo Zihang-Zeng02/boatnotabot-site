@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "" "">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://www.forester-notes.org" data-base-url="/"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width"></meta><link rel="stylesheet" href="/style.css"></link><link rel="stylesheet" href="/katex.min.css"></link><script type="text/javascript"></script><script type="module" src="/forester.js"></script><title>Admissible control</title></head><body><ninja-keys placeholder="Start typing a note title or ID"></ninja-keys><header class="header"><nav class="nav"><div class="logo"><a href="/index.html" title="Home">« Home</a></div></nav></header><div id="grid-wrapper"><article><section xmlns="" lang="en" class="block" data-taxon="Definition"><details id="id1" open="open"><summary><header><h1>
+<span class="taxon">Definition. </span>Admissible control <a class="slug" href="/opt-6006/">[opt-6006]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 7, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+    <p xmlns="http://www.w3.org/1999/xhtml">
+We say that a control \(\mathbf {u}\) is admissible if \(\forall  t \in  [0, t_f],\ \mathbf {u}(t) \in  U_t\) where \(U_t\) is the control constraint set.
+</p>
+  </details></section><footer xmlns="">
+    
+    <section lang="en" class="block hide-metadata"><details id="id2" open="open"><summary><header><h1>
+<span class="taxon"></span>Context  </h1>
+<div class="metadata"><ul></ul></div></header></summary>
+        <section lang="en" class="block"><details id="id3"><summary><header><h1>
+<span class="taxon"></span>Optimal Control <a class="slug" href="/opt-6001/">[opt-6001]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">February 21, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+    Notes on optimal control based on the course ECE6553-Optimal Control at Gatech 2026 Spring.
+</p>
+            <section lang="en" class="block hide-metadata"><details id="id4" open="open"><summary><header><h1>
+<span class="taxon"></span>Problem Formulation  </h1>
+<div class="metadata"><ul>
+<li class="meta-item">February 21, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+                <section lang="en" class="block hide-metadata" data-taxon="Definition"><details id="id5" open="open"><summary><header><h1>
+<span class="taxon">Definition. </span>Bolza Problem <a class="slug" href="/opt-6002/">[opt-6002]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">February 21, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+                    <p xmlns="http://www.w3.org/1999/xhtml">
+    Bolza problem is a fundamental formulation in the calculus of variations and optimal control that minimizes a cost functional consisting of both an integral term (running cost) and a terminal cost. It is described with a system dynamic funcation and a cost function. \[\dot {\mathbf {x}} = f(\mathbf {x}, \mathbf {u}),\quad  \mathbf {x} (0) = x_0\]\[J := \int _0^{t_f} L \big (\mathbf {x}(t), \mathbf {u}(t)\big ) dt + \Phi  \left ( \mathbf {x}(t_f) \right )\] where state \(\mathbf {x}(t)\in  \mathbb {R}^n\), control \(\mathbf {u}(t)\in  \mathbb {R}^k\), \(L:\mathbb {R}^n \times  \mathbb {R}^k \to  \mathbb {R}\) is the running cost and \(\Phi :\mathbb {R}^n \to  \mathbb {R}\) is the terminal cost. The goal is to find the optimal control \(\mathbf {u}^*(t)\in  \mathbb {R}^k\) that minimizes this cost functional subject to the system dynamics and boundary conditions. With input constraint, we minimize \(J\) subject to constraints \(\mathbf {u}(t) \in  U_t \subseteq  \mathbb {R} ^k\) where \(U_t\) is the <span xmlns="" class="link local"><a href="/opt-6006/" title="Admissible control [opt-6006]">set of admissible control</a></span> at time \(t\) and is guaranteed to be <span xmlns="" class="link local"><a href="/gtop-0008/" title="Compactness [gtop-0008]">compact</a></span> and convex.
+</p>
+                  </details></section>
+                <section lang="en" class="block hide-metadata" data-taxon="Definition"><details id="id6" open="open"><summary><header><h1>
+<span class="taxon">Definition. </span>Admissible control <a class="slug" href="/opt-6006/">[opt-6006]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 7, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+                    <p xmlns="http://www.w3.org/1999/xhtml">
+We say that a control \(\mathbf {u}\) is admissible if \(\forall  t \in  [0, t_f],\ \mathbf {u}(t) \in  U_t\) where \(U_t\) is the control constraint set.
+</p>
+                  </details></section>
+              </details></section>
+            <section lang="en" class="block hide-metadata"><details id="id7" open="open"><summary><header><h1>
+<span class="taxon"></span>Necessary Conditions  </h1>
+<div class="metadata"><ul>
+<li class="meta-item">February 21, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+                <section lang="en" class="block hide-metadata"><details id="id8" open="open"><summary><header><h1>
+<span class="taxon"></span>First-order Variation of the Bolza Functional <a class="slug" href="/opt-6003/">[opt-6003]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">February 22, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+                    <p xmlns="http://www.w3.org/1999/xhtml">
+    To find the optimal control \(\mathbf {u}\), we consider the first-order variation of the functional \(J\) with respect to \(\mathbf {u}\). By augmenting the cost functional with system dynamics \(\dot {\mathbf {x}} = f(\mathbf {x}, \mathbf {u})\) using the <span xmlns="" class="link local"><a href="/opt-6009/" title="Costate Equation [opt-6009]">costate</a></span> \(\mathbf {p}\), we define:
+</p>
+                    \[
+    \frac {\partial  J}{\partial  \mathbf {u}} = \left ( \frac {\partial  f}{\partial  \mathbf {u}} \right )^\intercal  \mathbf {p} + \left ( \frac {\partial  L}{\partial  \mathbf {u}} \right )^\intercal 
+\]
+                    <p xmlns="http://www.w3.org/1999/xhtml">
+    We obtain the stationarity condition \(\frac {\partial  J}{\partial  \mathbf {u}} \equiv  0\). See the <span xmlns="" class="link local"><a href="/opt-6010/" title="Derivation of the First-order Variation [opt-6010]">derivation</a></span> for how this expression arises from first principles.
+</p>
+                  </details></section>
+                <section lang="en" class="block hide-metadata"><details id="id9" open="open"><summary><header><h1>
+<span class="taxon"></span>Optimality Conditions for Bolza Problem <a class="slug" href="/opt-6004/">[opt-6004]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">February 22, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+                    <p xmlns="http://www.w3.org/1999/xhtml">
+    The necessary conditions for the optimality of \(\mathbf {u}(t)\) are given by the following set of equations:
+</p>
+                    <section lang="en" class="block hide-metadata" data-taxon="Definition"><details id="id10" open="open"><summary><header><h1>
+<span class="taxon">Definition. </span>State Equation <a class="slug" href="/opt-6011/">[opt-6011]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 8, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+                        <p xmlns="http://www.w3.org/1999/xhtml">
+                          \[\dot {\mathbf {x}}=f(\mathbf {x}, \mathbf {u}),\quad  \mathbf {x}(0)=x_0\]
+                        </p>
+                      </details></section>
+                    <section lang="en" class="block hide-metadata" data-taxon="Definition"><details id="id11" open="open"><summary><header><h1>
+<span class="taxon">Definition. </span>Costate Equation <a class="slug" href="/opt-6009/">[opt-6009]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 7, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+                        \[\dot {\mathbf {p}} = -\left ( \frac {\partial  f}{\partial  \mathbf {x}} \right )^\intercal  \mathbf {p} - \left ( \frac {\partial  L}{\partial  \mathbf {x}} \right )^\intercal , \quad  \mathbf {p}(t_f) = \nabla  \Phi \left ( \mathbf {x}(t_f) \right )\]
+                      </details></section>
+                    <section lang="en" class="block hide-metadata" data-taxon="Definition"><details id="id12" open="open"><summary><header><h1>
+<span class="taxon">Definition. </span>Stationarity Condition <a class="slug" href="/opt-6012/">[opt-6012]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 8, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+                        <p xmlns="http://www.w3.org/1999/xhtml">
+                          \[\left (\frac {\partial  f}{\partial  \mathbf {u}}\right )^\intercal  \mathbf {p} + \left (\frac {\partial  L}{\partial  \mathbf {u}}\right )^\intercal  \equiv  0\]
+                        </p>
+                      </details></section>
+                  </details></section>
+              </details></section>
+            <section lang="en" class="block hide-metadata"><details id="id13" open="open"><summary><header><h1>
+<span class="taxon"></span>Hamiltonian Methods  </h1>
+<div class="metadata"><ul>
+<li class="meta-item">February 21, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+                <section lang="en" class="block hide-metadata" data-taxon="Definition"><details id="id14" open="open"><summary><header><h1>
+<span class="taxon">Definition. </span>Hamiltonian function <a class="slug" href="/opt-6005/">[opt-6005]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 7, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+                    <p xmlns="http://www.w3.org/1999/xhtml">
+Define the Hamiltonian function at an <span xmlns="" class="link local"><a href="/opt-6006/" title="Admissible control [opt-6006]">admissible control</a></span> \(\mathbf {u}\) by \[H(\mathbf {x}, \mathbf {u}, \mathbf {p}) = {\mathbf {p}}^ \intercal  f(\mathbf {x},\mathbf {u}) + L(\mathbf {x}, \mathbf {u})\]</p>
+                  </details></section>
+                <section lang="en" class="block hide-metadata" data-taxon="Theorem"><details id="id15" open="open"><summary><header><h1>
+<span class="taxon">Theorem. </span>Pontryagin's Maximum Principle <a class="slug" href="/opt-6008/">[opt-6008]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 7, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+                    <p xmlns="http://www.w3.org/1999/xhtml">
+Given a control signal \(\mathbf {u}\), denote by \(\mathbf {x}_u\) and \(\mathbf {p}_u\) the corresponding state and costate trajectories.</p>
+                    <p xmlns="http://www.w3.org/1999/xhtml">
+Suppose that \(\mathbf {u}\) is an admissible optimal control. Then \(\forall  t \in  [0, t_f],\forall  \mathbf {v} \in  U_t\), \[H\big (\mathbf {x}_u(t),\mathbf {u}(t),\mathbf {p}_u(t)\big ) \leq  H\big (\mathbf {x}_u(t), \mathbf {v}, \mathbf {p}_u(t)\big )\]</p>
+                  </details></section>
+              </details></section>
+            <section lang="en" class="block hide-metadata"><details id="id16" open="open"><summary><header><h1>
+<span class="taxon"></span>Relaxed Control  </h1>
+<div class="metadata"><ul>
+<li class="meta-item">February 21, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+                <section lang="en" class="block hide-metadata" data-taxon="Definition"><details id="id17" open="open"><summary><header><h1>
+<span class="taxon">Definition. </span>Relaxed Control <a class="slug" href="/opt-6013/">[opt-6013]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 10, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+                    <p xmlns="http://www.w3.org/1999/xhtml">
+Consider the <span xmlns="" class="link local"><a href="/opt-6002/" title="Bolza Problem [opt-6002]">bolza problem</a></span> subject to \(\dot {\mathbf {x}} (t) = f(t,\mathbf {x} (t), \mathbf {u} (t)),\ \mathbf {u} (t) \in  U\), where \(U\) is a <span xmlns="" class="link local"><a href="/gtop-0008/" title="Compactness [gtop-0008]">compact</a></span> <span xmlns="" class="link local"><a href="/gtop-0009/" title="Metric Space [gtop-0009]">metric space</a></span>.
+</p>
+                    <p xmlns="http://www.w3.org/1999/xhtml">
+Relaxed controls replace the set \(U\) by the space of <span xmlns="" class="link local"><a href="/gtop-000N/" title="Radon Probability Measure [gtop-000N]">Radon probability measures</a></span> on \(U\).
+</p>
+                  </details></section>
+              </details></section>
+          </details></section>
+      </details></section>
+    <section lang="en" class="block hide-metadata"><details id="id18" open="open"><summary><header><h1>
+<span class="taxon"></span>Backlinks  </h1>
+<div class="metadata"><ul></ul></div></header></summary>
+        <section lang="en" class="block" data-taxon="Definition"><details id="id19"><summary><header><h1>
+<span class="taxon">Definition. </span>Hamiltonian function <a class="slug" href="/opt-6005/">[opt-6005]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 7, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+Define the Hamiltonian function at an <span xmlns="" class="link local"><a href="/opt-6006/" title="Admissible control [opt-6006]">admissible control</a></span> \(\mathbf {u}\) by \[H(\mathbf {x}, \mathbf {u}, \mathbf {p}) = {\mathbf {p}}^ \intercal  f(\mathbf {x},\mathbf {u}) + L(\mathbf {x}, \mathbf {u})\]</p>
+          </details></section>
+        <section lang="en" class="block" data-taxon="Definition"><details id="id20"><summary><header><h1>
+<span class="taxon">Definition. </span>Bolza Problem <a class="slug" href="/opt-6002/">[opt-6002]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">February 21, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+    Bolza problem is a fundamental formulation in the calculus of variations and optimal control that minimizes a cost functional consisting of both an integral term (running cost) and a terminal cost. It is described with a system dynamic funcation and a cost function. \[\dot {\mathbf {x}} = f(\mathbf {x}, \mathbf {u}),\quad  \mathbf {x} (0) = x_0\]\[J := \int _0^{t_f} L \big (\mathbf {x}(t), \mathbf {u}(t)\big ) dt + \Phi  \left ( \mathbf {x}(t_f) \right )\] where state \(\mathbf {x}(t)\in  \mathbb {R}^n\), control \(\mathbf {u}(t)\in  \mathbb {R}^k\), \(L:\mathbb {R}^n \times  \mathbb {R}^k \to  \mathbb {R}\) is the running cost and \(\Phi :\mathbb {R}^n \to  \mathbb {R}\) is the terminal cost. The goal is to find the optimal control \(\mathbf {u}^*(t)\in  \mathbb {R}^k\) that minimizes this cost functional subject to the system dynamics and boundary conditions. With input constraint, we minimize \(J\) subject to constraints \(\mathbf {u}(t) \in  U_t \subseteq  \mathbb {R} ^k\) where \(U_t\) is the <span xmlns="" class="link local"><a href="/opt-6006/" title="Admissible control [opt-6006]">set of admissible control</a></span> at time \(t\) and is guaranteed to be <span xmlns="" class="link local"><a href="/gtop-0008/" title="Compactness [gtop-0008]">compact</a></span> and convex.
+</p>
+          </details></section>
+      </details></section>
+    
+    
+  </footer></article></div></body></html>

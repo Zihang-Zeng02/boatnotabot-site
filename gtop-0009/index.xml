@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>3</fr:month>
+      <fr:day>10</fr:day>
+    </fr:date>
+    <fr:uri>https://boatnotabot.com/gtop-0009/</fr:uri>
+    <fr:display-uri>gtop-0009</fr:display-uri>
+    <fr:route>/gtop-0009/</fr:route>
+    <fr:title text="Metric Space">Metric Space</fr:title>
+    <fr:taxon>Definition</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>
+A <html:strong>metric space</html:strong> is an ordered pair <fr:tex display="inline"><![CDATA[(M,d)]]></fr:tex> where <fr:tex display="inline"><![CDATA[M]]></fr:tex> is a set and <fr:tex display="inline"><![CDATA[d]]></fr:tex> is a <html:strong>metric</html:strong> on <fr:tex display="inline"><![CDATA[M]]></fr:tex>, i.e., a function <fr:tex display="inline"><![CDATA[d:M\times  M \to  \mathbb {R}]]></fr:tex> satisfying the following axioms for all points <fr:tex display="inline"><![CDATA[x,y,z \in  M]]></fr:tex>:
+</html:p>
+    <html:ul><html:li><fr:tex display="inline"><![CDATA[d(x,x) = 0]]></fr:tex></html:li>
+<html:li><fr:tex display="inline"><![CDATA[\text {If } x\neq  y,\text { then } d(x,y)>0]]></fr:tex>. (Positivity)</html:li>
+<html:li><fr:tex display="inline"><![CDATA[d(x,y) = d(y,x)]]></fr:tex>. (Symmetry)</html:li>
+<html:li><fr:tex display="inline"><![CDATA[d(x,z) \leq  d(x,y) + d(y,z)]]></fr:tex>. (Triangle inequality)</html:li></html:ul>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>10</fr:day>
+            </fr:date>
+            <fr:uri>https://boatnotabot.com/gtop-000N/</fr:uri>
+            <fr:display-uri>gtop-000N</fr:display-uri>
+            <fr:route>/gtop-000N/</fr:route>
+            <fr:title text="Radon Probability Measure">Radon Probability Measure</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>
+A <html:strong>Radon probability measure</html:strong> on a <fr:link href="/gtop-000O/" title="Locally Compact Space" uri="https://boatnotabot.com/gtop-000O/" display-uri="gtop-000O" type="local">locally compact</fr:link> <fr:link href="/gtop-000B/" title="Hausdorff Space" uri="https://boatnotabot.com/gtop-000B/" display-uri="gtop-000B" type="local">Hausdorff space</fr:link> <fr:tex display="inline"><![CDATA[X]]></fr:tex> is a <fr:link href="/gtop-000A/" title="Radon Measure" uri="https://boatnotabot.com/gtop-000A/" display-uri="gtop-000A" type="local">Radon measure</fr:link> <fr:tex display="inline"><![CDATA[\mu ]]></fr:tex> satisfying <fr:tex display="inline"><![CDATA[\mu (X) = 1]]></fr:tex>.
+</html:p>
+            <html:p>
+The space of all Radon probability measures on <fr:tex display="inline"><![CDATA[X]]></fr:tex> is denoted <fr:tex display="inline"><![CDATA[\mathcal {P}(X)]]></fr:tex>. When <fr:tex display="inline"><![CDATA[X]]></fr:tex> is a <fr:link href="/gtop-0008/" title="Compactness" uri="https://boatnotabot.com/gtop-0008/" display-uri="gtop-0008" type="local">compact</fr:link> <fr:link href="/gtop-0009/" title="Metric Space" uri="https://boatnotabot.com/gtop-0009/" display-uri="gtop-0009" type="local">metric space</fr:link>, <fr:tex display="inline"><![CDATA[\mathcal {P}(X)]]></fr:tex> equipped with the weak-* topology is itself a compact metric space.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>10</fr:day>
+            </fr:date>
+            <fr:uri>https://boatnotabot.com/opt-6013/</fr:uri>
+            <fr:display-uri>opt-6013</fr:display-uri>
+            <fr:route>/opt-6013/</fr:route>
+            <fr:title text="Relaxed Control">Relaxed Control</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>
+Consider the <fr:link href="/opt-6002/" title="Bolza Problem" uri="https://boatnotabot.com/opt-6002/" display-uri="opt-6002" type="local">bolza problem</fr:link> subject to <fr:tex display="inline"><![CDATA[\dot {\mathbf {x}} (t) = f(t,\mathbf {x} (t), \mathbf {u} (t)),\ \mathbf {u} (t) \in  U]]></fr:tex>, where <fr:tex display="inline"><![CDATA[U]]></fr:tex> is a <fr:link href="/gtop-0008/" title="Compactness" uri="https://boatnotabot.com/gtop-0008/" display-uri="gtop-0008" type="local">compact</fr:link> <fr:link href="/gtop-0009/" title="Metric Space" uri="https://boatnotabot.com/gtop-0009/" display-uri="gtop-0009" type="local">metric space</fr:link>.
+</html:p>
+            <html:p>
+Relaxed controls replace the set <fr:tex display="inline"><![CDATA[U]]></fr:tex> by the space of <fr:link href="/gtop-000N/" title="Radon Probability Measure" uri="https://boatnotabot.com/gtop-000N/" display-uri="gtop-000N" type="local">Radon probability measures</fr:link> on <fr:tex display="inline"><![CDATA[U]]></fr:tex>.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

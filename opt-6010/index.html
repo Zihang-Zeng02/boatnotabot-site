@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "" "">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://www.forester-notes.org" data-base-url="/"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width"></meta><link rel="stylesheet" href="/style.css"></link><link rel="stylesheet" href="/katex.min.css"></link><script type="text/javascript"></script><script type="module" src="/forester.js"></script><title>Derivation of the First-order Variation</title></head><body><ninja-keys placeholder="Start typing a note title or ID"></ninja-keys><header class="header"><nav class="nav"><div class="logo"><a href="/index.html" title="Home">« Home</a></div></nav></header><div id="grid-wrapper"><article><section xmlns="" lang="en" class="block"><details id="id1" open="open"><summary><header><h1>
+<span class="taxon"></span>Derivation of the First-order Variation <a class="slug" href="/opt-6010/">[opt-6010]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 7, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+    <p xmlns="http://www.w3.org/1999/xhtml">
+    We derive \(\frac {\partial  J}{\partial  \mathbf {u}}\) for the <span xmlns="" class="link local"><a href="/opt-6002/" title="Bolza Problem [opt-6002]">Bolza problem</a></span> from first principles, then show how the <span xmlns="" class="link local"><a href="/opt-6009/" title="Costate Equation [opt-6009]">costate</a></span> arises naturally.
+</p>
+    <section lang="en" class="block hide-metadata"><details id="id2" open="open"><summary><header><h1>
+<span class="taxon">1. </span>Linearization of \(J\)  </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 7, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+      Expanding \(J(\mathbf {u} + \Delta  \mathbf {u}) - J(\mathbf {u})\) to first order:
+  </p>
+        \[
+      \int _0^{t_f} \frac {\partial  L}{\partial  \mathbf {x}} \Delta  \mathbf {x} \, dt + \int _0^{t_f} \frac {\partial  L}{\partial  \mathbf {u}} \Delta  \mathbf {u} \, dt + \frac {d\Phi }{d\mathbf {x}}\left ( \mathbf {x}(t_f) \right ) \Delta  \mathbf {x}(t_f)
+  \]
+      </details></section>
+    <section lang="en" class="block hide-metadata"><details id="id3" open="open"><summary><header><h1>
+<span class="taxon">2. </span>Variation of the state  </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 7, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+      Linearizing the dynamics \(\dot {\mathbf {x}} = f(\mathbf {x}, \mathbf {u})\) gives
+  </p>
+        \[\dot {\Delta  \mathbf {x}}(t) = \frac {\partial  f}{\partial  \mathbf {x}} \Delta  \mathbf {x}(t) + \frac {\partial  f}{\partial  \mathbf {u}} \Delta  \mathbf {u}(t)\]
+        <p xmlns="http://www.w3.org/1999/xhtml">
+      whose solution, with \(\Delta  \mathbf {x}(0) = 0\), is
+  </p>
+        \[\Delta  \mathbf {x}(t) = \int _0^{t} \Psi (t, \tau ) \frac {\partial  f}{\partial  \mathbf {u}}\left ( \mathbf {x}(\tau ), \mathbf {u}(\tau ) \right ) \Delta  \mathbf {u}(\tau ) \, d\tau \]
+        <p xmlns="http://www.w3.org/1999/xhtml">
+      where \(\Psi (t, \tau )\) is the state transition matrix of \(\frac {\partial  f}{\partial  \mathbf {x}}\).
+  </p>
+      </details></section>
+    <section lang="en" class="block hide-metadata"><details id="id4" open="open"><summary><header><h1>
+<span class="taxon">3. </span>Collecting \(\Delta  \mathbf {u}\) terms  </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 7, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+      Substituting \(\Delta  \mathbf {x}\) and swapping integration order (Fubini), all three terms become inner products against \(\Delta  \mathbf {u}(\tau )\), yielding
+  </p>
+        \[
+      \left ( \frac {\partial  J}{\partial  \mathbf {u}}(\tau ) \right )^\intercal  = \underbrace {\left ( \int _\tau ^{t_f} \frac {\partial  L}{\partial  \mathbf {x}} \Psi (t, \tau ) \, dt + \frac {d\Phi }{d\mathbf {x}}\left ( \mathbf {x}(t_f) \right ) \Psi (t_f, \tau ) \right )}_{\mathbf {p}^\intercal (\tau )} \frac {\partial  f}{\partial  \mathbf {u}}\left ( \mathbf {x}(\tau ), \mathbf {u}(\tau ) \right ) + \left ( \frac {\partial  L}{\partial  \mathbf {u}}\left ( \mathbf {x}(\tau ), \mathbf {u}(\tau ) \right ) \right )^\intercal 
+  \]
+        <p xmlns="http://www.w3.org/1999/xhtml">
+      The bracketed expression is precisely the <span xmlns="" class="link local"><a href="/opt-6009/" title="Costate Equation [opt-6009]">costate</a></span> \(\mathbf {p}(\tau )\), so we recover
+  </p>
+        \[\frac {\partial  J}{\partial  \mathbf {u}} = \left ( \frac {\partial  f}{\partial  \mathbf {u}} \right )^\intercal  \mathbf {p} + \left ( \frac {\partial  L}{\partial  \mathbf {u}} \right )^\intercal \]
+      </details></section>
+  </details></section><footer xmlns="">
+    
+    
+    <section lang="en" class="block hide-metadata"><details id="id5" open="open"><summary><header><h1>
+<span class="taxon"></span>Backlinks  </h1>
+<div class="metadata"><ul></ul></div></header></summary>
+        <section lang="en" class="block"><details id="id6"><summary><header><h1>
+<span class="taxon"></span>First-order Variation of the Bolza Functional <a class="slug" href="/opt-6003/">[opt-6003]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">February 22, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+    To find the optimal control \(\mathbf {u}\), we consider the first-order variation of the functional \(J\) with respect to \(\mathbf {u}\). By augmenting the cost functional with system dynamics \(\dot {\mathbf {x}} = f(\mathbf {x}, \mathbf {u})\) using the <span xmlns="" class="link local"><a href="/opt-6009/" title="Costate Equation [opt-6009]">costate</a></span> \(\mathbf {p}\), we define:
+</p>
+            \[
+    \frac {\partial  J}{\partial  \mathbf {u}} = \left ( \frac {\partial  f}{\partial  \mathbf {u}} \right )^\intercal  \mathbf {p} + \left ( \frac {\partial  L}{\partial  \mathbf {u}} \right )^\intercal 
+\]
+            <p xmlns="http://www.w3.org/1999/xhtml">
+    We obtain the stationarity condition \(\frac {\partial  J}{\partial  \mathbf {u}} \equiv  0\). See the <span xmlns="" class="link local"><a href="/opt-6010/" title="Derivation of the First-order Variation [opt-6010]">derivation</a></span> for how this expression arises from first principles.
+</p>
+          </details></section>
+      </details></section>
+    <section lang="en" class="block hide-metadata"><details id="id7" open="open"><summary><header><h1>
+<span class="taxon"></span>Related  </h1>
+<div class="metadata"><ul></ul></div></header></summary>
+        <section lang="en" class="block" data-taxon="Definition"><details id="id8"><summary><header><h1>
+<span class="taxon">Definition. </span>Costate Equation <a class="slug" href="/opt-6009/">[opt-6009]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 7, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+            \[\dot {\mathbf {p}} = -\left ( \frac {\partial  f}{\partial  \mathbf {x}} \right )^\intercal  \mathbf {p} - \left ( \frac {\partial  L}{\partial  \mathbf {x}} \right )^\intercal , \quad  \mathbf {p}(t_f) = \nabla  \Phi \left ( \mathbf {x}(t_f) \right )\]
+          </details></section>
+        <section lang="en" class="block" data-taxon="Definition"><details id="id9"><summary><header><h1>
+<span class="taxon">Definition. </span>Bolza Problem <a class="slug" href="/opt-6002/">[opt-6002]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">February 21, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+    Bolza problem is a fundamental formulation in the calculus of variations and optimal control that minimizes a cost functional consisting of both an integral term (running cost) and a terminal cost. It is described with a system dynamic funcation and a cost function. \[\dot {\mathbf {x}} = f(\mathbf {x}, \mathbf {u}),\quad  \mathbf {x} (0) = x_0\]\[J := \int _0^{t_f} L \big (\mathbf {x}(t), \mathbf {u}(t)\big ) dt + \Phi  \left ( \mathbf {x}(t_f) \right )\] where state \(\mathbf {x}(t)\in  \mathbb {R}^n\), control \(\mathbf {u}(t)\in  \mathbb {R}^k\), \(L:\mathbb {R}^n \times  \mathbb {R}^k \to  \mathbb {R}\) is the running cost and \(\Phi :\mathbb {R}^n \to  \mathbb {R}\) is the terminal cost. The goal is to find the optimal control \(\mathbf {u}^*(t)\in  \mathbb {R}^k\) that minimizes this cost functional subject to the system dynamics and boundary conditions. With input constraint, we minimize \(J\) subject to constraints \(\mathbf {u}(t) \in  U_t \subseteq  \mathbb {R} ^k\) where \(U_t\) is the <span xmlns="" class="link local"><a href="/opt-6006/" title="Admissible control [opt-6006]">set of admissible control</a></span> at time \(t\) and is guaranteed to be <span xmlns="" class="link local"><a href="/gtop-0008/" title="Compactness [gtop-0008]">compact</a></span> and convex.
+</p>
+          </details></section>
+      </details></section>
+    
+  </footer></article><nav id="toc"><div class="block"><h1>Table of Contents</h1><ul xmlns="" class="block">
+<li>
+<a class="bullet" href="#id2" title="Linearization of J">■</a><span class="link local" data-target="#id2"><span class="taxon">1. </span>Linearization of \(J\)</span><ul class="block"></ul>
+</li>
+<li>
+<a class="bullet" href="#id3" title="Variation of the state">■</a><span class="link local" data-target="#id3"><span class="taxon">2. </span>Variation of the state</span><ul class="block"></ul>
+</li>
+<li>
+<a class="bullet" href="#id4" title="Collecting \Delta  \mathbf {u} terms">■</a><span class="link local" data-target="#id4"><span class="taxon">3. </span>Collecting \(\Delta  \mathbf {u}\) terms</span><ul class="block"></ul>
+</li>
+</ul></div></nav></div></body></html>

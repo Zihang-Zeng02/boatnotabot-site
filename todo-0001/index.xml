@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>3</fr:month>
+      <fr:day>11</fr:day>
+    </fr:date>
+    <fr:uri>https://boatnotabot.com/todo-0001/</fr:uri>
+    <fr:display-uri>todo-0001</fr:display-uri>
+    <fr:route>/todo-0001/</fr:route>
+    <fr:title text="Todo">Todo</fr:title>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>
+Intuitions and notes to be reorganized.
+</html:p>
+    <fr:tree show-metadata="false">
+      <fr:frontmatter>
+        <fr:authors>
+          <fr:author>
+            <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+          </fr:author>
+        </fr:authors>
+        <fr:date>
+          <fr:year>2026</fr:year>
+          <fr:month>3</fr:month>
+          <fr:day>11</fr:day>
+        </fr:date>
+        <fr:uri>https://boatnotabot.com/todo-0002/</fr:uri>
+        <fr:display-uri>todo-0002</fr:display-uri>
+        <fr:route>/todo-0002/</fr:route>
+        <fr:title text="Intuition: Hausdorff Space">Intuition: Hausdorff Space</fr:title>
+        <fr:taxon>Intuition</fr:taxon>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <html:p>
+A <fr:link href="/gtop-000B/" title="Hausdorff Space" uri="https://boatnotabot.com/gtop-000B/" display-uri="gtop-000B" type="local">Hausdorff space</fr:link> is one where distinct points are truly separate — you can always draw non-overlapping <fr:link href="/gtop-0005/" title="Open Set" uri="https://boatnotabot.com/gtop-0005/" display-uri="gtop-0005" type="local">open</fr:link> neighbourhoods around them.
+</html:p>
+        <html:p>
+Without the Hausdorff property, a sequence can converge to multiple limits simultaneously, and single points might not be <fr:link href="/gtop-0006/" title="Closed Set" uri="https://boatnotabot.com/gtop-0006/" display-uri="gtop-0006" type="local">closed</fr:link> sets.
+</html:p>
+        <html:p>
+Most spaces encountered naturally (<fr:link href="/gtop-0003/" title="Metric Space" uri="https://boatnotabot.com/gtop-0003/" display-uri="gtop-0003" type="local">metric spaces</fr:link>, manifolds, <fr:tex display="inline"><![CDATA[\mathbb {R}^n]]></fr:tex>) are Hausdorff. The indiscrete topology is the classic non-Hausdorff example — the only nonempty open set is <fr:tex display="inline"><![CDATA[X]]></fr:tex> itself, so you can never separate any two points.
+</html:p>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false">
+      <fr:frontmatter>
+        <fr:authors>
+          <fr:author>
+            <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+          </fr:author>
+        </fr:authors>
+        <fr:date>
+          <fr:year>2026</fr:year>
+          <fr:month>3</fr:month>
+          <fr:day>11</fr:day>
+        </fr:date>
+        <fr:uri>https://boatnotabot.com/todo-0003/</fr:uri>
+        <fr:display-uri>todo-0003</fr:display-uri>
+        <fr:route>/todo-0003/</fr:route>
+        <fr:title text="Intuition: Measure vs Metric">Intuition: Measure vs Metric</fr:title>
+        <fr:taxon>Intuition</fr:taxon>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <html:p>
+A <html:strong>measure</html:strong> assigns a "size" to a set — how much stuff is in it. Length, area, volume, and probability are all measures.
+</html:p>
+        <html:p>
+A <html:strong>metric</html:strong> assigns a "distance" between two points — how far apart they are.
+</html:p>
+        <html:p>
+They answer fundamentally different questions: measure asks "how big is this region?" while metric asks "how far apart are these two points?"
+</html:p>
+        <html:p>
+A metric is upstream of measure: a <fr:link href="/gtop-0003/" title="Metric Space" uri="https://boatnotabot.com/gtop-0003/" display-uri="gtop-0003" type="local">metric</fr:link> defines <fr:link href="/gtop-000S/" title="Open Ball" uri="https://boatnotabot.com/gtop-000S/" display-uri="gtop-000S" type="local">open balls</fr:link>, which give a <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topology</fr:link>, which give a <fr:link href="/gtop-000K/" title="Borel \sigma -algebra" uri="https://boatnotabot.com/gtop-000K/" display-uri="gtop-000K" type="local">Borel <fr:tex display="inline"><![CDATA[\sigma ]]></fr:tex>-algebra</fr:link>, which gives sets you can measure. A set can be small in measure but wide in metric (e.g., a thin line segment across a room).
+</html:p>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false">
+      <fr:frontmatter>
+        <fr:authors>
+          <fr:author>
+            <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+          </fr:author>
+        </fr:authors>
+        <fr:date>
+          <fr:year>2026</fr:year>
+          <fr:month>3</fr:month>
+          <fr:day>11</fr:day>
+        </fr:date>
+        <fr:uri>https://boatnotabot.com/todo-0004/</fr:uri>
+        <fr:display-uri>todo-0004</fr:display-uri>
+        <fr:route>/todo-0004/</fr:route>
+        <fr:title text="Intuition: \sigma -algebra">Intuition: <fr:tex display="inline"><![CDATA[\sigma ]]></fr:tex>-algebra</fr:title>
+        <fr:taxon>Intuition</fr:taxon>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <html:p>
+A <fr:link href="/gtop-000M/" title="\sigma -algebra" uri="https://boatnotabot.com/gtop-000M/" display-uri="gtop-000M" type="local"><fr:tex display="inline"><![CDATA[\sigma ]]></fr:tex>-algebra</fr:link> is a collection of sets that is closed under the operations you need to do measurement: complements and countable unions.
+</html:p>
+        <html:p>
+Think of it as a budget of measurable sets — it decides what you are allowed to measure. Not every subset needs to be included, but whatever is included must be self-consistent: if you can measure <fr:tex display="inline"><![CDATA[A]]></fr:tex>, you can measure "not <fr:tex display="inline"><![CDATA[A]]></fr:tex>"; if you can measure <fr:tex display="inline"><![CDATA[A_1, A_2, A_3, \ldots ]]></fr:tex>, you can measure their union.
+</html:p>
+        <html:p>
+Why not just measure everything? In <fr:tex display="inline"><![CDATA[\mathbb {R}]]></fr:tex>, you cannot assign a consistent length to all subsets (Vitali sets). The <fr:tex display="inline"><![CDATA[\sigma ]]></fr:tex>-algebra avoids this by restricting to a well-behaved collection where measurement stays consistent.
+</html:p>
+        <html:p>
+The <fr:tex display="inline"><![CDATA[\sigma ]]></fr:tex> specifically means countable — closed under countable unions, not just finite ones. This is what distinguishes it from a plain algebra of sets and is essential for doing limits and integration.
+</html:p>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false">
+      <fr:frontmatter>
+        <fr:authors>
+          <fr:author>
+            <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+          </fr:author>
+        </fr:authors>
+        <fr:date>
+          <fr:year>2026</fr:year>
+          <fr:month>3</fr:month>
+          <fr:day>11</fr:day>
+        </fr:date>
+        <fr:uri>https://boatnotabot.com/todo-0005/</fr:uri>
+        <fr:display-uri>todo-0005</fr:display-uri>
+        <fr:route>/todo-0005/</fr:route>
+        <fr:title text="Intuition: Borel \sigma -algebra">Intuition: Borel <fr:tex display="inline"><![CDATA[\sigma ]]></fr:tex>-algebra</fr:title>
+        <fr:taxon>Intuition</fr:taxon>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <html:p>
+The <fr:link href="/gtop-000K/" title="Borel \sigma -algebra" uri="https://boatnotabot.com/gtop-000K/" display-uri="gtop-000K" type="local">Borel <fr:tex display="inline"><![CDATA[\sigma ]]></fr:tex>-algebra</fr:link> is what you get by starting from the <fr:link href="/gtop-0005/" title="Open Set" uri="https://boatnotabot.com/gtop-0005/" display-uri="gtop-0005" type="local">open sets</fr:link> and asking: what is the smallest <fr:link href="/gtop-000M/" title="\sigma -algebra" uri="https://boatnotabot.com/gtop-000M/" display-uri="gtop-000M" type="local"><fr:tex display="inline"><![CDATA[\sigma ]]></fr:tex>-algebra</fr:link> containing all of them?
+</html:p>
+        <html:p>
+The <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topology</fr:link> decides what is open. The Borel <fr:tex display="inline"><![CDATA[\sigma ]]></fr:tex>-algebra is the cheapest way to turn that into something you can measure. You take the open sets and "complete" them: add all <fr:link href="/gtop-0006/" title="Closed Set" uri="https://boatnotabot.com/gtop-0006/" display-uri="gtop-0006" type="local">closed</fr:link> sets (complements), countable intersections of open sets (<fr:tex display="inline"><![CDATA[G_\delta ]]></fr:tex> sets), countable unions of closed sets (<fr:tex display="inline"><![CDATA[F_\sigma ]]></fr:tex> sets), and so on.
+</html:p>
+        <html:p>
+Why minimal? A bigger <fr:tex display="inline"><![CDATA[\sigma ]]></fr:tex>-algebra means more sets to measure, which is harder to do consistently. The Borel <fr:tex display="inline"><![CDATA[\sigma ]]></fr:tex>-algebra includes exactly the sets that the topology forces you to measure — nothing more.
+</html:p>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false">
+      <fr:frontmatter>
+        <fr:authors>
+          <fr:author>
+            <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+          </fr:author>
+        </fr:authors>
+        <fr:date>
+          <fr:year>2026</fr:year>
+          <fr:month>3</fr:month>
+          <fr:day>11</fr:day>
+        </fr:date>
+        <fr:uri>https://boatnotabot.com/todo-0006/</fr:uri>
+        <fr:display-uri>todo-0006</fr:display-uri>
+        <fr:route>/todo-0006/</fr:route>
+        <fr:title text="Intuition: Borel Measure">Intuition: Borel Measure</fr:title>
+        <fr:taxon>Intuition</fr:taxon>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <html:p>
+A <fr:link href="/gtop-000C/" title="Borel Measure" uri="https://boatnotabot.com/gtop-000C/" display-uri="gtop-000C" type="local">Borel measure</fr:link> assigns "sizes" (lengths, areas, volumes, probabilities) to sets built from <fr:link href="/gtop-0005/" title="Open Set" uri="https://boatnotabot.com/gtop-0005/" display-uri="gtop-0005" type="local">open sets</fr:link>.
+</html:p>
+        <html:p>
+The <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topology</fr:link> tells you what is open, the <fr:link href="/gtop-000K/" title="Borel \sigma -algebra" uri="https://boatnotabot.com/gtop-000K/" display-uri="gtop-000K" type="local">Borel <fr:tex display="inline"><![CDATA[\sigma ]]></fr:tex>-algebra</fr:link> tells you what is measurable, and a Borel measure tells you how big. It is a function that assigns a non-negative size to each <fr:link href="/gtop-000L/" title="Borel Set" uri="https://boatnotabot.com/gtop-000L/" display-uri="gtop-000L" type="local">Borel set</fr:link>, respecting the rule that the measure of a countable disjoint union equals the sum of the measures.
+</html:p>
+        <html:p>
+Why not measure all subsets? In spaces like <fr:tex display="inline"><![CDATA[\mathbb {R}]]></fr:tex>, there exist pathological sets (via the axiom of choice) that cannot be assigned a size consistently. The Borel <fr:tex display="inline"><![CDATA[\sigma ]]></fr:tex>-algebra avoids this by only including sets constructible from open sets through countable operations — which turns out to be rich enough for essentially all practical purposes.
+</html:p>
+      </fr:mainmatter>
+    </fr:tree>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

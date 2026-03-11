@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>3</fr:month>
+      <fr:day>11</fr:day>
+    </fr:date>
+    <fr:uri>https://boatnotabot.com/gtop-000A/</fr:uri>
+    <fr:display-uri>gtop-000A</fr:display-uri>
+    <fr:route>/gtop-000A/</fr:route>
+    <fr:title text="Radon Measure">Radon Measure</fr:title>
+    <fr:taxon>Definition</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>
+A <html:strong>Radon measure</html:strong> on a <fr:link href="/gtop-000O/" title="Locally Compact Space" uri="https://boatnotabot.com/gtop-000O/" display-uri="gtop-000O" type="local">locally compact</fr:link> <fr:link href="/gtop-000B/" title="Hausdorff Space" uri="https://boatnotabot.com/gtop-000B/" display-uri="gtop-000B" type="local">Hausdorff space</fr:link> <fr:tex display="inline"><![CDATA[X]]></fr:tex> is a <fr:link href="/gtop-000C/" title="Borel Measure" uri="https://boatnotabot.com/gtop-000C/" display-uri="gtop-000C" type="local">Borel measure</fr:link> <fr:tex display="inline"><![CDATA[\mu ]]></fr:tex> satisfying:
+</html:p>
+    <html:ol><html:li><fr:tex display="inline"><![CDATA[\mu (K) < \infty ]]></fr:tex> for every <fr:link href="/gtop-0008/" title="Compactness" uri="https://boatnotabot.com/gtop-0008/" display-uri="gtop-0008" type="local">compact</fr:link> set <fr:tex display="inline"><![CDATA[K \subseteq  X]]></fr:tex>.</html:li>
+<html:li><fr:tex display="inline"><![CDATA[\mu ]]></fr:tex> is <fr:link href="/gtop-000D/" title="Outer Regularity" uri="https://boatnotabot.com/gtop-000D/" display-uri="gtop-000D" type="local">outer regular</fr:link> on all <fr:link href="/gtop-000L/" title="Borel Set" uri="https://boatnotabot.com/gtop-000L/" display-uri="gtop-000L" type="local">Borel sets</fr:link>.</html:li>
+<html:li><fr:tex display="inline"><![CDATA[\mu ]]></fr:tex> is <fr:link href="/gtop-000E/" title="Inner Regularity" uri="https://boatnotabot.com/gtop-000E/" display-uri="gtop-000E" type="local">inner regular</fr:link> on all <fr:link href="/gtop-0005/" title="Open Set" uri="https://boatnotabot.com/gtop-0005/" display-uri="gtop-0005" type="local">open sets</fr:link>.</html:li></html:ol>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>10</fr:day>
+            </fr:date>
+            <fr:uri>https://boatnotabot.com/gtop-000N/</fr:uri>
+            <fr:display-uri>gtop-000N</fr:display-uri>
+            <fr:route>/gtop-000N/</fr:route>
+            <fr:title text="Radon Probability Measure">Radon Probability Measure</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>
+A <html:strong>Radon probability measure</html:strong> on a <fr:link href="/gtop-000O/" title="Locally Compact Space" uri="https://boatnotabot.com/gtop-000O/" display-uri="gtop-000O" type="local">locally compact</fr:link> <fr:link href="/gtop-000B/" title="Hausdorff Space" uri="https://boatnotabot.com/gtop-000B/" display-uri="gtop-000B" type="local">Hausdorff space</fr:link> <fr:tex display="inline"><![CDATA[X]]></fr:tex> is a <fr:link href="/gtop-000A/" title="Radon Measure" uri="https://boatnotabot.com/gtop-000A/" display-uri="gtop-000A" type="local">Radon measure</fr:link> <fr:tex display="inline"><![CDATA[\mu ]]></fr:tex> satisfying <fr:tex display="inline"><![CDATA[\mu (X) = 1]]></fr:tex>.
+</html:p>
+            <html:p>
+The space of all Radon probability measures on <fr:tex display="inline"><![CDATA[X]]></fr:tex> is denoted <fr:tex display="inline"><![CDATA[\mathcal {P}(X)]]></fr:tex>. When <fr:tex display="inline"><![CDATA[X]]></fr:tex> is a <fr:link href="/gtop-0008/" title="Compactness" uri="https://boatnotabot.com/gtop-0008/" display-uri="gtop-0008" type="local">compact</fr:link> <fr:link href="/gtop-0009/" title="Metric Space" uri="https://boatnotabot.com/gtop-0009/" display-uri="gtop-0009" type="local">metric space</fr:link>, <fr:tex display="inline"><![CDATA[\mathcal {P}(X)]]></fr:tex> equipped with the weak-* topology is itself a compact metric space.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>11</fr:day>
+            </fr:date>
+            <fr:uri>https://boatnotabot.com/gtop-000C/</fr:uri>
+            <fr:display-uri>gtop-000C</fr:display-uri>
+            <fr:route>/gtop-000C/</fr:route>
+            <fr:title text="Borel Measure">Borel Measure</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>
+A <html:strong>Borel measure</html:strong> on a <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topological space</fr:link> <fr:tex display="inline"><![CDATA[X]]></fr:tex> is a measure <fr:tex display="inline"><![CDATA[\mu  : \mathcal {B}(X) \to  [0, \infty ]]]></fr:tex> defined on the <fr:link href="/gtop-000K/" title="Borel \sigma -algebra" uri="https://boatnotabot.com/gtop-000K/" display-uri="gtop-000K" type="local">Borel <fr:tex display="inline"><![CDATA[\sigma ]]></fr:tex>-algebra</fr:link>.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>11</fr:day>
+            </fr:date>
+            <fr:uri>https://boatnotabot.com/gtop-000B/</fr:uri>
+            <fr:display-uri>gtop-000B</fr:display-uri>
+            <fr:route>/gtop-000B/</fr:route>
+            <fr:title text="Hausdorff Space">Hausdorff Space</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>
+A <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topological space</fr:link> is <html:strong>Hausdorff</html:strong> if for every pair of distinct points therein there exist a <fr:link href="/gtop-000F/" title="Neighborhood" uri="https://boatnotabot.com/gtop-000F/" display-uri="gtop-000F" type="local">neighbourhood</fr:link> of each point that are disjoint from each other.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>10</fr:day>
+            </fr:date>
+            <fr:uri>https://boatnotabot.com/gtop-000L/</fr:uri>
+            <fr:display-uri>gtop-000L</fr:display-uri>
+            <fr:route>/gtop-000L/</fr:route>
+            <fr:title text="Borel Set">Borel Set</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>
+A <html:strong>Borel set</html:strong> in a <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topological space</fr:link> <fr:tex display="inline"><![CDATA[X]]></fr:tex> is any set belonging to the <fr:link href="/gtop-000K/" title="Borel \sigma -algebra" uri="https://boatnotabot.com/gtop-000K/" display-uri="gtop-000K" type="local">Borel <fr:tex display="inline"><![CDATA[\sigma ]]></fr:tex>-algebra</fr:link> <fr:tex display="inline"><![CDATA[\mathcal {B}(X)]]></fr:tex>.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>10</fr:day>
+            </fr:date>
+            <fr:uri>https://boatnotabot.com/gtop-000E/</fr:uri>
+            <fr:display-uri>gtop-000E</fr:display-uri>
+            <fr:route>/gtop-000E/</fr:route>
+            <fr:title text="Inner Regularity">Inner Regularity</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>
+A <fr:link href="/gtop-000C/" title="Borel Measure" uri="https://boatnotabot.com/gtop-000C/" display-uri="gtop-000C" type="local">Borel measure</fr:link> <fr:tex display="inline"><![CDATA[\mu ]]></fr:tex> on a <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topological space</fr:link> <fr:tex display="inline"><![CDATA[X]]></fr:tex> is <html:strong>inner regular</html:strong> on a <fr:link href="/gtop-000L/" title="Borel Set" uri="https://boatnotabot.com/gtop-000L/" display-uri="gtop-000L" type="local">Borel set</fr:link> <fr:tex display="inline"><![CDATA[E]]></fr:tex> if
+<fr:tex display="block"><![CDATA[
+\mu (E) = \sup  \left \{  \mu (M) : M \subseteq  E, \; M \text { is compact}  \right \}
+]]></fr:tex>
+where <fr:tex display="inline"><![CDATA[M]]></fr:tex> is a <fr:link href="/gtop-0008/" title="Compactness" uri="https://boatnotabot.com/gtop-0008/" display-uri="gtop-0008" type="local">compact</fr:link> subset.
+</html:p>
+            <html:p>
+That is, the measure of <fr:tex display="inline"><![CDATA[E]]></fr:tex> can be approximated from below by the measures of <fr:link href="/gtop-0008/" title="Compactness" uri="https://boatnotabot.com/gtop-0008/" display-uri="gtop-0008" type="local">compact</fr:link> subsets of <fr:tex display="inline"><![CDATA[E]]></fr:tex>.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>10</fr:day>
+            </fr:date>
+            <fr:uri>https://boatnotabot.com/gtop-000O/</fr:uri>
+            <fr:display-uri>gtop-000O</fr:display-uri>
+            <fr:route>/gtop-000O/</fr:route>
+            <fr:title text="Locally Compact Space">Locally Compact Space</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>
+A <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topological space</fr:link> <fr:tex display="inline"><![CDATA[X]]></fr:tex> is <html:strong>locally compact</html:strong> if every point <fr:tex display="inline"><![CDATA[x \in  X]]></fr:tex> has a <fr:link href="/gtop-000F/" title="Neighborhood" uri="https://boatnotabot.com/gtop-000F/" display-uri="gtop-000F" type="local">neighbourhood</fr:link> contained in a <fr:link href="/gtop-0008/" title="Compactness" uri="https://boatnotabot.com/gtop-0008/" display-uri="gtop-0008" type="local">compact</fr:link> subset of <fr:tex display="inline"><![CDATA[X]]></fr:tex>.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>10</fr:day>
+            </fr:date>
+            <fr:uri>https://boatnotabot.com/gtop-000D/</fr:uri>
+            <fr:display-uri>gtop-000D</fr:display-uri>
+            <fr:route>/gtop-000D/</fr:route>
+            <fr:title text="Outer Regularity">Outer Regularity</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>
+A <fr:link href="/gtop-000C/" title="Borel Measure" uri="https://boatnotabot.com/gtop-000C/" display-uri="gtop-000C" type="local">Borel measure</fr:link> <fr:tex display="inline"><![CDATA[\mu ]]></fr:tex> on a <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topological space</fr:link> <fr:tex display="inline"><![CDATA[X]]></fr:tex> is <html:strong>outer regular</html:strong> on a Borel set <fr:tex display="inline"><![CDATA[E]]></fr:tex> if
+<fr:tex display="block"><![CDATA[
+\mu (E) = \inf  \left \{  \mu (W) : E \subseteq  W, \; W \text { is open}  \right \}
+]]></fr:tex>
+where <fr:tex display="inline"><![CDATA[W]]></fr:tex> is an <fr:link href="/gtop-0005/" title="Open Set" uri="https://boatnotabot.com/gtop-0005/" display-uri="gtop-0005" type="local">open set</fr:link>.
+</html:p>
+            <html:p>
+That is, the measure of <fr:tex display="inline"><![CDATA[E]]></fr:tex> can be approximated from above by the measures of <fr:link href="/gtop-0005/" title="Open Set" uri="https://boatnotabot.com/gtop-0005/" display-uri="gtop-0005" type="local">open sets</fr:link> containing <fr:tex display="inline"><![CDATA[E]]></fr:tex>.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>7</fr:day>
+            </fr:date>
+            <fr:uri>https://boatnotabot.com/gtop-0008/</fr:uri>
+            <fr:display-uri>gtop-0008</fr:display-uri>
+            <fr:route>/gtop-0008/</fr:route>
+            <fr:title text="Compactness">Compactness</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>
+    A <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topological space</fr:link> <fr:tex display="inline"><![CDATA[(X, \tau )]]></fr:tex> is <html:strong>compact</html:strong> if every <fr:link href="/gtop-0007/" title="Open Cover" uri="https://boatnotabot.com/gtop-0007/" display-uri="gtop-0007" type="local">open cover</fr:link> of <fr:tex display="inline"><![CDATA[X]]></fr:tex> has a <fr:link href="/gtop-0007/" title="Open Cover" uri="https://boatnotabot.com/gtop-0007/" display-uri="gtop-0007" type="local">finite subcover</fr:link>.
+</html:p>
+            <html:p>
+    A subset <fr:tex display="inline"><![CDATA[K \subseteq  X]]></fr:tex> is compact if it is compact as a topological space with the subspace topology, or equivalently, if every open cover of <fr:tex display="inline"><![CDATA[K]]></fr:tex> by open sets in <fr:tex display="inline"><![CDATA[X]]></fr:tex> has a finite subcover.
+</html:p>
+            <html:p>
+    In <fr:link href="/gtop-0004/" title="Euclidean Space" uri="https://boatnotabot.com/gtop-0004/" display-uri="gtop-0004" type="local">Euclidean space</fr:link> <fr:tex display="inline"><![CDATA[\mathbb {R}^n]]></fr:tex>, the Heine-Borel theorem gives a concrete characterization: a subset <fr:tex display="inline"><![CDATA[K \subseteq  \mathbb {R}^n]]></fr:tex> is compact if and only if it is <fr:link href="/gtop-0006/" title="Closed Set" uri="https://boatnotabot.com/gtop-0006/" display-uri="gtop-0006" type="local">closed</fr:link> and bounded (i.e. <fr:tex display="inline"><![CDATA[K \subseteq  B(0, R)]]></fr:tex> for some <fr:tex display="inline"><![CDATA[R > 0]]></fr:tex>).
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>7</fr:day>
+            </fr:date>
+            <fr:uri>https://boatnotabot.com/gtop-0005/</fr:uri>
+            <fr:display-uri>gtop-0005</fr:display-uri>
+            <fr:route>/gtop-0005/</fr:route>
+            <fr:title text="Open Set">Open Set</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>
+    Let <fr:tex display="inline"><![CDATA[(X, \tau )]]></fr:tex> be a <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topological space</fr:link>. A subset <fr:tex display="inline"><![CDATA[U \subseteq  X]]></fr:tex> is called <html:strong>open</html:strong> if <fr:tex display="inline"><![CDATA[U \in  \tau ]]></fr:tex>.
+</html:p>
+            <html:p>
+    In a <fr:link href="/gtop-0004/" title="Euclidean Space" uri="https://boatnotabot.com/gtop-0004/" display-uri="gtop-0004" type="local">Euclidean space</fr:link> <fr:tex display="inline"><![CDATA[\mathbb {R}^n]]></fr:tex>, a subset <fr:tex display="inline"><![CDATA[U \subseteq  \mathbb {R}^n]]></fr:tex> is <html:strong>open</html:strong> if for every <fr:tex display="inline"><![CDATA[x \in  U]]></fr:tex>, there exists <fr:tex display="inline"><![CDATA[\epsilon  > 0]]></fr:tex> such that <fr:tex display="inline"><![CDATA[B(x, \epsilon ) \subseteq  U]]></fr:tex>. More generally, in any <fr:link href="/gtop-0003/" title="Metric Space" uri="https://boatnotabot.com/gtop-0003/" display-uri="gtop-0003" type="local">metric space</fr:link> <fr:tex display="inline"><![CDATA[(X, d)]]></fr:tex>, a set is open if it is a union of <fr:link href="/gtop-000S/" title="Open Ball" uri="https://boatnotabot.com/gtop-000S/" display-uri="gtop-000S" type="local">open balls</fr:link>.
+</html:p>
+            <html:p>
+    The <fr:link href="/gtop-0004/" title="Euclidean Space" uri="https://boatnotabot.com/gtop-0004/" display-uri="gtop-0004" type="local">Euclidean</fr:link> definition is a special case where the topology is induced by the metric <fr:tex display="inline"><![CDATA[d(x, y) = \lVert  x - y \rVert ]]></fr:tex>.
+</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>3</fr:month>
+      <fr:day>11</fr:day>
+    </fr:date>
+    <fr:uri>https://boatnotabot.com/gtop-000P/</fr:uri>
+    <fr:display-uri>gtop-000P</fr:display-uri>
+    <fr:route>/gtop-000P/</fr:route>
+    <fr:title text="Topologies on a Three-Point Set">Topologies on a Three-Point Set</fr:title>
+    <fr:taxon>Example</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>
+Let <fr:tex display="inline"><![CDATA[X = \left \{ 1, 2, 3 \right \}]]></fr:tex>. The following are all valid topologies on <fr:tex display="inline"><![CDATA[X]]></fr:tex>:
+</html:p>
+    <html:ul><html:li><html:strong>Indiscrete</html:strong>: <fr:tex display="inline"><![CDATA[\tau _1 = \left \{ \varnothing , X \right \}]]></fr:tex>. Only <fr:tex display="inline"><![CDATA[\varnothing ]]></fr:tex> and <fr:tex display="inline"><![CDATA[X]]></fr:tex> are open.</html:li>
+<html:li><html:strong>Partial</html:strong>: <fr:tex display="inline"><![CDATA[\tau _2 = \left \{ \varnothing , \left \{ 1 \right \}, X \right \}]]></fr:tex>. Only <fr:tex display="inline"><![CDATA[\left \{ 1 \right \}]]></fr:tex> and the trivial sets are open.</html:li>
+<html:li><html:strong>Discrete</html:strong>: <fr:tex display="inline"><![CDATA[\tau _3 = \mathcal {P}(X)]]></fr:tex>. Every subset is open.</html:li></html:ul>
+    <html:p>
+Each satisfies the three axioms of a <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topological space</fr:link>. The same set <fr:tex display="inline"><![CDATA[X]]></fr:tex> carries different topological structure depending on the choice of <fr:tex display="inline"><![CDATA[\tau ]]></fr:tex>.
+</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>7</fr:day>
+            </fr:date>
+            <fr:uri>https://boatnotabot.com/gtop-0002/</fr:uri>
+            <fr:display-uri>gtop-0002</fr:display-uri>
+            <fr:route>/gtop-0002/</fr:route>
+            <fr:title text="Topological Space">Topological Space</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>
+    A <html:strong>topological space</html:strong> is a pair <fr:tex display="inline"><![CDATA[(X, \tau )]]></fr:tex> where <fr:tex display="inline"><![CDATA[X]]></fr:tex> is a set and <fr:tex display="inline"><![CDATA[\tau  \subseteq  \mathcal {P}(X)]]></fr:tex> is a collection of subsets of <fr:tex display="inline"><![CDATA[X]]></fr:tex>, called a <html:strong>topology</html:strong> on <fr:tex display="inline"><![CDATA[X]]></fr:tex>, satisfying:
+</html:p>
+            <html:ol><html:li><fr:tex display="inline"><![CDATA[\varnothing , X \in  \tau ]]></fr:tex></html:li>
+    <html:li>If <fr:tex display="inline"><![CDATA[\left \{ U_\alpha  \right \}_{\alpha  \in  A} \subseteq  \tau ]]></fr:tex>, then <fr:tex display="inline"><![CDATA[\bigcup _{\alpha  \in  A} U_\alpha  \in  \tau ]]></fr:tex> (closed under arbitrary unions).</html:li>
+    <html:li>If <fr:tex display="inline"><![CDATA[U_1, U_2 \in  \tau ]]></fr:tex>, then <fr:tex display="inline"><![CDATA[U_1 \cap  U_2 \in  \tau ]]></fr:tex> (closed under finite intersections).</html:li></html:ol>
+            <html:p>
+    The elements of <fr:tex display="inline"><![CDATA[\tau ]]></fr:tex> are called <html:strong><fr:link href="/gtop-0005/" title="Open Set" uri="https://boatnotabot.com/gtop-0005/" display-uri="gtop-0005" type="local">open sets</fr:link></html:strong>. A set <fr:tex display="inline"><![CDATA[C \subseteq  X]]></fr:tex> is called <html:strong><fr:link href="/gtop-0006/" title="Closed Set" uri="https://boatnotabot.com/gtop-0006/" display-uri="gtop-0006" type="local">closed</fr:link></html:strong> if its complement <fr:tex display="inline"><![CDATA[X \setminus  C]]></fr:tex> is open.
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>11</fr:day>
+                </fr:date>
+                <fr:uri>https://boatnotabot.com/gtop-000P/</fr:uri>
+                <fr:display-uri>gtop-000P</fr:display-uri>
+                <fr:route>/gtop-000P/</fr:route>
+                <fr:title text="Topologies on a Three-Point Set">Topologies on a Three-Point Set</fr:title>
+                <fr:taxon>Example</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+Let <fr:tex display="inline"><![CDATA[X = \left \{ 1, 2, 3 \right \}]]></fr:tex>. The following are all valid topologies on <fr:tex display="inline"><![CDATA[X]]></fr:tex>:
+</html:p>
+                <html:ul><html:li><html:strong>Indiscrete</html:strong>: <fr:tex display="inline"><![CDATA[\tau _1 = \left \{ \varnothing , X \right \}]]></fr:tex>. Only <fr:tex display="inline"><![CDATA[\varnothing ]]></fr:tex> and <fr:tex display="inline"><![CDATA[X]]></fr:tex> are open.</html:li>
+<html:li><html:strong>Partial</html:strong>: <fr:tex display="inline"><![CDATA[\tau _2 = \left \{ \varnothing , \left \{ 1 \right \}, X \right \}]]></fr:tex>. Only <fr:tex display="inline"><![CDATA[\left \{ 1 \right \}]]></fr:tex> and the trivial sets are open.</html:li>
+<html:li><html:strong>Discrete</html:strong>: <fr:tex display="inline"><![CDATA[\tau _3 = \mathcal {P}(X)]]></fr:tex>. Every subset is open.</html:li></html:ul>
+                <html:p>
+Each satisfies the three axioms of a <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topological space</fr:link>. The same set <fr:tex display="inline"><![CDATA[X]]></fr:tex> carries different topological structure depending on the choice of <fr:tex display="inline"><![CDATA[\tau ]]></fr:tex>.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>11</fr:day>
+                </fr:date>
+                <fr:uri>https://boatnotabot.com/gtop-000Q/</fr:uri>
+                <fr:display-uri>gtop-000Q</fr:display-uri>
+                <fr:route>/gtop-000Q/</fr:route>
+                <fr:title text="Open, Closed, Both, or Neither">Open, Closed, Both, or Neither</fr:title>
+                <fr:taxon>Example</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+Let <fr:tex display="inline"><![CDATA[X = \left \{ 1,2,3 \right \}]]></fr:tex> with <fr:tex display="inline"><![CDATA[\tau  = \left \{ \varnothing , \left \{ 1 \right \}, X \right \}]]></fr:tex>. A subset need not be <fr:link href="/gtop-0005/" title="Open Set" uri="https://boatnotabot.com/gtop-0005/" display-uri="gtop-0005" type="local">open</fr:link> or <fr:link href="/gtop-0006/" title="Closed Set" uri="https://boatnotabot.com/gtop-0006/" display-uri="gtop-0006" type="local">closed</fr:link> — it can be both, or neither.
+</html:p>
+                <html:ul><html:li><fr:tex display="inline"><![CDATA[\left \{ 1 \right \}]]></fr:tex> is open (in <fr:tex display="inline"><![CDATA[\tau ]]></fr:tex>), but not closed (<fr:tex display="inline"><![CDATA[X \setminus  \left \{ 1 \right \} = \left \{ 2,3 \right \} \notin  \tau ]]></fr:tex>).</html:li>
+<html:li><fr:tex display="inline"><![CDATA[\left \{ 2,3 \right \}]]></fr:tex> is closed (<fr:tex display="inline"><![CDATA[X \setminus  \left \{ 2,3 \right \} = \left \{ 1 \right \} \in  \tau ]]></fr:tex>), but not open.</html:li>
+<html:li><fr:tex display="inline"><![CDATA[\varnothing ]]></fr:tex> and <fr:tex display="inline"><![CDATA[X]]></fr:tex> are <html:strong>both</html:strong> open and closed.</html:li>
+<html:li><fr:tex display="inline"><![CDATA[\left \{ 1,2 \right \}]]></fr:tex> is <html:strong>neither</html:strong> open (not in <fr:tex display="inline"><![CDATA[\tau ]]></fr:tex>) nor closed (<fr:tex display="inline"><![CDATA[X \setminus  \left \{ 1,2 \right \} = \left \{ 3 \right \} \notin  \tau ]]></fr:tex>).</html:li></html:ul>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2026</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>7</fr:day>
+            </fr:date>
+            <fr:uri>https://boatnotabot.com/gtop-0002/</fr:uri>
+            <fr:display-uri>gtop-0002</fr:display-uri>
+            <fr:route>/gtop-0002/</fr:route>
+            <fr:title text="Topological Space">Topological Space</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>
+    A <html:strong>topological space</html:strong> is a pair <fr:tex display="inline"><![CDATA[(X, \tau )]]></fr:tex> where <fr:tex display="inline"><![CDATA[X]]></fr:tex> is a set and <fr:tex display="inline"><![CDATA[\tau  \subseteq  \mathcal {P}(X)]]></fr:tex> is a collection of subsets of <fr:tex display="inline"><![CDATA[X]]></fr:tex>, called a <html:strong>topology</html:strong> on <fr:tex display="inline"><![CDATA[X]]></fr:tex>, satisfying:
+</html:p>
+            <html:ol><html:li><fr:tex display="inline"><![CDATA[\varnothing , X \in  \tau ]]></fr:tex></html:li>
+    <html:li>If <fr:tex display="inline"><![CDATA[\left \{ U_\alpha  \right \}_{\alpha  \in  A} \subseteq  \tau ]]></fr:tex>, then <fr:tex display="inline"><![CDATA[\bigcup _{\alpha  \in  A} U_\alpha  \in  \tau ]]></fr:tex> (closed under arbitrary unions).</html:li>
+    <html:li>If <fr:tex display="inline"><![CDATA[U_1, U_2 \in  \tau ]]></fr:tex>, then <fr:tex display="inline"><![CDATA[U_1 \cap  U_2 \in  \tau ]]></fr:tex> (closed under finite intersections).</html:li></html:ol>
+            <html:p>
+    The elements of <fr:tex display="inline"><![CDATA[\tau ]]></fr:tex> are called <html:strong><fr:link href="/gtop-0005/" title="Open Set" uri="https://boatnotabot.com/gtop-0005/" display-uri="gtop-0005" type="local">open sets</fr:link></html:strong>. A set <fr:tex display="inline"><![CDATA[C \subseteq  X]]></fr:tex> is called <html:strong><fr:link href="/gtop-0006/" title="Closed Set" uri="https://boatnotabot.com/gtop-0006/" display-uri="gtop-0006" type="local">closed</fr:link></html:strong> if its complement <fr:tex display="inline"><![CDATA[X \setminus  C]]></fr:tex> is open.
+</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>11</fr:day>
+                </fr:date>
+                <fr:uri>https://boatnotabot.com/gtop-000P/</fr:uri>
+                <fr:display-uri>gtop-000P</fr:display-uri>
+                <fr:route>/gtop-000P/</fr:route>
+                <fr:title text="Topologies on a Three-Point Set">Topologies on a Three-Point Set</fr:title>
+                <fr:taxon>Example</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+Let <fr:tex display="inline"><![CDATA[X = \left \{ 1, 2, 3 \right \}]]></fr:tex>. The following are all valid topologies on <fr:tex display="inline"><![CDATA[X]]></fr:tex>:
+</html:p>
+                <html:ul><html:li><html:strong>Indiscrete</html:strong>: <fr:tex display="inline"><![CDATA[\tau _1 = \left \{ \varnothing , X \right \}]]></fr:tex>. Only <fr:tex display="inline"><![CDATA[\varnothing ]]></fr:tex> and <fr:tex display="inline"><![CDATA[X]]></fr:tex> are open.</html:li>
+<html:li><html:strong>Partial</html:strong>: <fr:tex display="inline"><![CDATA[\tau _2 = \left \{ \varnothing , \left \{ 1 \right \}, X \right \}]]></fr:tex>. Only <fr:tex display="inline"><![CDATA[\left \{ 1 \right \}]]></fr:tex> and the trivial sets are open.</html:li>
+<html:li><html:strong>Discrete</html:strong>: <fr:tex display="inline"><![CDATA[\tau _3 = \mathcal {P}(X)]]></fr:tex>. Every subset is open.</html:li></html:ul>
+                <html:p>
+Each satisfies the three axioms of a <fr:link href="/gtop-0002/" title="Topological Space" uri="https://boatnotabot.com/gtop-0002/" display-uri="gtop-0002" type="local">topological space</fr:link>. The same set <fr:tex display="inline"><![CDATA[X]]></fr:tex> carries different topological structure depending on the choice of <fr:tex display="inline"><![CDATA[\tau ]]></fr:tex>.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/boat/" title="Zihang Zeng" uri="https://boatnotabot.com/boat/" display-uri="boat" type="local">Zihang Zeng</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>11</fr:day>
+                </fr:date>
+                <fr:uri>https://boatnotabot.com/gtop-000Q/</fr:uri>
+                <fr:display-uri>gtop-000Q</fr:display-uri>
+                <fr:route>/gtop-000Q/</fr:route>
+                <fr:title text="Open, Closed, Both, or Neither">Open, Closed, Both, or Neither</fr:title>
+                <fr:taxon>Example</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+Let <fr:tex display="inline"><![CDATA[X = \left \{ 1,2,3 \right \}]]></fr:tex> with <fr:tex display="inline"><![CDATA[\tau  = \left \{ \varnothing , \left \{ 1 \right \}, X \right \}]]></fr:tex>. A subset need not be <fr:link href="/gtop-0005/" title="Open Set" uri="https://boatnotabot.com/gtop-0005/" display-uri="gtop-0005" type="local">open</fr:link> or <fr:link href="/gtop-0006/" title="Closed Set" uri="https://boatnotabot.com/gtop-0006/" display-uri="gtop-0006" type="local">closed</fr:link> — it can be both, or neither.
+</html:p>
+                <html:ul><html:li><fr:tex display="inline"><![CDATA[\left \{ 1 \right \}]]></fr:tex> is open (in <fr:tex display="inline"><![CDATA[\tau ]]></fr:tex>), but not closed (<fr:tex display="inline"><![CDATA[X \setminus  \left \{ 1 \right \} = \left \{ 2,3 \right \} \notin  \tau ]]></fr:tex>).</html:li>
+<html:li><fr:tex display="inline"><![CDATA[\left \{ 2,3 \right \}]]></fr:tex> is closed (<fr:tex display="inline"><![CDATA[X \setminus  \left \{ 2,3 \right \} = \left \{ 1 \right \} \in  \tau ]]></fr:tex>), but not open.</html:li>
+<html:li><fr:tex display="inline"><![CDATA[\varnothing ]]></fr:tex> and <fr:tex display="inline"><![CDATA[X]]></fr:tex> are <html:strong>both</html:strong> open and closed.</html:li>
+<html:li><fr:tex display="inline"><![CDATA[\left \{ 1,2 \right \}]]></fr:tex> is <html:strong>neither</html:strong> open (not in <fr:tex display="inline"><![CDATA[\tau ]]></fr:tex>) nor closed (<fr:tex display="inline"><![CDATA[X \setminus  \left \{ 1,2 \right \} = \left \{ 3 \right \} \notin  \tau ]]></fr:tex>).</html:li></html:ul>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

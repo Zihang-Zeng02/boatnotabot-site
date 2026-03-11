@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "" "">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://www.forester-notes.org" data-base-url="/"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width"></meta><link rel="stylesheet" href="/style.css"></link><link rel="stylesheet" href="/katex.min.css"></link><script type="text/javascript"></script><script type="module" src="/forester.js"></script><title>Open Ball</title></head><body><ninja-keys placeholder="Start typing a note title or ID"></ninja-keys><header class="header"><nav class="nav"><div class="logo"><a href="/index.html" title="Home">« Home</a></div></nav></header><div id="grid-wrapper"><article><section xmlns="" lang="en" class="block" data-taxon="Definition"><details id="id1" open="open"><summary><header><h1>
+<span class="taxon">Definition. </span>Open Ball <a class="slug" href="/gtop-000S/">[gtop-000S]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 11, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+    <p xmlns="http://www.w3.org/1999/xhtml">
+Let \((X, d)\) be a <span xmlns="" class="link local"><a href="/gtop-0003/" title="Metric Space [gtop-0003]">metric space</a></span>. The <strong>open ball</strong> centered at \(x \in  X\) with radius \(\epsilon  &gt; 0\) is
+</p>
+    \[B(x, \epsilon ) = \left \{ y \in  X : d(x, y) &lt; \epsilon  \right \}\]
+  </details></section><footer xmlns="">
+    
+    <section lang="en" class="block hide-metadata"><details id="id2" open="open"><summary><header><h1>
+<span class="taxon"></span>Context  </h1>
+<div class="metadata"><ul></ul></div></header></summary>
+        <section lang="en" class="block" data-taxon="Definition"><details id="id3"><summary><header><h1>
+<span class="taxon">Definition. </span>Metric Space <a class="slug" href="/gtop-0003/">[gtop-0003]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 7, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+    A <strong>metric space</strong> is a pair \((X, d)\) where \(X\) is a set and \(d : X \times  X \to  \mathbb {R}\) is a function called a <strong>metric</strong>, satisfying for all \(x, y, z \in  X\):
+</p>
+            <ol xmlns="http://www.w3.org/1999/xhtml"><li>\(d(x, y) \geq  0\) and \(d(x, y) = 0\) if and only if \(x = y\) (positive definiteness).</li>
+    <li>\(d(x, y) = d(y, x)\) (symmetry).</li>
+    <li>\(d(x, z) \leq  d(x, y) + d(y, z)\) (triangle inequality).</li></ol>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+    Every metric space \((X, d)\) induces a <span xmlns="" class="link local"><a href="/gtop-0002/" title="Topological Space [gtop-0002]">topology</a></span> on \(X\), called the <strong>metric topology</strong>, where the open sets are unions of <span xmlns="" class="link local"><a href="/gtop-000S/" title="Open Ball [gtop-000S]">open balls</a></span>.
+</p>
+            <section lang="en" class="block hide-metadata" data-taxon="Definition"><details id="id4" open="open"><summary><header><h1>
+<span class="taxon">Definition. </span>Open Ball <a class="slug" href="/gtop-000S/">[gtop-000S]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 11, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+                <p xmlns="http://www.w3.org/1999/xhtml">
+Let \((X, d)\) be a <span xmlns="" class="link local"><a href="/gtop-0003/" title="Metric Space [gtop-0003]">metric space</a></span>. The <strong>open ball</strong> centered at \(x \in  X\) with radius \(\epsilon  &gt; 0\) is
+</p>
+                \[B(x, \epsilon ) = \left \{ y \in  X : d(x, y) &lt; \epsilon  \right \}\]
+              </details></section>
+            <section lang="en" class="block hide-metadata" data-taxon="Notation"><details id="id5" open="open"><summary><header><h1>
+<span class="taxon">Notation. </span>Metric Topology <a class="slug" href="/gtop-000R/">[gtop-000R]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 11, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+                <p xmlns="http://www.w3.org/1999/xhtml">
+A <span xmlns="" class="link local"><a href="/gtop-0003/" title="Metric Space [gtop-0003]">metric space</a></span> \((X, d)\) induces a <span xmlns="" class="link local"><a href="/gtop-0002/" title="Topological Space [gtop-0002]">topology</a></span> \(\tau _d\) on \(X\) by declaring \(U \in  \tau _d\) if and only if for every \(x \in  U\) there exists \(\epsilon  &gt; 0\) such that the <span xmlns="" class="link local"><a href="/gtop-000S/" title="Open Ball [gtop-000S]">open ball</a></span> \(B(x, \epsilon ) \subseteq  U\).
+</p>
+                <p xmlns="http://www.w3.org/1999/xhtml">
+That is, a metric \(d\) induces a topology through the following chain:
+</p>
+                <ol xmlns="http://www.w3.org/1999/xhtml"><li>The metric \(d\) defines <span xmlns="" class="link local"><a href="/gtop-000S/" title="Open Ball [gtop-000S]">open balls</a></span> \(B(x, \epsilon )\).</li>
+<li>Open balls generate <span xmlns="" class="link local"><a href="/gtop-0005/" title="Open Set [gtop-0005]">open sets</a></span>: a set is open if and only if it is an arbitrary union of open balls.</li>
+<li>The collection of all open sets forms \(\tau _d\), a valid <span xmlns="" class="link local"><a href="/gtop-0002/" title="Topological Space [gtop-0002]">topology</a></span>.</li></ol>
+                <p xmlns="http://www.w3.org/1999/xhtml">
+Every metric space is a topological space, but not every topological space arises from a metric. A topological space \((X, \tau )\) is called <strong>metrizable</strong> if there exists a metric \(d\) on \(X\) such that \(\tau  = \tau _d\).
+</p>
+              </details></section>
+          </details></section>
+      </details></section>
+    <section lang="en" class="block hide-metadata"><details id="id6" open="open"><summary><header><h1>
+<span class="taxon"></span>Backlinks  </h1>
+<div class="metadata"><ul></ul></div></header></summary>
+        <section lang="en" class="block" data-taxon="Definition"><details id="id7"><summary><header><h1>
+<span class="taxon">Definition. </span>Interior Point <a class="slug" href="/gtop-000I/">[gtop-000I]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 11, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+If \(S\) is a subset of a <span xmlns="" class="link local"><a href="/gtop-0004/" title="Euclidean Space [gtop-0004]">Euclidean space</a></span>, then \(x\) is an <strong>interior point</strong> of \(S\) if there exists an <span xmlns="" class="link local"><a href="/gtop-000S/" title="Open Ball [gtop-000S]">open ball</a></span> centered at \(x\) which is completely contained in \(S\).
+</p>
+          </details></section>
+        <section lang="en" class="block" data-taxon="Intuition"><details id="id8"><summary><header><h1>
+<span class="taxon">Intuition. </span>Intuition: Measure vs Metric <a class="slug" href="/todo-0003/">[todo-0003]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 11, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+A <strong>measure</strong> assigns a "size" to a set — how much stuff is in it. Length, area, volume, and probability are all measures.
+</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+A <strong>metric</strong> assigns a "distance" between two points — how far apart they are.
+</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+They answer fundamentally different questions: measure asks "how big is this region?" while metric asks "how far apart are these two points?"
+</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+A metric is upstream of measure: a <span xmlns="" class="link local"><a href="/gtop-0003/" title="Metric Space [gtop-0003]">metric</a></span> defines <span xmlns="" class="link local"><a href="/gtop-000S/" title="Open Ball [gtop-000S]">open balls</a></span>, which give a <span xmlns="" class="link local"><a href="/gtop-0002/" title="Topological Space [gtop-0002]">topology</a></span>, which give a <span xmlns="" class="link local"><a href="/gtop-000K/" title="Borel \sigma -algebra [gtop-000K]">Borel </a>\(\sigma \)<a href="/gtop-000K/" title="Borel \sigma -algebra [gtop-000K]">-algebra</a></span>, which gives sets you can measure. A set can be small in measure but wide in metric (e.g., a thin line segment across a room).
+</p>
+          </details></section>
+        <section lang="en" class="block" data-taxon="Notation"><details id="id9"><summary><header><h1>
+<span class="taxon">Notation. </span>Metric Topology <a class="slug" href="/gtop-000R/">[gtop-000R]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 11, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+A <span xmlns="" class="link local"><a href="/gtop-0003/" title="Metric Space [gtop-0003]">metric space</a></span> \((X, d)\) induces a <span xmlns="" class="link local"><a href="/gtop-0002/" title="Topological Space [gtop-0002]">topology</a></span> \(\tau _d\) on \(X\) by declaring \(U \in  \tau _d\) if and only if for every \(x \in  U\) there exists \(\epsilon  &gt; 0\) such that the <span xmlns="" class="link local"><a href="/gtop-000S/" title="Open Ball [gtop-000S]">open ball</a></span> \(B(x, \epsilon ) \subseteq  U\).
+</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+That is, a metric \(d\) induces a topology through the following chain:
+</p>
+            <ol xmlns="http://www.w3.org/1999/xhtml"><li>The metric \(d\) defines <span xmlns="" class="link local"><a href="/gtop-000S/" title="Open Ball [gtop-000S]">open balls</a></span> \(B(x, \epsilon )\).</li>
+<li>Open balls generate <span xmlns="" class="link local"><a href="/gtop-0005/" title="Open Set [gtop-0005]">open sets</a></span>: a set is open if and only if it is an arbitrary union of open balls.</li>
+<li>The collection of all open sets forms \(\tau _d\), a valid <span xmlns="" class="link local"><a href="/gtop-0002/" title="Topological Space [gtop-0002]">topology</a></span>.</li></ol>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+Every metric space is a topological space, but not every topological space arises from a metric. A topological space \((X, \tau )\) is called <strong>metrizable</strong> if there exists a metric \(d\) on \(X\) such that \(\tau  = \tau _d\).
+</p>
+          </details></section>
+        <section lang="en" class="block" data-taxon="Definition"><details id="id10"><summary><header><h1>
+<span class="taxon">Definition. </span>Euclidean Space <a class="slug" href="/gtop-0004/">[gtop-0004]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 7, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+    The <strong>Euclidean space</strong> \(\mathbb {R}^n\) is the <span xmlns="" class="link local"><a href="/gtop-0003/" title="Metric Space [gtop-0003]">metric space</a></span> equipped with the Euclidean metric
+</p>
+            \[d(x, y) = \lVert  x - y \rVert  = \sqrt {\sum _{i=1}^{n} (x_i - y_i)^2}\]
+            <p xmlns="http://www.w3.org/1999/xhtml">
+    The <span xmlns="" class="link local"><a href="/gtop-0002/" title="Topological Space [gtop-0002]">topology</a></span> induced by this metric is called the <strong>standard topology</strong> on \(\mathbb {R}^n\). In this topology, the <span xmlns="" class="link local"><a href="/gtop-000S/" title="Open Ball [gtop-000S]">open ball</a></span> centered at \(x\) with radius \(\epsilon  &gt; 0\) is
+</p>
+            \[B(x, \epsilon ) = \left \{ y \in  \mathbb {R}^n : \lVert  y - x \rVert  &lt; \epsilon  \right \}\]
+            <p xmlns="http://www.w3.org/1999/xhtml">
+    This is a special case of a <span xmlns="" class="link local"><a href="/gtop-0003/" title="Metric Space [gtop-0003]">metric space</a></span>, which in turn induces a <span xmlns="" class="link local"><a href="/gtop-0002/" title="Topological Space [gtop-0002]">topological space</a></span>.
+</p>
+          </details></section>
+        <section lang="en" class="block" data-taxon="Definition"><details id="id11"><summary><header><h1>
+<span class="taxon">Definition. </span>Metric Space <a class="slug" href="/gtop-0003/">[gtop-0003]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 7, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+    A <strong>metric space</strong> is a pair \((X, d)\) where \(X\) is a set and \(d : X \times  X \to  \mathbb {R}\) is a function called a <strong>metric</strong>, satisfying for all \(x, y, z \in  X\):
+</p>
+            <ol xmlns="http://www.w3.org/1999/xhtml"><li>\(d(x, y) \geq  0\) and \(d(x, y) = 0\) if and only if \(x = y\) (positive definiteness).</li>
+    <li>\(d(x, y) = d(y, x)\) (symmetry).</li>
+    <li>\(d(x, z) \leq  d(x, y) + d(y, z)\) (triangle inequality).</li></ol>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+    Every metric space \((X, d)\) induces a <span xmlns="" class="link local"><a href="/gtop-0002/" title="Topological Space [gtop-0002]">topology</a></span> on \(X\), called the <strong>metric topology</strong>, where the open sets are unions of <span xmlns="" class="link local"><a href="/gtop-000S/" title="Open Ball [gtop-000S]">open balls</a></span>.
+</p>
+            <section lang="en" class="block hide-metadata" data-taxon="Definition"><details id="id12" open="open"><summary><header><h1>
+<span class="taxon">Definition. </span>Open Ball <a class="slug" href="/gtop-000S/">[gtop-000S]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 11, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+                <p xmlns="http://www.w3.org/1999/xhtml">
+Let \((X, d)\) be a <span xmlns="" class="link local"><a href="/gtop-0003/" title="Metric Space [gtop-0003]">metric space</a></span>. The <strong>open ball</strong> centered at \(x \in  X\) with radius \(\epsilon  &gt; 0\) is
+</p>
+                \[B(x, \epsilon ) = \left \{ y \in  X : d(x, y) &lt; \epsilon  \right \}\]
+              </details></section>
+            <section lang="en" class="block hide-metadata" data-taxon="Notation"><details id="id13" open="open"><summary><header><h1>
+<span class="taxon">Notation. </span>Metric Topology <a class="slug" href="/gtop-000R/">[gtop-000R]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 11, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+                <p xmlns="http://www.w3.org/1999/xhtml">
+A <span xmlns="" class="link local"><a href="/gtop-0003/" title="Metric Space [gtop-0003]">metric space</a></span> \((X, d)\) induces a <span xmlns="" class="link local"><a href="/gtop-0002/" title="Topological Space [gtop-0002]">topology</a></span> \(\tau _d\) on \(X\) by declaring \(U \in  \tau _d\) if and only if for every \(x \in  U\) there exists \(\epsilon  &gt; 0\) such that the <span xmlns="" class="link local"><a href="/gtop-000S/" title="Open Ball [gtop-000S]">open ball</a></span> \(B(x, \epsilon ) \subseteq  U\).
+</p>
+                <p xmlns="http://www.w3.org/1999/xhtml">
+That is, a metric \(d\) induces a topology through the following chain:
+</p>
+                <ol xmlns="http://www.w3.org/1999/xhtml"><li>The metric \(d\) defines <span xmlns="" class="link local"><a href="/gtop-000S/" title="Open Ball [gtop-000S]">open balls</a></span> \(B(x, \epsilon )\).</li>
+<li>Open balls generate <span xmlns="" class="link local"><a href="/gtop-0005/" title="Open Set [gtop-0005]">open sets</a></span>: a set is open if and only if it is an arbitrary union of open balls.</li>
+<li>The collection of all open sets forms \(\tau _d\), a valid <span xmlns="" class="link local"><a href="/gtop-0002/" title="Topological Space [gtop-0002]">topology</a></span>.</li></ol>
+                <p xmlns="http://www.w3.org/1999/xhtml">
+Every metric space is a topological space, but not every topological space arises from a metric. A topological space \((X, \tau )\) is called <strong>metrizable</strong> if there exists a metric \(d\) on \(X\) such that \(\tau  = \tau _d\).
+</p>
+              </details></section>
+          </details></section>
+        <section lang="en" class="block" data-taxon="Definition"><details id="id14"><summary><header><h1>
+<span class="taxon">Definition. </span>Open Set <a class="slug" href="/gtop-0005/">[gtop-0005]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 7, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+    Let \((X, \tau )\) be a <span xmlns="" class="link local"><a href="/gtop-0002/" title="Topological Space [gtop-0002]">topological space</a></span>. A subset \(U \subseteq  X\) is called <strong>open</strong> if \(U \in  \tau \).
+</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+    In a <span xmlns="" class="link local"><a href="/gtop-0004/" title="Euclidean Space [gtop-0004]">Euclidean space</a></span> \(\mathbb {R}^n\), a subset \(U \subseteq  \mathbb {R}^n\) is <strong>open</strong> if for every \(x \in  U\), there exists \(\epsilon  &gt; 0\) such that \(B(x, \epsilon ) \subseteq  U\). More generally, in any <span xmlns="" class="link local"><a href="/gtop-0003/" title="Metric Space [gtop-0003]">metric space</a></span> \((X, d)\), a set is open if it is a union of <span xmlns="" class="link local"><a href="/gtop-000S/" title="Open Ball [gtop-000S]">open balls</a></span>.
+</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+    The <span xmlns="" class="link local"><a href="/gtop-0004/" title="Euclidean Space [gtop-0004]">Euclidean</a></span> definition is a special case where the topology is induced by the metric \(d(x, y) = \lVert  x - y \rVert \).
+</p>
+          </details></section>
+      </details></section>
+    <section lang="en" class="block hide-metadata"><details id="id15" open="open"><summary><header><h1>
+<span class="taxon"></span>Related  </h1>
+<div class="metadata"><ul></ul></div></header></summary>
+        <section lang="en" class="block" data-taxon="Definition"><details id="id16"><summary><header><h1>
+<span class="taxon">Definition. </span>Metric Space <a class="slug" href="/gtop-0003/">[gtop-0003]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 7, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+    A <strong>metric space</strong> is a pair \((X, d)\) where \(X\) is a set and \(d : X \times  X \to  \mathbb {R}\) is a function called a <strong>metric</strong>, satisfying for all \(x, y, z \in  X\):
+</p>
+            <ol xmlns="http://www.w3.org/1999/xhtml"><li>\(d(x, y) \geq  0\) and \(d(x, y) = 0\) if and only if \(x = y\) (positive definiteness).</li>
+    <li>\(d(x, y) = d(y, x)\) (symmetry).</li>
+    <li>\(d(x, z) \leq  d(x, y) + d(y, z)\) (triangle inequality).</li></ol>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+    Every metric space \((X, d)\) induces a <span xmlns="" class="link local"><a href="/gtop-0002/" title="Topological Space [gtop-0002]">topology</a></span> on \(X\), called the <strong>metric topology</strong>, where the open sets are unions of <span xmlns="" class="link local"><a href="/gtop-000S/" title="Open Ball [gtop-000S]">open balls</a></span>.
+</p>
+            <section lang="en" class="block hide-metadata" data-taxon="Definition"><details id="id17" open="open"><summary><header><h1>
+<span class="taxon">Definition. </span>Open Ball <a class="slug" href="/gtop-000S/">[gtop-000S]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 11, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+                <p xmlns="http://www.w3.org/1999/xhtml">
+Let \((X, d)\) be a <span xmlns="" class="link local"><a href="/gtop-0003/" title="Metric Space [gtop-0003]">metric space</a></span>. The <strong>open ball</strong> centered at \(x \in  X\) with radius \(\epsilon  &gt; 0\) is
+</p>
+                \[B(x, \epsilon ) = \left \{ y \in  X : d(x, y) &lt; \epsilon  \right \}\]
+              </details></section>
+            <section lang="en" class="block hide-metadata" data-taxon="Notation"><details id="id18" open="open"><summary><header><h1>
+<span class="taxon">Notation. </span>Metric Topology <a class="slug" href="/gtop-000R/">[gtop-000R]</a> </h1>
+<div class="metadata"><ul>
+<li class="meta-item">March 11, 2026</li>
+<li class="meta-item"><address class="author"><span class="link local"><a href="/boat/" title="Zihang Zeng [boat]">Zihang Zeng</a></span></address></li>
+</ul></div></header></summary>
+                <p xmlns="http://www.w3.org/1999/xhtml">
+A <span xmlns="" class="link local"><a href="/gtop-0003/" title="Metric Space [gtop-0003]">metric space</a></span> \((X, d)\) induces a <span xmlns="" class="link local"><a href="/gtop-0002/" title="Topological Space [gtop-0002]">topology</a></span> \(\tau _d\) on \(X\) by declaring \(U \in  \tau _d\) if and only if for every \(x \in  U\) there exists \(\epsilon  &gt; 0\) such that the <span xmlns="" class="link local"><a href="/gtop-000S/" title="Open Ball [gtop-000S]">open ball</a></span> \(B(x, \epsilon ) \subseteq  U\).
+</p>
+                <p xmlns="http://www.w3.org/1999/xhtml">
+That is, a metric \(d\) induces a topology through the following chain:
+</p>
+                <ol xmlns="http://www.w3.org/1999/xhtml"><li>The metric \(d\) defines <span xmlns="" class="link local"><a href="/gtop-000S/" title="Open Ball [gtop-000S]">open balls</a></span> \(B(x, \epsilon )\).</li>
+<li>Open balls generate <span xmlns="" class="link local"><a href="/gtop-0005/" title="Open Set [gtop-0005]">open sets</a></span>: a set is open if and only if it is an arbitrary union of open balls.</li>
+<li>The collection of all open sets forms \(\tau _d\), a valid <span xmlns="" class="link local"><a href="/gtop-0002/" title="Topological Space [gtop-0002]">topology</a></span>.</li></ol>
+                <p xmlns="http://www.w3.org/1999/xhtml">
+Every metric space is a topological space, but not every topological space arises from a metric. A topological space \((X, \tau )\) is called <strong>metrizable</strong> if there exists a metric \(d\) on \(X\) such that \(\tau  = \tau _d\).
+</p>
+              </details></section>
+          </details></section>
+      </details></section>
+    
+  </footer></article></div></body></html>
