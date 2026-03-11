@@ -3,7 +3,7 @@
 <fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
   <fr:frontmatter>
     <fr:authors />
-    <fr:uri>https://boatnotabot.com/math-lib/</fr:uri>
+    <fr:uri>https://www.my-great-forest.net/math-lib/</fr:uri>
     <fr:display-uri>math-lib</fr:display-uri>
     <fr:route>/math-lib/</fr:route>
     <fr:title text="Mathematical Macros">Mathematical Macros</fr:title>
