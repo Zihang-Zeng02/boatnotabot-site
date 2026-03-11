@@ -3,4 +3,3 @@ trees = ["trees"]
 assets = ["assets"]
 home = "boat-0001"
 url = "https://boatnotabot.com/"
-prefixes = ["gtop", "calc", "opt", "ml", "boat"]
